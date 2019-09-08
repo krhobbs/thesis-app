@@ -4,12 +4,12 @@ import java.util.ArrayList;
 
 public class Node {
 
-  private int id;
-  private String text;
-  private Decision[] decisions;
-  private ArrayList<Node> children = new ArrayList<>();
-  private int speaker;
-  private boolean checkpoint;
+  public int id;
+  public String text;
+  public Decision[] decisions;
+  public ArrayList<Node> children = new ArrayList<>();
+  public int speaker;
+  public boolean checkpoint;
 
   public Node() {}
 
