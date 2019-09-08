@@ -4,6 +4,14 @@ public class Game {
 
   private Decision[] emptyDecisions = {};
 
+  public Decision[] getEmptyDecisions() {
+    return emptyDecisions;
+  }
+
+  public void setEmptyDecisions(Decision[] emptyDecisions) {
+    this.emptyDecisions = emptyDecisions;
+  }
+
   public Game() {}
 
   public Node buildFullStoryTree() {

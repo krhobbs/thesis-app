@@ -9,6 +9,47 @@ public class SimpleNode {
   private int speaker;
   private boolean checkpoint;
 
+  //Getters and Setters (required for Jackson)
+  public int getId() {
+    return id;
+  }
+
+  public void setId(int id) {
+    this.id = id;
+  }
+
+  public String getText() {
+    return text;
+  }
+
+  public void setText(String text) {
+    this.text = text;
+  }
+
+  public Decision[] getDecisions() {
+    return decisions;
+  }
+
+  public void setDecisions(Decision[] decisions) {
+    this.decisions = decisions;
+  }
+
+  public int getSpeaker() {
+    return speaker;
+  }
+
+  public void setSpeaker(int speaker) {
+    this.speaker = speaker;
+  }
+
+  public boolean isCheckpoint() {
+    return checkpoint;
+  }
+
+  public void setCheckpoint(boolean checkpoint) {
+    this.checkpoint = checkpoint;
+  }
+
   public SimpleNode() {}
 
   public SimpleNode(Node node) {
@@ -18,4 +59,5 @@ public class SimpleNode {
     this.speaker = node.speaker;
     this.checkpoint = node.checkpoint;
   }
+
 }
