@@ -7,6 +7,15 @@ public class Decide implements Serializable {
 
   private int[] decisionList;
 
+  //Getters and Setters
+  public int[] getDecisionList() {
+    return decisionList;
+  }
+
+  public void setDecisionList(int[] decisionList) {
+    this.decisionList = decisionList;
+  }
+
   public Decide() { this.decisionList = new int[0]; }
 
   public Decide(int[] decisionList) { this.decisionList = decisionList; }
@@ -24,4 +33,5 @@ public class Decide implements Serializable {
 
     return new SimpleNode(currentNode);
   }
+
 }

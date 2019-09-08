@@ -11,6 +11,55 @@ public class Node {
   public int speaker;
   public boolean checkpoint;
 
+  //Getters and Setters
+  public int getId() {
+    return id;
+  }
+
+  public void setId(int id) {
+    this.id = id;
+  }
+
+  public String getText() {
+    return text;
+  }
+
+  public void setText(String text) {
+    this.text = text;
+  }
+
+  public Decision[] getDecisions() {
+    return decisions;
+  }
+
+  public void setDecisions(Decision[] decisions) {
+    this.decisions = decisions;
+  }
+
+  public ArrayList<Node> getChildren() {
+    return children;
+  }
+
+  public void setChildren(ArrayList<Node> children) {
+    this.children = children;
+  }
+
+  public int getSpeaker() {
+    return speaker;
+  }
+
+  public void setSpeaker(int speaker) {
+    this.speaker = speaker;
+  }
+
+  public boolean getCheckpoint() {
+    return checkpoint;
+  }
+
+  public void setCheckpoint(boolean checkpoint) {
+    this.checkpoint = checkpoint;
+  }
+
   public Node() {}
 
   public Node(int id, String text, Decision[] decisions, int speaker, boolean checkpoint) {
