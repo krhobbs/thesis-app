@@ -31,6 +31,7 @@ build/
 .vscode/
 
 # dependencies
+/src/main/client/node_modules
 /node_modules
 /.pnp
 .pnp.js
