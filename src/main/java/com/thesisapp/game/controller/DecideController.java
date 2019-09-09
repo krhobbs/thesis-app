@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 public class DecideController {
 
-  //@CrossOrigin(origins = "https://localhost:3000")
+  @CrossOrigin(origins = "http://localhost:3000")
   @RequestMapping(value="/decide", method= RequestMethod.POST)
   public ResponseEntity<SimpleNode> decide(@RequestBody Decide decide) {
     SimpleNode currentNode = decide.getNode();

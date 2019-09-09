@@ -28,7 +28,7 @@ class Home extends Component {
         speaker: 0,
         checkpoint: true
       },
-      decisionList: []
+      decisionList: [0]
     };
 
     this.onDecide = this.onDecide.bind(this);
@@ -43,7 +43,7 @@ class Home extends Component {
     }
 
     return currentPrevious.map((text) =>
-      <Message key={}{currentPrevious.indexOf(text)} text={text}/>
+      <Message key={currentPrevious.indexOf(text)} text={text}/>
     );
   }
 
