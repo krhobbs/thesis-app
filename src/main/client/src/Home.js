@@ -3,7 +3,13 @@ import React, { Component } from 'react';
 class Home extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      previouslyPlayed: [],
+      currentNode: {
+
+      },
+      decisionList: []
+    };
 
   }
 }
