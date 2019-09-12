@@ -7,7 +7,7 @@ class Home extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      previouslyPlayed: [],
+      previouslyPlayed: ['pinging... status...connected', 'Ah-- what the hell? Stupid thing.'],
       currentNode: {
         id: 1,
         text: 'Ah-- what the hell? Stupid thing.',
@@ -37,13 +37,8 @@ class Home extends Component {
 
   // Generate the previous messages to be displayed on the screen
   generateMessages() {
-    let currentPrevious = this.state.previouslyPlayed;
-    if (currentPrevious.indexOf(this.state.currentNode.text) < 0) {
-      currentPrevious.push(this.state.currentNode.text);
-    }
-
-    return currentPrevious.map((text) =>
-      <Message key={currentPrevious.indexOf(text)} text={text}/>
+    return this.state.previouslyPlayed.map((text) =>
+      <Message key={this.state.previouslyPlayed.indexOf(text)} text={text}/>
     );
   }
 
@@ -83,6 +78,7 @@ class Home extends Component {
       body: JSON.stringify(body),
     })).json();
     this.setState({currentNode: currentNode});
+    this.updatePreviouslyPlayed(currentNode.text);
 
   }
 
