@@ -35,14 +35,14 @@ class Home extends Component {
 
   }
 
-  // Generate the previous messages to be displayed on the screen
+  // Generate the previous messages to be displayed on the screen (do not modify state)
   generateMessages() {
     return this.state.previouslyPlayed.map((text) =>
       <Message key={this.state.previouslyPlayed.indexOf(text)} text={text}/>
     );
   }
 
-  // Generate the current decision that the play must make
+  // Generate the current decision that the play must make (do not modify state)
   generateDecision() {
     return <Decision decisions={this.state.currentNode.decisions} onDecide={this.onDecide}/>;
   }
