@@ -82,8 +82,8 @@ class Home extends Component {
     this.setState({currentNode: currentNode});
     this.updatePreviouslyPlayed(currentNode.text);
 
-    if (currentNode.decisions.length === 0) {
-      this.onDecide({id: 'n0d0', text: '', whichChild: 0, attitude: -1})
+    if (currentNode.decisions[0].id === '') {
+      this.onDecide(currentNode.decisions[0]);
     }
 
   }
