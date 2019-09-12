@@ -48,9 +48,11 @@ class Home extends Component {
   }
 
   updatePreviouslyPlayed(text) {
-    let previouslyPlayed = this.state.previouslyPlayed;
-    previouslyPlayed.push(text);
-    this.setState({previouslyPlayed: previouslyPlayed});
+    if (text.length > 0) {
+      let previouslyPlayed = this.state.previouslyPlayed;
+      previouslyPlayed.push(text);
+      this.setState({previouslyPlayed: previouslyPlayed});
+    }
   }
 
   updateDecisionList(whichChild) {
@@ -80,7 +82,13 @@ class Home extends Component {
     this.setState({currentNode: currentNode});
     this.updatePreviouslyPlayed(currentNode.text);
 
+    if (currentNode.decisions.length === 0) {
+      this.onDecide({id: 'n0d0', text: '', whichChild: 0, attitude: -1})
+    }
+
   }
+
+  //A method to get the next node when no decision is necessary
 
   render() {
     return (
