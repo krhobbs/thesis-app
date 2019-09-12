@@ -18,9 +18,9 @@ public class Game {
     this.blankDecision = blankDecision;
   }
 
-  public Game() {}
+  Game() {}
 
-  public Node buildFullStoryTree() {
+  Node buildFullStoryTree() {
     //Act 1
     Node n0 = new Node(0, "pinging...\nacquired signal\nstatus...connected", emptyDecisions, 0, true);
 
