@@ -7,10 +7,10 @@ class Home extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      previouslyPlayed: ['pinging... status...connected', 'Ah-- what the hell? Stupid thing.'],
+      previouslyPlayed: ['pinging...  acquired signal  status...connected', 'Ah-- what the hell?'],
       currentNode: {
         id: 1,
-        text: 'Ah-- what the hell? Stupid thing.',
+        text: 'Stupid thing.',
         decisions: [
           {
             id: 'n1d1',
@@ -28,7 +28,7 @@ class Home extends Component {
         speaker: 0,
         checkpoint: true
       },
-      decisionList: [0]
+      decisionList: [0, 0]
     };
 
     this.onDecide = this.onDecide.bind(this);

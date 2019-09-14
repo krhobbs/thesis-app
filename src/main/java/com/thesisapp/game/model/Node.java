@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Node {
 
-  public int id;
+  public double id;
   public String text;
   public Decision[] decisions;
   public ArrayList<Node> children = new ArrayList<>();
@@ -12,11 +12,11 @@ public class Node {
   public boolean checkpoint;
 
   //Getters and Setters
-  public int getId() {
+  public double getId() {
     return id;
   }
 
-  public void setId(int id) {
+  public void setId(double id) {
     this.id = id;
   }
 
@@ -62,7 +62,7 @@ public class Node {
 
   public Node() {}
 
-  public Node(int id, String text, Decision[] decisions, int speaker, boolean checkpoint) {
+  public Node(double id, String text, Decision[] decisions, int speaker, boolean checkpoint) {
     this.id = id;
     this.text = text;
     this.decisions = decisions;
