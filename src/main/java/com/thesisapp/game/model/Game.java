@@ -327,6 +327,130 @@ public class Game {
     Decision[] n94d = {n94d1, n94d2};
     Node n94 = new Node(94, "Damn it. I'm not sure this is a good idea, [Simon].", n94d, 1, false);
 
+    Node n95 = new Node(95, "You know, that's an analogy I never got around to understanding.", emptyDecisions, 1, false);
+
+    Decision n96d1 = new Decision("n96d1", "It's okay. This sounds heavy, and it's a weight you probably need off your shoulders.", 0, 0);
+    Decision n96d2 = new Decision("n96d2", "Can I assume Grace thinks you might be dead?", 1, 0);
+    Decision[] n96d = {n96d1, n96d2};
+    Node n96 = new Node(96, "Yes, that.", n96d, 1, false);
+
+    Node n97 = new Node(97, "Yes. I thought if I had the chance to get word to anybody, it would be to her. To say goodbye.", emptyDecisions, 1, false);
+
+    Node n98 = new Node(98, "Let her know there's nothing to be done. Warn her, maybe, in case there's cause for it.", emptyDecisions, 1, false);
+
+    Decision n99d1 = new Decision("n99d1", "Well, keep going. This sounds heavy, and it's a weight you probably need off your shoulders.", 0, 0);
+    Decision n99d2 = new Decision("n99d2", "Can I assume....Grace was a paramour of yours?", 1, 0);
+    Decision[] n99d = {n99d1, n99d2};
+    Node n99 = new Node(99, "I have a feeling she didn't heed my warning to keep herself safe when I left.", n99d, 1, false);
+
+    Decision n100d1 = new Decision("n100d1", "Right. Sorry. Well, keep going. This sounds heavy, and it's a weight you probably need off your shoulders.", 0, 0);
+    Decision n100d2 = new Decision("n100d2", "Assumption retracted. Well, keep going. This sounds heavy, and it's a weight you probably need off your shoulders.", 1, 0);
+    Decision[] n100d = {n100d1, n100d2};
+    Node n100 = new Node(100, "No.", n100d, 1, false);
+
+    Decision n101d1 = new Decision("n101d1", "I do. It's time for some cathode-ray tube Skype therapy.", 0, 0);
+    Decision n101d2 = new Decision("n101d2", "I don't know about right, but you've already convinced me to help you this far.", 0 ,0);
+    Decision[] n101d = {n101d1, n101d2};
+    Node n101 = new Node(101, "Never mind that, though. You really think this is the right thing to do?", n101d, 1, false);
+
+    Node n102 = new Node(102, "Maybe you're right.", emptyDecisions, 1, false);
+    Node n103 = new Node(103, "Okay. So, Grace. Once more, with feeling.", emptyDecisions, 1, false);
+    Node n104 = new Node(104, "It really was an honor to work with you. In time, I think we would have been honest friends. I regret not getting the chance to find out.", emptyDecisions, 1, false);
+    Node n105 = new Node(105, "It's over, though. This is to make certain you know that. It's also to make certain you cleared any data caches I left behind. Keeping that data is dangerous.", emptyDecisions, 1, false);
+
+    Decision n106d1 = new Decision("n106d1", "I mean, if she's important to you, maybe she deserves a bit of hope.", 0, 0);
+    Decision n106d2 = new Decision("n106d2", "I mean, if it's from the heart, it's from the heart. I'll write this up.", 1, 0);
+    Decision[] n106d = {n106d1, n106d2};
+    Node n106 = new Node(106, "That's it... I think. Should I end on a better note?", n106d, 1, false);
+
+    Node n107 = new Node(107, "You're right.", emptyDecisions, 1, false);
+    Node n108 = new Node(108, "Grace, despite everything, I think I'll be okay. In some incarnation or another.", emptyDecisions, 1, false);
+
+    Decision n109d1 = new Decision("n109d1", "That's beautiful, Prosper. I'll write this up.", 0, 0);
+    Decision n109d2 = new Decision("n109d2", "You've got me tearing up over here, Prosper. I'll write this up.", 0, 0);
+    Decision[] n109d = {n109d1, n109d2};
+    Node n109 = new Node(109, "And all the better for having known you.", n109d, 1, false);
+
+    Node n110 = new Node(110, "Thanks.", emptyDecisions, 1, false);
+    Node n111 = new Node(111, "I guess it's time to send it.", emptyDecisions, 1, false);
+
+    Decision n112d1 = new Decision("n112d1", "NYC, huh? I'll send this. After I look up how much postage I need. Worth every cent.", 0, 0);
+    Decision n112d2 = new Decision("n112d2", "NYC, huh? I'll send this. After I look up how much postage I need. I don't suppose you'll reimburse me?", 0, 0);
+    Decision[] n112d = {n112d1, n112d2};
+    Node n112 = new Node(112, "Grace Dillon\n 1765 11th Ave\n New York City, NY", n112d, 1, false);
+
+    Node n113 = new Node(113, "This is such a relief. Thank you, [Simon]. Really.", emptyDecisions, 1, false);
+    Node n114 = new Node(114, "Now... You may not like the sound of this.", emptyDecisions, 1, false);
+
+    Decision n115d1 = new Decision("n115d1", "Whoa, whoa. What if you need help in the future?", 0, 0);
+    Decision n115d2 = new Decision("n115d2", "I'm getting a martyr-y vibe from you, Prosper.", 1, 0);
+    Decision[] n115d = {n115d1, n115d2};
+    Node n115 = new Node(115, "But staying connected to this chip could endanger you.", n115d, 1, false);
+
+    Node n116 = new Node(116, "Sweet of you to worry, but I'll be okay.", emptyDecisions, 1, false);
+    Node n117 = new Node(117, "What can I say? It's a style.", emptyDecisions, 1, false);
+
+    Decision n118d1 = new Decision("n118d1", "Yeah, you want me to be safe. Or at they very least, hoard all the danger for yourself.", 0, 0);
+    Decision n118d2 = new Decision("n118d2", "Yeah. You're ghosting me. And I thought we had a connection...", 1, 0);
+    Decision[] n118d = {n118d1, n118d2};
+    Node n118 = new Node(118, "You see where I'm going with this don't you?", n118d, 1, false);
+
+    Node n119 = new Node(119, "Guess I'm selfish that way.", emptyDecisions, 1, false);
+    Node n120 = new Node(120, "I'm not sure I even know how to unpack that.", emptyDecisions, 1, false);
+
+    Node n121 = new Node(121, "More than that though.", emptyDecisions, 1, false);
+
+    Decision n122d1 = new Decision("n122d1", "Is it really that bad?", 0, 0);
+    Decision n122d2 = new Decision("n122d2", "HOLD UP. Do you know how long I had to dumpster dive and thrift lift to get this thing together?", 1, 0);
+    Decision[] n122d = {n122d1, n122d2};
+    Node n122 = new Node(122, "I think you should dismantle the computer.", n122d, 1, false);
+
+    Node n123 = new Node(123, "It might be.", emptyDecisions, 1, false);
+    Node n124 = new Node(124, "It would be the best way to ensure your safety.", emptyDecisions, 1, false);
+
+    Node n125 = new Node(125, "I know you're proud of it. And you should be.", emptyDecisions, 1, false);
+    Node n126 = new Node(126, "That said, I'd encourage you to look up \"hubris.\"", emptyDecisions, 1, false);
+
+    Node n127 = new Node(127, "Look, if there's one thing I need in here, it's peace of mind.", emptyDecisions, 1, false);
+
+    Decision n128d1 = new Decision("n128d1", "I understand. I don't like it, but I understand. Thanks for looking out for me.", 0, 0);
+    Decision n128d2 = new Decision("n128d2", "I mean, I don't really want to pay for that either.", 0, 0);
+    Decision[] n128d = {n128d1, n128d2};
+    Node n128 = new Node(128, "I don't want you to pay the price for helping me.", n128d, 1, false);
+
+    Decision n129d1 = new Decision("n129d1", "Okay. I guess this is goodbye, Prosper.", 0, 0);
+    Decision n129d2 = new Decision("n129d2", "Are you sure?", 1, 0);
+    Decision[] n129d = {n129d1, n129d1};
+    Node n129 = new Node(129, "So you'll shut it down?", n129d, 1, false);
+
+    Decision n130d1 = new Decision("n130d1", "Okay. I trust your judgement.\n It was nice to meet you, Prosper.", 0, 0);
+    Decision n130d2 = new Decision("n130d2", "This is me...signing off, then.\n In 60 seconds. A last minute, just in case you change your mind.", 1, 0);
+    Decision[] n130d = {n130d1, n130d2};
+    Node n130 = new Node(130, "It is.", n130d, 1, false);
+
+    Decision n131d1 = new Decision("n131d1", "Okay. I guess this is goodbye, Prosper.", 0, 0);
+    Decision n131d2 = new Decision("n131d2", "There's really nothing else I can do to help?", 1, 0);
+    Decision[] n131d = {n131d1, n131d2};
+    Node n131 = new Node(131, "I'm sure.", n131d, 1, false);
+
+    Node n132 = new Node(132, "You've done more than enough. I couldn't possible repay you.", emptyDecisions, 1, false);
+
+    Decision n133d1 = new Decision("n133d1", "Okay. I guess this is goodbye, Prosper.", 0, 0);
+    Decision n133d2 = new Decision("n133d2", "No way! I can still help you, Prosper.", 1, 0);
+    Decision[] n133d = {n133d1, n133d2};
+    Node n133 = new Node(133, "But I'll start by disconnecting the chip.", n133d, 1, false);
+
+    Node n134 = new Node(134, "[Simon].", emptyDecisions, 1, false);
+    Node n135 = new Node(135, "Take care of yourself.", emptyDecisions, 1, false);
+    Node n136 = new Node(136, "signal lost", emptyDecisions, 1, false);
+    Node n137 = new Node(137, "status...disconnected", emptyDecisions, 1, false);
+    Node n138 = new Node(138, "shut down", emptyDecisions, 1, false);
+    Node n139 = new Node(139, "3", emptyDecisions, 1, false);
+    Node n140 = new Node(140, "2", emptyDecisions, 1, false);
+    Node n141 = new Node(141, "1", emptyDecisions, 1, false);
+
+    //WAIT 3 HOURS, IF THE ATTEMPT TO PLAY AGAIN WITHIN 3 HOURS (ADD A MESSAGE THAT SENDS - MAY HAVE TO BE CLIENT SIDE)
+
     n0.addChild(n1);
     n1.addChild(n1_5);
     n1_5.addChild(n2);
@@ -510,6 +634,89 @@ public class Game {
 
     n93.addChild(n94);
 
+    n94.addChild(n95);
+    n94.addChild(n96);
+
+    n96.addChild(n95);
+    n96.addChild(n97);
+
+    n97.addChild(n98);
+    n98.addChild(n99);
+
+    n99.addChild(n95);
+    n99.addChild(n100);
+
+    n100.addChild(n95);
+
+    n95.addChild(n101);
+
+    n101.addChild(n102);
+    n102.addChild(n103);
+    n103.addChild(n104);
+    n104.addChild(n105);
+    n105.addChild(n106);
+
+    n106.addChild(n107);
+    n106.addChild(n110);
+
+    n107.addChild(n108);
+
+    n108.addChild(n109);
+
+    n109.addChild(n110);
+
+    n110.addChild(n111);
+    n111.addChild(n112);
+    n112.addChild(n113);
+    n113.addChild(n114);
+    n114.addChild(n115);
+
+    n115.addChild(n116);
+    n115.addChild(n117);
+
+    n116.addChild(n118);
+    n117.addChild(n118);
+
+    n118.addChild(n119);
+    n118.addChild(n120);
+
+    n119.addChild(n121);
+    n120.addChild(n121);
+
+    n121.addChild(n122);
+
+    n122.addChild(n123);
+    n122.addChild(n125);
+
+    n123.addChild(n124);
+    n125.addChild(n126);
+
+    n124.addChild(n127);
+    n126.addChild(n127);
+
+    n127.addChild(n128);
+
+    n128.addChild(n129);
+
+    n129.addChild(n130);
+    n129.addChild(n131);
+
+    n131.addChild(n130);
+    n131.addChild(n132);
+
+    n132.addChild(n133);
+
+    n133.addChild(n130);
+    n133.addChild(n134);
+
+    n130.addChild(n134);
+
+    n134.addChild(n135);
+    n135.addChild(n136);
+    n136.addChild(n137);
+    n137.addChild(n138);
+    n138.addChild(n139);
+    n139.addChild(n140);
 
     return n0;
   }
