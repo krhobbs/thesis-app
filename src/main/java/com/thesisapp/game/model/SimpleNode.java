@@ -3,18 +3,18 @@ package com.thesisapp.game.model;
 //This is the same as the Node class but with out the children member, so a simpler object can be passed to the client
 public class SimpleNode {
 
-  private int id;
+  private double id;
   private String text;
   private Decision[] decisions;
   private int speaker;
   private boolean checkpoint;
 
   //Getters and Setters (required for Jackson)
-  public int getId() {
+  public double getId() {
     return id;
   }
 
-  public void setId(int id) {
+  public void setId(double id) {
     this.id = id;
   }
 
