@@ -2,19 +2,25 @@ package com.thesisapp.game.model;
 
 public class Game {
 
-  private Decision[] emptyDecisions = {};
+  private Decision blankDecision = new Decision("", "", 0, -1);
+  private Decision[] emptyDecisions = {blankDecision};
 
   public Decision[] getEmptyDecisions() {
     return emptyDecisions;
   }
-
   public void setEmptyDecisions(Decision[] emptyDecisions) {
     this.emptyDecisions = emptyDecisions;
   }
+  public Decision getBlankDecision() {
+    return blankDecision;
+  }
+  public void setBlankDecision(Decision blankDecision) {
+    this.blankDecision = blankDecision;
+  }
 
-  public Game() {}
+  Game() {}
 
-  public Node buildFullStoryTree() {
+  Node buildFullStoryTree() {
     //Act 1
     Node n0 = new Node(0, "pinging...\nacquired signal\nstatus...connected", emptyDecisions, 0, true);
 
@@ -29,8 +35,8 @@ public class Game {
 
     Node n3 = new Node(3, "This is... I can't believe it. I thought this thing was fried, but if it accepted a signal from you...", emptyDecisions, 1, false);
 
-    Decision n4d1 = new Decision("n2d1", "Maybe you could tell me who you are first? I shouldn't even have connectivity on this thing.", 0, 0);
-    Decision n4d2 = new Decision("n2d1", "Total stranger talking through computer? I'm pretty sure my parents said something disapproving about this type of scenario.", 0, 0);
+    Decision n4d1 = new Decision("n4d1", "Maybe you could tell me who you are first? I shouldn't even have connectivity on this thing.", 0, 0);
+    Decision n4d2 = new Decision("n4d2", "Total stranger talking through computer? I'm pretty sure my parents said something disapproving about this type of scenario.", 0, 0);
     Decision[] n4d = {n4d1, n4d2};
     Node n4 = new Node(4, "Okay. This is on your computer, you said? What computer?", n4d, 1, false);
 

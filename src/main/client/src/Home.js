@@ -7,7 +7,7 @@ class Home extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      previouslyPlayed: [],
+      previouslyPlayed: ['pinging... status...connected', 'Ah-- what the hell? Stupid thing.'],
       currentNode: {
         id: 1,
         text: 'Ah-- what the hell? Stupid thing.',
@@ -35,27 +35,24 @@ class Home extends Component {
 
   }
 
-  // Generate the previous messages to be displayed on the screen
+  // Generate the previous messages to be displayed on the screen (do not modify state)
   generateMessages() {
-    let currentPrevious = this.state.previouslyPlayed;
-    if (currentPrevious.indexOf(this.state.currentNode.text) < 0) {
-      currentPrevious.push(this.state.currentNode.text);
-    }
-
-    return currentPrevious.map((text) =>
-      <Message key={currentPrevious.indexOf(text)} text={text}/>
+    return this.state.previouslyPlayed.map((text) =>
+      <Message key={this.state.previouslyPlayed.indexOf(text)} text={text}/>
     );
   }
 
-  // Generate the current decision that the play must make
+  // Generate the current decision that the play must make (do not modify state)
   generateDecision() {
     return <Decision decisions={this.state.currentNode.decisions} onDecide={this.onDecide}/>;
   }
 
   updatePreviouslyPlayed(text) {
-    let previouslyPlayed = this.state.previouslyPlayed;
-    previouslyPlayed.push(text);
-    this.setState({previouslyPlayed: previouslyPlayed});
+    if (text.length > 0) {
+      let previouslyPlayed = this.state.previouslyPlayed;
+      previouslyPlayed.push(text);
+      this.setState({previouslyPlayed: previouslyPlayed});
+    }
   }
 
   updateDecisionList(whichChild) {
@@ -83,8 +80,15 @@ class Home extends Component {
       body: JSON.stringify(body),
     })).json();
     this.setState({currentNode: currentNode});
+    this.updatePreviouslyPlayed(currentNode.text);
+
+    if (currentNode.decisions[0].id === '') {
+      this.onDecide(currentNode.decisions[0]);
+    }
 
   }
+
+  //A method to get the next node when no decision is necessary
 
   render() {
     return (
