@@ -66,6 +66,8 @@ class Home extends Component {
     this.updatePreviouslyPlayed(answer.text);
     this.updateDecisionList(answer.whichChild);
 
+    //console.log(this.state.decisionList);
+
     let body = { decisionList: this.state.decisionList };
 
     let currentNode = await (await fetch('http://localhost:8080/decide', {
