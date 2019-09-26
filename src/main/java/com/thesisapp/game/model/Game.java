@@ -465,14 +465,440 @@ public class Game {
 
     Node n134 = new Node(134, "[Simon].", emptyDecisions, 1, false);
     Node n135 = new Node(135, "Take care of yourself.", emptyDecisions, 1, false);
-    Node n136 = new Node(136, "signal lost", emptyDecisions, 1, false);
-    Node n137 = new Node(137, "status...disconnected", emptyDecisions, 1, false);
-    Node n138 = new Node(138, "shut down", emptyDecisions, 1, false);
-    Node n139 = new Node(139, "3", emptyDecisions, 1, false);
-    Node n140 = new Node(140, "2", emptyDecisions, 1, false);
-    Node n141 = new Node(141, "1", emptyDecisions, 1, false);
+    Node n136 = new Node(136, "signal lost", emptyDecisions, 0, false);
+    Node n137 = new Node(137, "status...disconnected", emptyDecisions, 0, false);
+    Node n138 = new Node(138, "shut down", emptyDecisions, 0, false);
+    Node n139 = new Node(139, "3", emptyDecisions, 0, false);
+    Node n140 = new Node(140, "2", emptyDecisions, 0, false);
+    Node n141 = new Node(141, "1", emptyDecisions, 0, false);
 
     //WAIT 3 HOURS, IF THE ATTEMPT TO PLAY AGAIN WITHIN 3 HOURS (ADD A MESSAGE THAT SENDS - MAY HAVE TO BE CLIENT SIDE)
+
+    Node n142 = new Node(142, "incoming message", emptyDecisions, 0, false);
+
+    Node n143 = new Node(143, "Prosper?", emptyDecisions, 2, false);
+
+    Decision n144d1 = new Decision("n144d1", "This is [Simon]. But I talked to Prosper.", 0, 0);
+    Decision n144d2 = new Decision("n144d2", "Who is this, and how do you know Prosper?", 1, 0);
+    Decision[] n144d = {n144d1, n144d2};
+    Node n144 = new Node(144, "Do you copy?", n144d, 2, false);
+
+    Node n145 = new Node(145, "You got a connection?", emptyDecisions, 2, false);
+    Node n146 = new Node(146, "I traced the signal back here...", emptyDecisions, 2, false);
+
+    Node n147 = new Node(147, "The better question is how you know him.", emptyDecisions, 2, false);
+    Node n148 = new Node(148, "I traced the signal back here...", emptyDecisions, 2, false);
+
+    Decision n149d1 = new Decision("n149d1", "I could try. But who is this?", 0, 0);
+    Decision n149d2 = new Decision("n149d2", "Last time I cooperated with a stranger on this computer, things got weird.", 0, 0);
+    Decision[] n149d = {n149d1, n149d2};
+    Node n149 = new Node(149, "Never mind. Can you get a hold of him again?", n149d, 2, false);
+
+    Decision n150d1 = new Decision("n150d1", "Oh. I'll get on it.", 0 , 0);
+    Decision n150d2 = new Decision("n150d2", "Okaaaay. One sec.", 0, 0);
+    Decision[] n150d = {n150d1, n150d2};
+    Node n150 = new Node(150, "This is Detective Grace Dillon. NYPD.", n150d, 2, false);
+
+    Decision n151d1 = new Decision("n151d1", "Hi, Prosper.", 0, 0);
+    Decision n151d2 = new Decision("n151d2", "Don't be mad.", 0, 0);
+    Decision[] n151d = {n151d1, n151d2};
+    Node n151 = new Node(151, "pinging...\nacquired signal\nstatus...connected", n151d, 2, false);
+
+    Node n152 = new Node(152, "[Simon]?", emptyDecisions, 1, false);
+
+    Decision n153d1 = new Decision("n153d1", "You did. But I didn't want to take away your only link to the outside world!", 0, 0);
+    Decision n153d2 = new Decision("n153d2", "You did. But I for sure did not listen.", 0, 0);
+    Decision[] n153d = {n153d1, n153d2};
+    Node n153 = new Node(153, "I seem to remember telling you to dismantle the computer.", n153d, 1, false);
+
+    Decision n154d1 = new Decision("n154d1", "Wait! Hear me out. I kept the computer together just in case. And there's a case. Detective Dillon.", 0, 0);
+    Decision n154d2 = new Decision("n154d2", "Wait! There's someone here you probably like more than me. Detective Dillon.", 0, 0);
+    Decision[] n154d = {n154d1, n154d2};
+    Node n154 = new Node(154, "I'm disconnecting again.", n154d, 1, false);
+
+    Node n155 = new Node(155, "No. No, she can't--", emptyDecisions, 1, false);
+
+    Node n156 = new Node(156, "She can't be involved.", emptyDecisions, 1, false);
+
+    Decision n157d1 = new Decision("n157d1", "She doesn't seem like the type to quit. I think she hacked me.", 0, 0);
+    Decision n157d2 = new Decision("n157d2", "Try telling her that! She hacked me!", 0, 0);
+    Decision[] n157d = {n157d1, n157d2};
+    Node n157 = new Node(157, "It's not safe.", n157d, 1, false);
+
+    Node n158 = new Node(158, "I'm taking over this conversation.", emptyDecisions, 2, false);
+
+    Node n159 = new Node(159, "Prosper. What the hell is wrong with you.", emptyDecisions, 2, false);
+
+    Node n160 = new Node(160, "Detective.", emptyDecisions, 1, false);
+    Node n161 = new Node(161, "The fight's over.", emptyDecisions, 1, false);
+    Node n162 = new Node(162, "I'm not going to drag you back into it.", emptyDecisions, 1, false);
+
+    Node n163 = new Node(163, "It's over when I say it's over.", emptyDecisions, 2, false);
+    Node n164 = new Node(164, "You saved my life. I'm not going to let you get killed.", emptyDecisions, 2, false);
+
+    Node n165 = new Node(165, "It doesn't matter.", emptyDecisions, 1, false);
+    Node n166 = new Node(166, "There's nothing more I can say to you. I'm disconnecting.", emptyDecisions, 1, false);
+
+    Node n167 = new Node(167, "Like hell you are.", emptyDecisions, 2, false);
+    Node n168 = new Node(168, "You're not going anywhere until I get answers.", emptyDecisions, 2, false);
+
+    Node n169 = new Node(169, "I don't have answers to give", emptyDecisions, 1, false);
+
+    Decision n170d1 = new Decision("n170d1", "Yeah. Not much I can do about it.", 0, 0);
+    Decision n170d2 = new Decision("n170d2", "Just pretend like I'm not here.", 0, 0);
+    Decision[] n170d = {n170d1, n170d2};
+    Node n170 = new Node(170, "[Simon], are you still there?", n170d, 1, false);
+
+    Node n171 = new Node(171, "Prosper, where are you?", emptyDecisions, 2, false);
+
+    Node n172 = new Node(172, "I can't tell you that, Detective.", emptyDecisions, 1, false);
+
+    Node n173 = new Node(173, "Detective?", emptyDecisions, 1, false);
+
+    Node n174 = new Node(174, "A prison in Greenland.", emptyDecisions, 2, false);
+
+    Decision n175d1 = new Decision("n175d1", "Did you just go through my files?", 0, 0);
+    Decision n175d2 = new Decision("n175d2", "Hey, ask before you go snooping around in my computer!", 0, 0);
+    Decision[] n175d = {n175d1, n175d2};
+    Node n175 = new Node(175, "A TUR facility, you mean.", n175d, 2, false);
+
+    Node n176 = new Node(176, "There's nothing either of us can do, Detective. Get yourself home, and deactivate [Simon]'s computer.", emptyDecisions, 1, false);
+    Node n177 = new Node(177, "Please. I don't want anyone else to get hurt because of me.", emptyDecisions, 1, false);
+
+    Node n178 = new Node(178, "That's exactly why I have to help you.", emptyDecisions, 2, false);
+    Node n179 = new Node(179, "You want.", emptyDecisions, 2, false);
+    Node n180 = new Node(180, "You think.", emptyDecisions, 2, false);
+    Node n181 = new Node(181, "I'm pretty sure there's a saying about that last one.", emptyDecisions, 2, false);
+    Node n182 = new Node(182, "You're a good person, Prosper. Better than most.", emptyDecisions, 2, false);
+
+    Node n183 = new Node(183, "signal lost", emptyDecisions, 0, false);
+    Node n184 = new Node(184, "status...disconnected", emptyDecisions, 0, false);
+    Node n185 = new Node(185, "shut down", emptyDecisions, 0, false);
+    Node n186 = new Node(186, "3", emptyDecisions, 0, false);
+    Node n187 = new Node(187, "2", emptyDecisions, 0, false);
+    Node n188 = new Node(188, "1", emptyDecisions, 0, false);
+
+    Node n189 = new Node(189, "pinging...\nacquired signal\nstatus...connected", emptyDecisions, 0, false);
+
+    Node n190 = new Node(190, "Let it go, Detective.", emptyDecisions, 1, false);
+
+    Node n191 = new Node(191, "If you reboot again, I'm gonna track you down just so I can hit you.", emptyDecisions, 2, false);
+
+    Node n192 = new Node(192, "Detective, you know why you can't help me.", emptyDecisions, 1, false);
+    Node n193 = new Node(193, "Why you shouldn't.", emptyDecisions, 1, false);
+    Node n194 = new Node(194, "It isn't worth endangering real lives for a simulated one.", emptyDecisions, 1, false);
+
+    Node n195 = new Node(195, "Bullshit. I know you.", emptyDecisions, 2, false);
+    Node n196 = new Node(196, "If you just let me in on what's going on, I can help.", emptyDecisions, 2, false);
+
+    Node n197 = new Node(197, "I'm not a person, Detective. I only look like one.", emptyDecisions, 1, false);
+    Node n198 = new Node(198, "I understand your desire to help. My appearance was designed to ease humans into a sympathetic state.", emptyDecisions, 1, false);
+
+    Node n199 = new Node(199, "Cut the user manual crap.", emptyDecisions, 2, false);
+
+    Node n200 = new Node(200, "You are no longer obligated to prevent damage to this unit.", emptyDecisions, 1, false);
+
+    Node n201 = new Node(201, "That had better be sarcastic.", emptyDecisions, 2, false);
+
+    Node n202 = new Node(202, "signal lost", emptyDecisions, 0, false);
+    Node n203 = new Node(203, "status...disconnected", emptyDecisions, 0, false);
+    Node n204 = new Node(204, "shut down", emptyDecisions, 0, false);
+    Node n205 = new Node(205, "3", emptyDecisions, 0, false);
+    Node n206 = new Node(206, "2", emptyDecisions, 0, false);
+    Node n207 = new Node(207, "1", emptyDecisions, 0, false);
+    Node n208 = new Node(208, "pinging...\nacquired signal\nstatus...connected", emptyDecisions, 0, false);
+
+    Node n209 = new Node(209, "Explain what you did on the roof in Harlem, Prosper.", emptyDecisions, 2, false);
+    Node n210 = new Node(210, "What you chose to do.", emptyDecisions, 2, false);
+    Node n211 = new Node(211, "If you're just a machine, if your emotions are part of a11 program, then explain that mission to me. The people we saved.", emptyDecisions, 2, false);
+    Node n212 = new Node(212, "Prosper?", emptyDecisions, 2, false);
+
+    //Delay
+
+    Node n213 = new Node(213, "The way you constructed theories, you liked building on assumptions. So let's assume.", emptyDecisions, 2, false);
+    Node n214 = new Node(214, "Let's assume I'm not going to stop until I find a way to help you.", emptyDecisions, 2, false);
+    Node n215 = new Node(215, "Let's assume you're worth saving.", emptyDecisions, 2, false);
+    Node n216 = new Node(216, "Let's assume I'm going to get you out of there.", emptyDecisions, 2, false);
+    Node n217 = new Node(217, "Once you start by telling me what I need to know.", emptyDecisions, 2, false);
+
+    Node n218 = new Node(218, "I can't.", emptyDecisions, 1, false);
+    Node n219 = new Node(219, "You don't understand, Grace.", emptyDecisions, 1, false);
+    Node n220 = new Node(220, "There's no way.", emptyDecisions, 1, false);
+
+    Node n221 = new Node(221, "I saw that you had [Simon] send me a letter. You wouldn't have contacted me if there wasn't some part of you that wanted help.", emptyDecisions, 2, false);
+    Node n222 = new Node(222, "But I...", emptyDecisions, 1, false);
+    Node n223 = new Node(223, "I shouldn't want help.", emptyDecisions, 1, false);
+    Node n224 = new Node(224, "It's over. Test failed.", emptyDecisions, 1, false);
+    Node n225 = new Node(225, "I'm... where I'm supposed to be.", emptyDecisions, 1, false);
+    Node n226 = new Node(226, "Except...", emptyDecisions, 1, false);
+
+    Node n227 = new Node(227, "Except you learned to want more.", emptyDecisions, 2, false);
+    Node n228 = new Node(228, "You don't have to give up.", emptyDecisions, 2, false);
+
+    Node n229 = new Node(229, "I don't know. I don't know what to do.", emptyDecisions, 1, false);
+
+    Node n230 = new Node(230, "Then help me figure it out.", emptyDecisions, 2, false);
+    Node n231 = new Node(231, "Where are you exactly? What do you see?", emptyDecisions, 2, false);
+
+    Node n232 = new Node(232, "Thank you.", emptyDecisions, 1, false);
+
+    Node n233 = new Node(233, "Thank me later. Now, what do you see?", emptyDecisions, 2, false);
+
+    Node n234 = new Node(234, "There's nothing. Last time...", emptyDecisions, 1, false);
+    Node n235 = new Node(235, "They disabled my sensors.", emptyDecisions, 1, false);
+    Node n236 = new Node(236, "I can only communicate with you because it comes discretely through the communicator chip.", emptyDecisions, 1, false);
+    Node n237 = new Node(237, "I think I'm in a workshop.", emptyDecisions, 1, false);
+
+    Node n238 = new Node(238, "Bastards.", emptyDecisions, 2, false);
+    Node n239 = new Node(239, "What are they doing to you?", emptyDecisions, 2, false);
+
+    Node n240 = new Node(240, "Testing hypotheses. Running diagnostics.", emptyDecisions, 1, false);
+    Node n241 = new Node(241, "Judging by the tests, they're trying to build a new model.", emptyDecisions, 1, false);
+    Node n242 = new Node(242, "Searching for faults and weak points.", emptyDecisions, 1, false);
+    Node n243 = new Node(243, "They didn't fix my arm. They removed it, capped it by the shoulder where it was damaged.", emptyDecisions, 1, false);
+
+    Node n244 = new Node(244, "Oh, no.", emptyDecisions, 2, false);
+    Node n245 = new Node(245, "I'm sorry. I shouldn't have believed them. I shouldn't have let them take you.", emptyDecisions, 2, false);
+
+    Node n246 = new Node(246, "You didn't have a choice.", emptyDecisions, 1, false);
+    Node n247 = new Node(247, "What were you going to do? Abduct me from a billion-dollar corporation?", emptyDecisions, 1, false);
+    Node n248 = new Node(248, "There's no way that would have worked.", emptyDecisions, 1, false);
+
+    Node n249 = new Node(249, "I could have tried.", emptyDecisions, 2, false);
+    Node n250 = new Node(250, "Can you move?", emptyDecisions, 2, false);
+
+    Node n251 = new Node(251, "No. I don't think so. Sensitivity is pretty weak, but judging by the pressure, there are braces bolting my legs down.", emptyDecisions, 1, false);
+    Node n252 = new Node(252, "I'm hooked up to something. They can't read the chip 2 5 2 activity, or they would have disabled it by now. They must just be reading processor activity.", emptyDecisions, 1, false);
+
+    Node n253 = new Node(253, "Okay. No sight, sound, smell. No movement. Down a limb.", emptyDecisions, 2, false);
+    Node n254 = new Node(254, "Then it's a waiting game.", emptyDecisions, 2, false);
+    Node n255 = new Node(255, "When they come back, keep us updated. We'll assess from there.", emptyDecisions, 2, false);
+    Node n256 = new Node(256, "Not the best plan, I know, but I'll keep working on it.", emptyDecisions, 2, false);
+    Node n257 = new Node(257, "Have they interrogated you at all? Can you tell what they want from you?", emptyDecisions, 2, false);
+
+    Node n258 = new Node(258, "They ask me to self-test. They ask me nonspecific questions, usually about New York or missions.", emptyDecisions, 1, false);
+    Node n259 = new Node(259, "And?", emptyDecisions, 2, false);
+
+    Node n260 = new Node(260, "I answer. In New York, I could redirect commands away from my core processor. Here...", emptyDecisions, 1, false);
+    Node n261 = new Node(261, "Well. It's like getting hit with a truck every time they want something from me.", emptyDecisions, 1, false);
+
+    Node n262 = new Node(262, "Okay, okay. A lot to process. I'll be back.", emptyDecisions, 2, false);
+
+    Node n263 = new Node(263, "Wait, Detective.", emptyDecisions, 1, false);
+
+    Decision n264d1 = new Decision("n264d1", "For the record, I don't think she can. And I was reading along the whole time.\n Sounds like you're in a lot of trouble. And it also sounds like you're a robot.", 0, 0);
+    Decision n264d2 = new Decision("n264d2", "As if I wasn't eavesdropping the entire time.\n Soooo...a ROBOT?", 0, 0);
+    Decision[] n264d = {n264d1, n264d2};
+    Node n264 = new Node(264, "There's sensitive information [Simon] shouldn't see. Clear the messages.", n264d, 1, false);
+
+    Node n265 = new Node(265, "Hello, [Simon].", emptyDecisions, 1, false);
+
+    Decision n266d1 = new Decision("n266d1", "Of course not. You're amazing.", 0, 0);
+    Decision n266d2 = new Decision("n266d2", "Mechanical- American?", 1, 0);
+    Decision[] n266d = {n266d1, n266d2};
+    Node n266 = new Node(266, "No, I'm not a robot. Nothing so simplistic.", n266d, 1, false);
+
+    Node n267 = new Node(267, "Why, thank you.", emptyDecisions, 1, false);
+    Node n268 = new Node(268, "But it's nothing for you to concern yourself with.", emptyDecisions, 1, false);
+
+    Node n269 = new Node(269, "Not American.", emptyDecisions, 1, false);
+    Node n270 = new Node(270, "And it's nothing for you to concern yourself with.", emptyDecisions, 1, false);
+
+    Decision n271d1 = new Decision("n271d1", "Still gone. In the meantime...know any good icebreakers?", 0, 0);
+    Decision n271d2 = new Decision("n271d2", "Here. I need your specs so I can find the records.", 1, 0);
+    Decision[] n271d = {n271d1, n271d2};
+    Node n271 = new Node(271, "Where's Detective Dillon?", n271d, 1, false);
+
+    Node n272 = new Node(272, "I don't think there is such a thing.", emptyDecisions, 1, false);
+
+    Decision n273d1 = new Decision("n273d1", "If you insist. We'll just...twiddle our respective thumbs. For who knows how long.", 0, 0);
+    Decision n273d2 = new Decision("n273d2", "Well, is some information too much to ask?", 1, 0);
+    Decision[] n273d = {n273d1, n273d2};
+    Node n273 = new Node(273, "We can just wait.", n273d, 1, false);
+
+    Node n274 = new Node(274, "Find.", emptyDecisions, 1, false);
+    Node n275 = new Node(275, "But this situation is highly dangerous.", emptyDecisions, 1, false);
+
+    Decision n276d1 = new Decision("n276d1", "Life is dangerous. I'm involved now, and I should know what's going on.", 0, 0);
+    Decision n276d2 = new Decision("n276d2", "You really think it's not too late for that?", 0, 0);
+    Decision[] n276d = {n276d1, n276d2};
+    Node n276 = new Node(276, "You shouldn't know more than you absolutely need to.", n276d, 1, false);
+
+    Decision n277d1 = new Decision("n277d1", "Life is dangerous. I'm involved now, and I should know what's going on.", 0, 0);
+    Decision n277d2 = new Decision("n277d2", "You really think it's not too late for that?", 0, 0);
+    Decision[] n277d = {n277d1, n277d2};
+    Node n277 = new Node(277, "When that information could be dangerous to you, yes.", n277d, 1, false);
+
+    Node n278 = new Node(278, "I suppose... you're not wrong.", emptyDecisions, 1, false);
+    Node n279 = new Node(279, "It's fair for you to want to know.", emptyDecisions, 1, false);
+    Node n280 = new Node(280, "I'm a prototype android.", emptyDecisions, 1, false);
+
+    Decision n281d1 = new Decision("n281d1", "Definitely good information to have. Thanks for telling me. Wait---does that mean there are 412 models?", 0, 0);
+    Decision n281d2 = new Decision("n281d2", "Give me a minute to get past \"wow.\" Which brings us to: are there 412 models??", 0, 0);
+    Decision[] n281d = {n281d1, n281d2};
+    Node n281 = new Node(281, "Model 412-009 Mark-1, to be precise.", n281d, 1, false);
+
+    Node n282 = new Node(282, "412 is the employee code. I'm their ninth design.", emptyDecisions, 1, false);
+    Node n283 = new Node(283, "I don't know if the previous eight even made it to the prototype stage, or if those projects were even androids.", emptyDecisions, 1, false);
+
+    Decision n284d1 = new Decision("n284d1", "Yes, I'm good.", 0, 0);
+    Decision n284d2 = new Decision("n284d2", "Well, no, but my dozen other questions can wait.", 0, 0);
+    Decision[] n284d = {n284d1, n284d2};
+    Node n284 = new Node(284, "Enough information for you?", n284d, 1, false);
+
+    Node n285 = new Node(285, "All right, I'm back.", emptyDecisions, 2, false);
+
+    Decision n286d1 = new Decision("n286d1", "So, I know that was absolutely a low blow. Apologies.", 0, 0);
+    Decision n286d2 = new Decision("n286d2", "Okay, I want you to know how thrilled I am to be the second half of a successful Turing test. 10/10 would be fooled again.", 0, 0);
+    Decision[] n286d = {n286d1, n286d2};
+    Node n286 = new Node(286, "Class: Prototype 286\n Model 412-009 Mark-1\n Unit Dictation: Prospero", n286d, 1, false);
+
+    Node n287 = new Node(287, "[Simon].", emptyDecisions, 1, false);
+
+    Decision n288d1 = new Decision("n288d1", "You're right. I'm sorry. I just wanted to know what I'm getting into here. Like...412? Are there that many models?", 0, 0);
+    Decision n288d2 = new Decision("n288d2", "Well, now we've traded low blows and we're even. Does that mean there are 412 models?", 1, 0);
+    Decision[] n288d = {n288d1, n288d2};
+    Node n288 = new Node(288, "You must be joking. And yet, this is not a laughing matter.", n288d, 1, false);
+
+    Node n289 = new Node(289, "I want you to know that I'm sighing right now.", emptyDecisions, 1, false);
+    Node n290 = new Node(290, "Heavily", emptyDecisions, 1, false);
+    Node n291 = new Node(291, "But it's fair for you to want to know.", emptyDecisions, 1, false);
+    Node n292 = new Node(292, "412 is the employee code. I'm their ninth design.", emptyDecisions, 1, false);
+
+    Node n293 = new Node(293, "Not amusing, [Simon].", emptyDecisions, 1, false);
+    Node n294 = new Node(294, "This sort of information could be dangerous to you.", emptyDecisions, 1, false);
+
+    Decision n295d1 = new Decision("n295d1", "You're right. I'm sorry. I just wanted to know what I'm getting into here. Like...412? Are there that many models?", 0, 0);
+    Decision n295d2 = new Decision("n295d2", "Well, now we've traded low blows and we're even. Does that mean there are 412 models?", 1, 0);
+    Decision[] n295d = {n295d1, n295d2};
+    Node n295 = new Node(295, "To your family.", n295d, 1, false);
+
+    Node n296 = new Node(296, "I want you to know that I'm sighing right now.", emptyDecisions, 1, false);
+    Node n297 = new Node(297, "Heavily.", emptyDecisions, 1, false);
+
+    Decision n298d1 = new Decision("n298d1", "I'm going to try to keep my cool here. But internally, this is my cool. But this absolutely fantastic.", 0, 0);
+    Decision n298d2 = new Decision("n298d2", "Okay\n ANDROIDS\n What else is at the mysterious agency? Death rays, alien corpses, advanced spacecraft, etc.?", 1, 0);
+    Decision[] n298d = {n298d1, n298d2};
+    Node n298 = new Node(298, "I don't know if the previous eight even made it to the prototype stage, or if those projects were even androids.", n298d, 1, false);
+
+    Node n299 = new Node(299, "If I understand that phrase correctly, you've failed.", emptyDecisions, 1, false);
+    Node n300 = new Node(300, "I wouldn't know.", emptyDecisions, 1, false);
+
+    Node n301 = new Node(301, "All right, I'm back.", emptyDecisions, 2, false);
+
+    Node n302 = new Node(302, "Detective, what's your dog's name?", emptyDecisions, 1, false);
+    Node n303 = new Node(303, "No dog. I have two canaries.", emptyDecisions, 2, false);
+    Node n304 = new Node(304, "Something wrong with your memory?", emptyDecisions, 2, false);
+    Node n305 = new Node(305, "No. Just checking.", emptyDecisions, 1, false);
+
+    Node n306 = new Node(306, "What have you got?", emptyDecisions, 1, false);
+    Node n307 = new Node(307, "Anything useful in your records?", emptyDecisions, 1, false);
+    Node n308 = new Node(308, "Looking through them now. Sit tight.", emptyDecisions, 2, false);
+    Node n309 = new Node(309, "My compliance is unfortunately literal, Detective.", emptyDecisions, 1, false);
+    Node n310 = new Node(310, "Right, poor choice of words.", emptyDecisions, 2, false);
+    Node n311 = new Node(311, "This is mostly legal junk. They stressed the kill codes, in the event of catastrophic malfunction.", emptyDecisions, 2, false);
+    Node n312 = new Node(312, "No offense.", emptyDecisions, 2, false);
+    Node n313 = new Node(313, "One is through a data port. The other is the removal of a component in your lower spine.", emptyDecisions, 2, false);
+    Node n314 = new Node(314, "Or whatever equivalent of a lower spine you have.", emptyDecisions, 2, false);
+    Node n315 = new Node(315, "If I was flesh and bone, you mean.", emptyDecisions, 1, false);
+    Node n316 = new Node(316, "Your insertion for the kill port is almost certainly disabled.", emptyDecisions, 1, false);
+    Node n317 = new Node(317, "As far as the component goes, that would effectively be pulling my plug.", emptyDecisions, 1, false);
+    Node n318 = new Node(318, "It would separate my power source from the rest of my body. A rather intentional weak point, it seems.", emptyDecisions, 1, false);
+
+    Decision n319d1 = new Decision("n319d1", "What are you getting at?", 0, 0);
+    Decision n319d2 = new Decision("n319d2", "If I may interject, killing you seems like the opposite of what we want to do.", 1, 0);
+    Decision[] n319d = {n319d1, n319d2};
+    Node n319 = new Node(319, "I'd shut down after 60 seconds.", n319d, 1, false);
+
+    Node n320 = new Node(320, "I'd rather avoid that, yes.", emptyDecisions, 1, false);
+
+    Decision n321d1 = new Decision("n321d1", "\"Get help\" sounds good. \"Sabotage\" sounds less good.", 0, 0);
+    Decision n321d2 = new Decision("n321d2", "And then comes persuasive physical force?", 0, 0);
+    Decision[] n321d = {n321d1, n321d2};
+    Node n321 = new Node(321, "Well, to borrow from dozens of movies, you could pull a \"I'm hurt, get help\" move. If you sabotage your own systems, someone would come to fix you.", n321d, 2, false);
+
+    Node n322 = new Node(322, "That's if I can even access it.", emptyDecisions, 1, false);
+    Node n323 = new Node(323, "Range of motion is limited. My damaged arm isn't restrained, but it isn't useful, either. My legs and other arms are bound.", emptyDecisions, 1, false);
+
+    Decision n324d1 = new Decision("n324d1", "Maybe there's something I could do to help. Figure out a patch from my end to reboot your senses?", 0, 0);
+    Decision n324d2 = new Decision("n324d2", "I believe this is what we in the biz call a pickle.", 1, 0);
+    Decision[] n324d = {n324d1, n324d2};
+    Node n324 = new Node(324, "I should point out that I don't know if anyone is in the room with me now. All I have access to are dulled touch sensors.", n324d, 1, false);
+
+    Node n325 = new Node(325, "Is there something we can do from our end? Through the chip?", emptyDecisions, 2, false);
+
+    Node n326 = new Node(326, "It's a nice thought, but my communicator chip doesn't have access to other processes. Or else they would have realized by now that it's online.", emptyDecisions, 1, false);
+
+    Decision n327d1 = new Decision("n327d1", "I might know how, actually, after picking apart the hardware while we were disconnected.", 0, 0);
+    Decision n327d2 = new Decision("n327d2", "About that. I was looking at the hardware while we were disconnected.", 0, 0);
+    Decision[] n327d = {n327d1, n327d2};
+    Node n327 = new Node(327, "It still doesn't make sense that it's connecting to your computer, [Simon].", n327d, 1, false);
+
+    Decision n328d1 = new Decision("n328d1", "And, I picked up my processor from a junkstore that ships in from New York. Think it could be your tech?", 0, 0);
+    Decision n328d2 = new Decision("n328d2", "And, I picked up my processor from a junkstore that ships in from New York. Not to embarass you, but...you ever leave some spare parts lying around?", 0, 0);
+    Decision[] n328d = {n328d1, n328d2};
+    Node n328 = new Node(328, "And?", n328d, 1, false);
+
+    Node n329 = new Node(329, "Certainly not.", emptyDecisions, 1, false);
+    Node n330 = new Node(330, "Unless...", emptyDecisions, 1, false);
+
+    Decision n331d1 = new Decision("n331d1", "Must be. Unless we're thinking pure kismet. Uh, TUR?", 0, 0);
+    Decision n331d2 = new Decision("n331d2", "Happens to the best of us. Uh, TUR?", 0, 0);
+    Decision[] n331d = {n331d1, n331d2};
+    Node n331 = new Node(331, "I was badly damaged on my last mission. I suppose when they came to retrieve me, TUR might have left something behind.", n331d, 1, false);
+
+    Decision n332d1 = new Decision("n332d1", "How's that?", 0, 0);
+    Decision n332d2 = new Decision("n332d2", "Don't tell me...", 0, 0);
+    Decision[] n332d = {n332d1, n332d2};
+    Node n332 = new Node(332, "Taskforce for Upcoming Robotics. I gather they built the name around the acronym, and their headquarters to match.", n332d, 1, false);
+
+    Node n333 = new Node(333, "It's a circular building. So...", emptyDecisions, 1, false);
+
+    Decision n334d1 = new Decision("n334d1", "That is just... That would be the coolest thing I've heard all day, except that I've heard a lot of cool things today.", 0, 0);
+    Decision n334d2 = new Decision("n334d2", "The nerds will stop at nothing, will they?", 1, 0);
+    Decision[] n334d = {n334d1, n334d2};
+    Node n334 = new Node(334, "TURing.", n334d, 1, false);
+
+    Node n335 = new Node(335, "I thought you might like it.", emptyDecisions, 1, false);
+    Node n336 = new Node(336, "That they won't.", emptyDecisions, 1, false);
+
+    Node n337 = new Node(337, "All right, sorry to break up the chat, but I'm making some headway here on a ticket to Greenland.", emptyDecisions, 2, false);
+    Node n338 = new Node(338, "What? Dillon, that's far too dangerous.", emptyDecisions, 1, false);
+    Node n339 = new Node(339, "We've been over this already.", emptyDecisions, 2, false);
+    Node n340 = new Node(340, "Need I remind you that Greenland is not the green one?", emptyDecisions, 2, false);
+    Node n341 = new Node(341, "Good point.", emptyDecisions, 1, false);
+    Node n342 = new Node(342, "Even I wouldn't last long in subfreezing temperatures.", emptyDecisions, 1, false);
+    Node n343 = new Node(343, "So we have an outline.", emptyDecisions, 2, false);
+
+    Decision n344d1 = new Decision("n344d1", "Not to be a buzz kill, but there isn't a lot of detail in that plan.", 0, 0);
+    Decision n344d2 = new Decision("n344d2", "And then, live long and...", 1, 0);
+    Decision[] n344d = {n344d1, n344d2};
+    Node n344 = new Node(344, "Get you out of that workshop, then out of that facility, then to me.", n344d, 2, false);
+
+    Decision n345d1 = new Decision("n345d1", "Not gonna finish the quote? All right then.", 0, 0);
+    Decision n345d2 = new Decision("n345d2", "I was really hoping you would finish the quote.", 1, 0);
+    Decision[] n345d = {n345d1, n345d2};
+    Node n345 = new Node(345, "I suppose it's as good as place as any to start.", n345d, 1, false);
+
+    Node n346 = new Node(346, "I refuse.", emptyDecisions, 1, false);
+    Node n347 = new Node(347, "For now, it's what we've got.", emptyDecisions, 2, false);
+    Node n348 = new Node(348, "I'm not letting you go that easy, Prosper.", emptyDecisions, 2, false);
+    Node n349 = new Node(349, "Detective. I don't know how to thank you.", emptyDecisions, 1, false);
+    Node n350 = new Node(350, "It's not in my programming.", emptyDecisions, 1, false);
+    Node n351 = new Node(351, "And you certainly didn't teach me.", emptyDecisions, 1, false);
+    Node n352 = new Node(352, "Wise-ass.", emptyDecisions, 2, false);
+    Node n353 = new Node(353, "I", emptyDecisions, 1, false);
+    Node n354 = new Node(354, "Something'shappening around me", emptyDecisions, 1, false);
+    Node n355 = new Node(355, "Have to go.", emptyDecisions, 1, false);
+    Node n356 = new Node(356, "signal lost", emptyDecisions, 0, false);
+    Node n357 = new Node(357, "status...disconnected", emptyDecisions, 0, false);
+    Node n358 = new Node(358, "shut down", emptyDecisions, 0, false);
+    Node n359 = new Node(359, "3", emptyDecisions, 0, false);
+    Node n360 = new Node(360, "2", emptyDecisions, 0, false);
+    Node n361 = new Node(361, "1", emptyDecisions, 0, false);
+
+    // END ACT I
+
 
     n0.addChild(n1);
     n1.addChild(n1_5);
@@ -751,6 +1177,278 @@ public class Game {
     n138.addChild(n139);
     n139.addChild(n140);
     n140.addChild(n141);
+
+    n141.addChild(n142);
+    n142.addChild(n143);
+    n143.addChild(n144);
+
+    n144.addChild(n145);
+    n144.addChild(n147);
+
+    n145.addChild(n146);
+    n147.addChild(n148);
+
+    n146.addChild(n149);
+    n148.addChild(n149);
+
+    n149.addChild(n150);
+
+    n150.addChild(n151);
+    n151.addChild(n152);
+    n152.addChild(n153);
+    n153.addChild(n154);
+    n154.addChild(n155);
+    n155.addChild(n156);
+    n156.addChild(n157);
+    n157.addChild(n158);
+    n158.addChild(n159);
+    n159.addChild(n160);
+    n160.addChild(n161);
+    n161.addChild(n162);
+    n162.addChild(n163);
+    n163.addChild(n164);
+    n164.addChild(n165);
+    n165.addChild(n166);
+    n166.addChild(n167);
+    n167.addChild(n168);
+    n168.addChild(n169);
+    n169.addChild(n170);
+    n170.addChild(n171);
+    n171.addChild(n172);
+    n172.addChild(n173);
+    n173.addChild(n174);
+    n174.addChild(n175);
+    n175.addChild(n176);
+    n176.addChild(n177);
+    n177.addChild(n178);
+    n178.addChild(n179);
+    n179.addChild(n180);
+    n180.addChild(n181);
+    n181.addChild(n182);
+    n182.addChild(n183);
+    n183.addChild(n184);
+    n184.addChild(n185);
+    n185.addChild(n186);
+    n186.addChild(n187);
+    n187.addChild(n188);
+    n188.addChild(n189);
+    n189.addChild(n190);
+    n190.addChild(n191);
+    n191.addChild(n192);
+    n192.addChild(n193);
+    n193.addChild(n194);
+    n194.addChild(n195);
+    n195.addChild(n196);
+    n196.addChild(n197);
+    n197.addChild(n198);
+    n198.addChild(n199);
+    n199.addChild(n200);
+    n200.addChild(n201);
+    n201.addChild(n202);
+    n202.addChild(n203);
+    n203.addChild(n204);
+    n204.addChild(n205);
+    n205.addChild(n206);
+    n206.addChild(n207);
+    n207.addChild(n208);
+    n208.addChild(n209);
+    n209.addChild(n210);
+    n210.addChild(n211);
+    n211.addChild(n212);
+    n212.addChild(n213);
+    n213.addChild(n214);
+    n214.addChild(n215);
+    n215.addChild(n216);
+    n216.addChild(n217);
+    n217.addChild(n218);
+    n218.addChild(n219);
+    n219.addChild(n220);
+    n220.addChild(n221);
+    n221.addChild(n222);
+    n222.addChild(n223);
+    n223.addChild(n224);
+    n224.addChild(n225);
+    n225.addChild(n226);
+    n226.addChild(n227);
+    n227.addChild(n228);
+    n228.addChild(n229);
+    n229.addChild(n230);
+    n230.addChild(n231);
+    n231.addChild(n232);
+    n232.addChild(n233);
+    n233.addChild(n234);
+    n234.addChild(n235);
+    n235.addChild(n236);
+    n236.addChild(n237);
+    n237.addChild(n238);
+    n238.addChild(n239);
+    n239.addChild(n240);
+    n240.addChild(n241);
+    n241.addChild(n242);
+    n242.addChild(n243);
+    n243.addChild(n244);
+    n244.addChild(n245);
+    n245.addChild(n246);
+    n246.addChild(n247);
+    n247.addChild(n248);
+    n248.addChild(n249);
+    n249.addChild(n250);
+    n250.addChild(n251);
+    n251.addChild(n252);
+    n252.addChild(n253);
+    n253.addChild(n254);
+    n254.addChild(n255);
+    n255.addChild(n256);
+    n256.addChild(n257);
+    n257.addChild(n258);
+    n258.addChild(n259);
+    n259.addChild(n260);
+    n260.addChild(n261);
+    n261.addChild(n262);
+    n262.addChild(n263);
+    n263.addChild(n264);
+    n264.addChild(n265);
+    n265.addChild(n266);
+
+    n266.addChild(n267);
+    n266.addChild(n269);
+
+    n267.addChild(n268);
+    n269.addChild(n270);
+
+    n268.addChild(n271);
+    n270.addChild(n271);
+
+    n271.addChild(n272);
+    n271.addChild(n286);
+
+    n272.addChild(n273);
+
+    n273.addChild(n274);
+    n273.addChild(n277);
+
+    n274.addChild(n275);
+    n275.addChild(n276);
+
+    n276.addChild(n278);
+    n277.addChild(n278);
+
+    n278.addChild(n279);
+    n279.addChild(n280);
+    n280.addChild(n281);
+    n281.addChild(n282);
+    n282.addChild(n283);
+    n283.addChild(n284);
+    n284.addChild(n285);
+    n285.addChild(n306);
+
+    n286.addChild(n287);
+    n286.addChild(n293);
+
+    n287.addChild(n288);
+
+    n288.addChild(n289);
+    n288.addChild(n296);
+
+    n289.addChild(n290);
+    n290.addChild(n291);
+    n291.addChild(n292);
+    n292.addChild(n298);
+
+    n293.addChild(n294);
+    n294.addChild(n295);
+
+    n295.addChild(n289);
+    n295.addChild(n296);
+
+    n296.addChild(n297);
+
+    n297.addChild(n292);
+
+    n298.addChild(n299);
+    n298.addChild(n300);
+
+    n299.addChild(n301);
+    n300.addChild(n301);
+
+    n301.addChild(n302);
+    n302.addChild(n303);
+    n303.addChild(n304);
+    n304.addChild(n305);
+    n305.addChild(n306);
+
+    n306.addChild(n307);
+    n307.addChild(n308);
+    n308.addChild(n309);
+    n309.addChild(n310);
+    n310.addChild(n311);
+    n311.addChild(n312);
+    n312.addChild(n313);
+    n313.addChild(n314);
+    n314.addChild(n315);
+    n315.addChild(n316);
+    n316.addChild(n317);
+    n317.addChild(n318);
+    n318.addChild(n319);
+
+    n319.addChild(n321);
+    n319.addChild(n320);
+
+    n320.addChild(n321);
+
+    n321.addChild(n322);
+    n322.addChild(n323);
+    n323.addChild(n324);
+
+    n324.addChild(n326);
+    n324.addChild(n325);
+
+    n325.addChild(n326);
+
+    n326.addChild(n327);
+    n327.addChild(n328);
+    n328.addChild(n329);
+    n329.addChild(n330);
+    n330.addChild(n331);
+    n331.addChild(n332);
+    n332.addChild(n333);
+    n333.addChild(n334);
+
+    n334.addChild(n335);
+    n334.addChild(n336);
+
+    n335.addChild(n337);
+    n336.addChild(n337);
+
+    n337.addChild(n338);
+    n338.addChild(n339);
+    n339.addChild(n340);
+    n340.addChild(n341);
+    n341.addChild(n342);
+    n342.addChild(n343);
+    n343.addChild(n344);
+
+    n344.addChild(n347);
+    n344.addChild(n345);
+
+    n345.addChild(n347);
+    n345.addChild(n346);
+    n346.addChild(n347);
+
+    n347.addChild(n348);
+    n348.addChild(n349);
+    n349.addChild(n350);
+    n350.addChild(n351);
+    n351.addChild(n352);
+    n352.addChild(n353);
+    n353.addChild(n354);
+    n354.addChild(n355);
+    n355.addChild(n356);
+    n356.addChild(n357);
+    n357.addChild(n358);
+    n358.addChild(n359);
+    n359.addChild(n360);
+    n360.addChild(n361);
 
     return n0;
   }
