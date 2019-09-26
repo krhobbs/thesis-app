@@ -825,7 +825,7 @@ public class Game {
     Decision[] n324d = {n324d1, n324d2};
     Node n324 = new Node(324, "I should point out that I don't know if anyone is in the room with me now. All I have access to are dulled touch sensors.", n324d, 1, false);
 
-    Node n325 = new Node(325, "I believe this is what we in the biz call a pickle.", emptyDecisions, 2, false);
+    Node n325 = new Node(325, "Is there something we can do from our end? Through the chip?", emptyDecisions, 2, false);
 
     Node n326 = new Node(326, "It's a nice thought, but my communicator chip doesn't have access to other processes. Or else they would have realized by now that it's online.", emptyDecisions, 1, false);
 
