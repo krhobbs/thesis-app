@@ -805,8 +805,100 @@ public class Game {
     Node n317 = new Node(317, "As far as the component goes, that would effectively be pulling my plug.", emptyDecisions, 1, false);
     Node n318 = new Node(318, "It would separate my power source from the rest of my body. A rather intentional weak point, it seems.", emptyDecisions, 1, false);
 
-    
-    Node n319 = new Node(319, "I'd shut down after 60 seconds.", emptyDecisions, 1, false);
+    Decision n319d1 = new Decision("n319d1", "What are you getting at?", 0, 0);
+    Decision n319d2 = new Decision("n319d2", "If I may interject, killing you seems like the opposite of what we want to do.", 1, 0);
+    Decision[] n319d = {n319d1, n319d2};
+    Node n319 = new Node(319, "I'd shut down after 60 seconds.", n319d, 1, false);
+
+    Node n320 = new Node(320, "I'd rather avoid that, yes.", emptyDecisions, 1, false);
+
+    Decision n321d1 = new Decision("n321d1", "\"Get help\" sounds good. \"Sabotage\" sounds less good.", 0, 0);
+    Decision n321d2 = new Decision("n321d2", "And then comes persuasive physical force?", 0, 0);
+    Decision[] n321d = {n321d1, n321d2};
+    Node n321 = new Node(321, "Well, to borrow from dozens of movies, you could pull a \"I'm hurt, get help\" move. If you sabotage your own systems, someone would come to fix you.", n321d, 2, false);
+
+    Node n322 = new Node(322, "That's if I can even access it.", emptyDecisions, 1, false);
+    Node n323 = new Node(323, "Range of motion is limited. My damaged arm isn't restrained, but it isn't useful, either. My legs and other arms are bound.", emptyDecisions, 1, false);
+
+    Decision n324d1 = new Decision("n324d1", "Maybe there's something I could do to help. Figure out a patch from my end to reboot your senses?", 0, 0);
+    Decision n324d2 = new Decision("n324d2", "I believe this is what we in the biz call a pickle.", 1, 0);
+    Decision[] n324d = {n324d1, n324d2};
+    Node n324 = new Node(324, "I should point out that I don't know if anyone is in the room with me now. All I have access to are dulled touch sensors.", n324d, 1, false);
+
+    Node n325 = new Node(325, "I believe this is what we in the biz call a pickle.", emptyDecisions, 2, false);
+
+    Node n326 = new Node(326, "It's a nice thought, but my communicator chip doesn't have access to other processes. Or else they would have realized by now that it's online.", emptyDecisions, 1, false);
+
+    Decision n327d1 = new Decision("n327d1", "I might know how, actually, after picking apart the hardware while we were disconnected.", 0, 0);
+    Decision n327d2 = new Decision("n327d2", "About that. I was looking at the hardware while we were disconnected.", 0, 0);
+    Decision[] n327d = {n327d1, n327d2};
+    Node n327 = new Node(327, "It still doesn't make sense that it's connecting to your computer, [Simon].", n327d, 1, false);
+
+    Decision n328d1 = new Decision("n328d1", "And, I picked up my processor from a junkstore that ships in from New York. Think it could be your tech?", 0, 0);
+    Decision n328d2 = new Decision("n328d2", "And, I picked up my processor from a junkstore that ships in from New York. Not to embarass you, but...you ever leave some spare parts lying around?", 0, 0);
+    Decision[] n328d = {n328d1, n328d2};
+    Node n328 = new Node(328, "And?", n328d, 1, false);
+
+    Node n329 = new Node(329, "Certainly not.", emptyDecisions, 1, false);
+    Node n330 = new Node(330, "Unless...", emptyDecisions, 1, false);
+
+    Decision n331d1 = new Decision("n331d1", "Must be. Unless we're thinking pure kismet. Uh, TUR?", 0, 0);
+    Decision n331d2 = new Decision("n331d2", "Happens to the best of us. Uh, TUR?", 0, 0);
+    Decision[] n331d = {n331d1, n331d2};
+    Node n331 = new Node(331, "I was badly damaged on my last mission. I suppose when they came to retrieve me, TUR might have left something behind.", n331d, 1, false);
+
+    Decision n332d1 = new Decision("n332d1", "How's that?", 0, 0);
+    Decision n332d2 = new Decision("n332d2", "Don't tell me...", 0, 0);
+    Decision[] n332d = {n332d1, n332d2};
+    Node n332 = new Node(332, "Taskforce for Upcoming Robotics. I gather they built the name around the acronym, and their headquarters to match.", n332d, 1, false);
+
+    Node n333 = new Node(333, "It's a circular building. So...", emptyDecisions, 1, false);
+
+    Decision n334d1 = new Decision("n334d1", "That is just... That would be the coolest thing I've heard all day, except that I've heard a lot of cool things today.", 0, 0);
+    Decision n334d2 = new Decision("n334d2", "The nerds will stop at nothing, will they?", 1, 0);
+    Decision[] n334d = {n334d1, n334d2};
+    Node n334 = new Node(334, "TURing.", n334d, 1, false);
+
+    Node n335 = new Node(335, "I thought you might like it.", emptyDecisions, 1, false);
+    Node n336 = new Node(336, "That they won't.", emptyDecisions, 1, false);
+
+    Node n337 = new Node(337, "All right, sorry to break up the chat, but I'm making some headway here on a ticket to Greenland.", emptyDecisions, 2, false);
+    Node n338 = new Node(338, "What? Dillon, that's far too dangerous.", emptyDecisions, 1, false);
+    Node n339 = new Node(339, "We've been over this already.", emptyDecisions, 2, false);
+    Node n340 = new Node(340, "Need I remind you that Greenland is not the green one?", emptyDecisions, 2, false);
+    Node n341 = new Node(341, "Good point.", emptyDecisions, 1, false);
+    Node n342 = new Node(342, "Even I wouldn't last long in subfreezing temperatures.", emptyDecisions, 1, false);
+    Node n343 = new Node(343, "So we have an outline.", emptyDecisions, 2, false);
+
+    Decision n344d1 = new Decision("n344d1", "Not to be a buzz kill, but there isn't a lot of detail in that plan.", 0, 0);
+    Decision n344d2 = new Decision("n344d2", "And then, live long and...", 1, 0);
+    Decision[] n344d = {n344d1, n344d2};
+    Node n344 = new Node(344, "Get you out of that workshop, then out of that facility, then to me.", n344d, 2, false);
+
+    Decision n345d1 = new Decision("n345d1", "Not gonna finish the quote? All right then.", 0, 0);
+    Decision n345d2 = new Decision("n345d2", "I was really hoping you would finish the quote.", 1, 0);
+    Decision[] n345d = {n345d1, n345d2};
+    Node n345 = new Node(345, "I suppose it's as good as place as any to start.", n345d, 1, false);
+
+    Node n346 = new Node(346, "I refuse.", emptyDecisions, 1, false);
+    Node n347 = new Node(347, "For now, it's what we've got.", emptyDecisions, 2, false);
+    Node n348 = new Node(348, "I'm not letting you go that easy, Prosper.", emptyDecisions, 2, false);
+    Node n349 = new Node(349, "Detective. I don't know how to thank you.", emptyDecisions, 1, false);
+    Node n350 = new Node(350, "It's not in my programming.", emptyDecisions, 1, false);
+    Node n351 = new Node(351, "And you certainly didn't teach me.", emptyDecisions, 1, false);
+    Node n352 = new Node(352, "Wise-ass.", emptyDecisions, 2, false);
+    Node n353 = new Node(353, "I", emptyDecisions, 1, false);
+    Node n354 = new Node(354, "Something'shappening around me", emptyDecisions, 1, false);
+    Node n355 = new Node(355, "Have to go.", emptyDecisions, 1, false);
+    Node n356 = new Node(356, "signal lost", emptyDecisions, 0, false);
+    Node n357 = new Node(357, "status...disconnected", emptyDecisions, 0, false);
+    Node n358 = new Node(358, "shut down", emptyDecisions, 0, false);
+    Node n359 = new Node(359, "3", emptyDecisions, 0, false);
+    Node n360 = new Node(360, "2", emptyDecisions, 0, false);
+    Node n361 = new Node(361, "1", emptyDecisions, 0, false);
+
+    // END ACT I
+
 
     n0.addChild(n1);
     n1.addChild(n1_5);
@@ -1085,6 +1177,278 @@ public class Game {
     n138.addChild(n139);
     n139.addChild(n140);
     n140.addChild(n141);
+
+    n141.addChild(n142);
+    n142.addChild(n143);
+    n143.addChild(n144);
+
+    n144.addChild(n145);
+    n144.addChild(n147);
+
+    n144.addChild(n146);
+    n147.addChild(n148);
+
+    n146.addChild(n149);
+    n148.addChild(n149);
+
+    n149.addChild(n150);
+
+    n150.addChild(n151);
+    n151.addChild(n152);
+    n152.addChild(n153);
+    n153.addChild(n154);
+    n154.addChild(n155);
+    n155.addChild(n156);
+    n156.addChild(n157);
+    n157.addChild(n158);
+    n158.addChild(n159);
+    n159.addChild(n160);
+    n160.addChild(n161);
+    n161.addChild(n162);
+    n162.addChild(n163);
+    n163.addChild(n164);
+    n164.addChild(n165);
+    n165.addChild(n166);
+    n166.addChild(n167);
+    n167.addChild(n168);
+    n168.addChild(n169);
+    n169.addChild(n170);
+    n170.addChild(n171);
+    n171.addChild(n172);
+    n172.addChild(n173);
+    n173.addChild(n174);
+    n174.addChild(n175);
+    n175.addChild(n176);
+    n176.addChild(n177);
+    n177.addChild(n178);
+    n178.addChild(n179);
+    n179.addChild(n180);
+    n180.addChild(n181);
+    n181.addChild(n182);
+    n182.addChild(n183);
+    n183.addChild(n184);
+    n184.addChild(n185);
+    n185.addChild(n186);
+    n186.addChild(n187);
+    n187.addChild(n188);
+    n188.addChild(n189);
+    n189.addChild(n190);
+    n190.addChild(n191);
+    n191.addChild(n192);
+    n192.addChild(n193);
+    n193.addChild(n194);
+    n194.addChild(n195);
+    n195.addChild(n196);
+    n196.addChild(n197);
+    n197.addChild(n198);
+    n198.addChild(n199);
+    n199.addChild(n200);
+    n200.addChild(n201);
+    n201.addChild(n202);
+    n202.addChild(n203);
+    n203.addChild(n204);
+    n204.addChild(n205);
+    n205.addChild(n206);
+    n206.addChild(n207);
+    n207.addChild(n208);
+    n208.addChild(n209);
+    n209.addChild(n210);
+    n210.addChild(n211);
+    n211.addChild(n212);
+    n212.addChild(n213);
+    n213.addChild(n214);
+    n214.addChild(n215);
+    n215.addChild(n216);
+    n216.addChild(n217);
+    n217.addChild(n218);
+    n218.addChild(n219);
+    n219.addChild(n220);
+    n220.addChild(n221);
+    n221.addChild(n222);
+    n222.addChild(n223);
+    n223.addChild(n224);
+    n224.addChild(n225);
+    n225.addChild(n226);
+    n226.addChild(n227);
+    n227.addChild(n228);
+    n228.addChild(n229);
+    n229.addChild(n230);
+    n230.addChild(n231);
+    n231.addChild(n232);
+    n232.addChild(n233);
+    n233.addChild(n234);
+    n234.addChild(n235);
+    n235.addChild(n236);
+    n236.addChild(n237);
+    n237.addChild(n238);
+    n238.addChild(n239);
+    n239.addChild(n240);
+    n240.addChild(n241);
+    n241.addChild(n242);
+    n242.addChild(n243);
+    n243.addChild(n244);
+    n244.addChild(n245);
+    n245.addChild(n246);
+    n246.addChild(n247);
+    n247.addChild(n248);
+    n248.addChild(n249);
+    n249.addChild(n250);
+    n250.addChild(n251);
+    n251.addChild(n252);
+    n252.addChild(n253);
+    n253.addChild(n254);
+    n254.addChild(n255);
+    n255.addChild(n256);
+    n256.addChild(n257);
+    n257.addChild(n258);
+    n258.addChild(n259);
+    n259.addChild(n260);
+    n260.addChild(n261);
+    n261.addChild(n262);
+    n262.addChild(n263);
+    n263.addChild(n264);
+    n264.addChild(n265);
+    n265.addChild(n266);
+
+    n266.addChild(n267);
+    n266.addChild(n269);
+
+    n267.addChild(n268);
+    n269.addChild(n270);
+
+    n268.addChild(n271);
+    n270.addChild(n271);
+
+    n271.addChild(n272);
+    n271.addChild(n286);
+
+    n272.addChild(n273);
+
+    n273.addChild(n274);
+    n273.addChild(n277);
+
+    n274.addChild(n275);
+    n275.addChild(n276);
+
+    n276.addChild(n278);
+    n277.addChild(n278);
+
+    n278.addChild(n279);
+    n279.addChild(n280);
+    n280.addChild(n281);
+    n281.addChild(n282);
+    n282.addChild(n283);
+    n283.addChild(n284);
+    n284.addChild(n285);
+    n285.addChild(n306);
+
+    n286.addChild(n287);
+    n286.addChild(n293);
+
+    n287.addChild(n288);
+
+    n288.addChild(n289);
+    n288.addChild(n296);
+
+    n289.addChild(n290);
+    n290.addChild(n291);
+    n291.addChild(n292);
+    n292.addChild(n298);
+
+    n293.addChild(n294);
+    n294.addChild(n295);
+
+    n295.addChild(n289);
+    n295.addChild(n296);
+
+    n296.addChild(n297);
+
+    n297.addChild(n292);
+
+    n298.addChild(n299);
+    n298.addChild(n300);
+
+    n299.addChild(n301);
+    n300.addChild(n301);
+
+    n301.addChild(n302);
+    n302.addChild(n303);
+    n303.addChild(n304);
+    n304.addChild(n305);
+    n305.addChild(n306);
+
+    n306.addChild(n307);
+    n307.addChild(n308);
+    n308.addChild(n309);
+    n309.addChild(n310);
+    n310.addChild(n311);
+    n311.addChild(n312);
+    n312.addChild(n313);
+    n313.addChild(n314);
+    n314.addChild(n315);
+    n315.addChild(n316);
+    n316.addChild(n317);
+    n317.addChild(n318);
+    n318.addChild(n319);
+
+    n319.addChild(n321);
+    n319.addChild(n320);
+
+    n320.addChild(n321);
+
+    n321.addChild(n322);
+    n322.addChild(n323);
+    n323.addChild(n324);
+
+    n324.addChild(n326);
+    n324.addChild(n325);
+
+    n325.addChild(n326);
+
+    n326.addChild(n327);
+    n327.addChild(n328);
+    n328.addChild(n329);
+    n329.addChild(n330);
+    n330.addChild(n331);
+    n331.addChild(n332);
+    n332.addChild(n333);
+    n333.addChild(n334);
+
+    n334.addChild(n335);
+    n334.addChild(n336);
+
+    n335.addChild(n337);
+    n336.addChild(n337);
+
+    n337.addChild(n338);
+    n338.addChild(n339);
+    n339.addChild(n340);
+    n340.addChild(n341);
+    n341.addChild(n342);
+    n342.addChild(n343);
+    n343.addChild(n344);
+
+    n344.addChild(n347);
+    n344.addChild(n345);
+
+    n345.addChild(n347);
+    n345.addChild(n346);
+    n346.addChild(n347);
+
+    n347.addChild(n348);
+    n348.addChild(n349);
+    n349.addChild(n350);
+    n350.addChild(n351);
+    n351.addChild(n352);
+    n352.addChild(n353);
+    n353.addChild(n354);
+    n354.addChild(n355);
+    n355.addChild(n356);
+    n356.addChild(n357);
+    n357.addChild(n358);
+    n358.addChild(n359);
+    n359.addChild(n360);
+    n360.addChild(n361);
 
     return n0;
   }
