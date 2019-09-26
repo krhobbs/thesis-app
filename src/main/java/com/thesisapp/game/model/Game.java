@@ -1185,7 +1185,7 @@ public class Game {
     n144.addChild(n145);
     n144.addChild(n147);
 
-    n144.addChild(n146);
+    n145.addChild(n146);
     n147.addChild(n148);
 
     n146.addChild(n149);
