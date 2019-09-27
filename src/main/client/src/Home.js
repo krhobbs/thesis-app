@@ -7,7 +7,7 @@ class Home extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      previouslyPlayed: ['pinging...  acquired signal  status...connected', 'Ah-- what the hell?'],
+      previouslyPlayed: [{text: 'pinging...  acquired signal  status...connected', speaker: 0}, {text: 'Ah-- what the hell?', speaker: 1}],
       currentNode: {
         id: 1,
         text: 'Stupid thing.',
@@ -37,8 +37,8 @@ class Home extends Component {
 
   // Generate the previous messages to be displayed on the screen (do not modify state)
   generateMessages() {
-    return this.state.previouslyPlayed.map((text) =>
-      <Message key={this.state.previouslyPlayed.indexOf(text)} text={text}/>
+    return this.state.previouslyPlayed.map((superSimpleNode) =>
+      <Message key={this.state.previouslyPlayed.indexOf(superSimpleNode)} text={superSimpleNode.text} speaker={superSimpleNode.speaker}/>
     );
   }
 
@@ -47,10 +47,10 @@ class Home extends Component {
     return <Decision decisions={this.state.currentNode.decisions} onDecide={this.onDecide}/>;
   }
 
-  updatePreviouslyPlayed(text) {
-    if (text.length > 0) {
+  updatePreviouslyPlayed(superSimpleNode) {
+    if (superSimpleNode.text.length > 0) {
       let previouslyPlayed = this.state.previouslyPlayed;
-      previouslyPlayed.push(text);
+      previouslyPlayed.push(superSimpleNode);
       this.setState({previouslyPlayed: previouslyPlayed});
     }
   }
@@ -63,7 +63,7 @@ class Home extends Component {
 
   async onDecide(answer) {
     //Update the state to reflect the decision made
-    this.updatePreviouslyPlayed(answer.text);
+    this.updatePreviouslyPlayed({text: answer.text, speaker: 3});
     this.updateDecisionList(answer.whichChild);
 
     //console.log(this.state.decisionList);
@@ -82,7 +82,7 @@ class Home extends Component {
       body: JSON.stringify(body),
     })).json();
     this.setState({currentNode: currentNode});
-    this.updatePreviouslyPlayed(currentNode.text);
+    this.updatePreviouslyPlayed({text: currentNode.text, speaker: currentNode.speaker});
 
     if (currentNode.decisions[0].id === '') {
       this.onDecide(currentNode.decisions[0]);
@@ -94,7 +94,7 @@ class Home extends Component {
 
   render() {
     return (
-      <div>
+      <div id={'background'}>
         <Container id={'Application'}>
           {this.generateMessages()}
           {this.generateDecision()}
