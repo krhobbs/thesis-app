@@ -1,3 +1,4 @@
+
 .App {
   text-align: center;
 }
@@ -30,8 +31,8 @@
   padding-left: 50%;
   border-top-style: solid;
   border-top-width: 1px;
-  border-top-color: white;
+  border-top-color: gray;
   border-bottom-style: solid;
   border-bottom-width: 1px;
-  border-bottom-color: white;
+  border-bottom-color: gray;
 }
