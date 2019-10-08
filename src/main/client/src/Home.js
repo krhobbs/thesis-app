@@ -81,6 +81,7 @@ class Home extends Component {
       },
       body: JSON.stringify(body),
     })).json();
+
     this.setState({currentNode: currentNode});
     this.updatePreviouslyPlayed({text: currentNode.text, speaker: currentNode.speaker});
 
