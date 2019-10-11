@@ -41,6 +41,14 @@ public class Decision {
     this.attitude = attitude;
   }
 
+  public String getShortText() {
+    return shortText;
+  }
+
+  public void setShortText(String shortText) {
+    this.shortText = shortText;
+  }
+
   public Decision() {}
 
   Decision(String id, String text, int whichChild, int attitude) {
