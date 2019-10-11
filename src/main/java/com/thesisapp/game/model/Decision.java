@@ -6,6 +6,7 @@ public class Decision {
   private String text;
   private int whichChild;
   private int attitude;
+  private String shortText;
 
   //Getters and Setters
   public String getId() {
@@ -42,11 +43,20 @@ public class Decision {
 
   public Decision() {}
 
-  public Decision(String id, String text, int whichChild, int attitude) {
+  Decision(String id, String text, int whichChild, int attitude) {
     this.id = id;
     this.text = text;
     this.whichChild = whichChild;
     this.attitude = attitude;
+    this.shortText = text; //If there is no shortened text, then just provide the full text
+  }
+
+  public Decision(String id, String text, int whichChild, int attitude, String shortText) {
+    this.id = id;
+    this.text = text;
+    this.whichChild = whichChild;
+    this.attitude = attitude;
+    this.shortText = shortText; //If there is no shortened text, then just provide the full text
   }
 
 }
