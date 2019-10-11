@@ -16,13 +16,15 @@ class Home extends Component {
             id: 'n1d1',
             text: 'Who is this?',
             whichChild: 0,
-            attitude: 0
+            attitude: 0,
+            shortText: "Who is this?"
           },
           {
             id: 'n1d2',
-            text: 'What the hell yourself.',
+            text: 'Whoa -- is this an actual person?.',
             whichChild: 0,
-            attitude: 0
+            attitude: 0,
+            shortText: "Whoa."
           }
         ],
         speaker: 0,

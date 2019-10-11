@@ -11,9 +11,9 @@ class Decision extends Component {
           onClick={() => {
             this.props.onDecide(decision);}
           }
-          value={decision.text}
+          value={decision.shortText}
         >
-          {decision.text}
+          {decision.shortText}
         </Button>
       );
     }
