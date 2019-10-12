@@ -37,6 +37,10 @@ class Home extends Component {
 
   }
 
+  componentDidUpdate(prevProps, prevState, snapshot) {
+    this.scrollToBottom();
+  }
+
   // Generate the previous messages to be displayed on the screen (do not modify state)
   generateMessages() {
     return this.state.previouslyPlayed.map((superSimpleNode) =>
@@ -61,6 +65,10 @@ class Home extends Component {
     let decisionList = this.state.decisionList;
     decisionList.push(whichChild);
     this.setState({decisionList: decisionList});
+  }
+
+  scrollToBottom() {
+    this.el.scrollIntoView({behavior: "auto"});
   }
 
   async onDecide(answer) {
@@ -102,6 +110,7 @@ class Home extends Component {
           {this.generateMessages()}
           {this.generateDecision()}
         </Container>
+        <div ref={el => {this.el = el}} style={{float: "left", clear: "both"}}/>
       </div>
     );
   }
