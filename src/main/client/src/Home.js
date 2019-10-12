@@ -16,13 +16,15 @@ class Home extends Component {
             id: 'n1d1',
             text: 'Who is this?',
             whichChild: 0,
-            attitude: 0
+            attitude: 0,
+            shortText: "Who is this?"
           },
           {
             id: 'n1d2',
-            text: 'What the hell yourself.',
+            text: 'Whoa -- is this an actual person?.',
             whichChild: 0,
-            attitude: 0
+            attitude: 0,
+            shortText: "Whoa."
           }
         ],
         speaker: 0,
@@ -33,6 +35,10 @@ class Home extends Component {
 
     this.onDecide = this.onDecide.bind(this);
 
+  }
+
+  componentDidUpdate(prevProps, prevState, snapshot) {
+    this.scrollToBottom();
   }
 
   // Generate the previous messages to be displayed on the screen (do not modify state)
@@ -59,6 +65,10 @@ class Home extends Component {
     let decisionList = this.state.decisionList;
     decisionList.push(whichChild);
     this.setState({decisionList: decisionList});
+  }
+
+  scrollToBottom() {
+    this.el.scrollIntoView({behavior: "auto"});
   }
 
   async onDecide(answer) {
@@ -100,6 +110,7 @@ class Home extends Component {
           {this.generateMessages()}
           {this.generateDecision()}
         </Container>
+        <div ref={el => {this.el = el}} style={{float: "left", clear: "both"}}/>
       </div>
     );
   }

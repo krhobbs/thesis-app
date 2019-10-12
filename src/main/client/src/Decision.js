@@ -11,9 +11,9 @@ class Decision extends Component {
           onClick={() => {
             this.props.onDecide(decision);}
           }
-          value={decision.text}
+          value={decision.shortText}
         >
-          {decision.text}
+          {decision.shortText}
         </Button>
       );
     }
@@ -21,7 +21,7 @@ class Decision extends Component {
 
   render() {
     return (
-      <ButtonGroup>
+      <ButtonGroup className={"decision"}>
         {this.generateAnswerButtons()}
       </ButtonGroup>
     );

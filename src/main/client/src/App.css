@@ -43,3 +43,7 @@ html {
   border-bottom-width: 1px;
   border-bottom-color: gray;
 }
+
+.decision {
+  margin-bottom: 4em;
+}
