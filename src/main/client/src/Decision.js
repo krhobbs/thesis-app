@@ -21,7 +21,7 @@ class Decision extends Component {
 
   render() {
     return (
-      <ButtonGroup>
+      <ButtonGroup className={"decision"}>
         {this.generateAnswerButtons()}
       </ButtonGroup>
     );
