@@ -7,6 +7,8 @@ class Home extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      name: "",
+      pronouns: "",
       previouslyPlayed: [{text: 'pinging...  acquired signal  status...connected', speaker: 0}, {text: 'Ah-- what the hell?', speaker: 1}],
       currentNode: {
         id: 1,
@@ -34,6 +36,8 @@ class Home extends Component {
     };
 
     this.onDecide = this.onDecide.bind(this);
+    this.updateName = this.updateName.bind(this);
+    this.updatePronoun = this.updatePronoun.bind(this);
 
   }
 
@@ -44,13 +48,13 @@ class Home extends Component {
   // Generate the previous messages to be displayed on the screen (do not modify state)
   generateMessages() {
     return this.state.previouslyPlayed.map((superSimpleNode) =>
-      <Message key={this.state.previouslyPlayed.indexOf(superSimpleNode)} text={superSimpleNode.text} speaker={superSimpleNode.speaker}/>
+      <Message key={this.state.previouslyPlayed.indexOf(superSimpleNode)} text={superSimpleNode.text} speaker={superSimpleNode.speaker} name={this.state.name}/>
     );
   }
 
   // Generate the current decision that the play must make (do not modify state)
   generateDecision() {
-    return <Decision decisions={this.state.currentNode.decisions} onDecide={this.onDecide}/>;
+    return <Decision decisions={this.state.currentNode.decisions} onDecide={this.onDecide} updateName={this.updateName} updatePronoun={this.updatePronoun}/>;
   }
 
   updatePreviouslyPlayed(superSimpleNode) {
@@ -65,6 +69,14 @@ class Home extends Component {
     let decisionList = this.state.decisionList;
     decisionList.push(whichChild);
     this.setState({decisionList: decisionList});
+  }
+
+  updateName(name) {
+    this.setState({name: name});
+  }
+
+  updatePronoun(pronoun) {
+    this.setState({pronoun: pronoun})
   }
 
   scrollToBottom() {
