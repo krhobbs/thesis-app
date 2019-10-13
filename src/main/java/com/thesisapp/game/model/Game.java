@@ -62,30 +62,30 @@ public class Game {
 
     Node n10 = new Node(10, "Wild. Me too. I'm pretty far north, in Greenland. I suppose it's not so unbelievable that we're communicating somehow. That's what the chip was made for, after all.", emptyDecisions, 1, false);
 
-    Decision n11d1 = new Decision("n11d1", "My name is Simon.", 0, 0);
+    Decision n11d1 = new Decision("n11d1", "My name is [].", 0, 0);
     Decision n11d2 = new Decision("n11d2", "I'm pretty sure not providing personal info to strangers on the web is the first rule of the modern age.", 1, 0, "Nothing.");
     Decision[] n11d = {n11d1, n11d2};
     Node n11 = new Node(11, "What do I call you, then?", n11d, 1, false);
 
-    Decision n12d1 = new Decision("n12d1", "True. My name is [Simon].", 0, 0, "Agree.");
+    Decision n12d1 = new Decision("n12d1", "True. My name is [].", 0, 0, "Agree.");
     Decision n12d2 = new Decision("n12d2", "Is \"Prosper\" an honest given name?", 1, 0, "Do I?");
     Decision[] n12d = {n12d1, n12d2};
     Node n12 = new Node(12,"You know me now, don't you?", n12d,1,false);
 
-    Decision n13d1 = new Decision("n14d1", "My name is [Simon].", 0, 0, "Agree.");
+    Decision n13d1 = new Decision("n13d1", "My name is [].", 0, 0, "Agree.");
     Decision[] n13d = {n13d1};
     Node n13 = new Node(13, "Yes. It's exceptionally ironic, but it's mine. And yours is...", n13d,1,false);
 
-    Node n14 = new Node(14,"Pleased to meet you, Simon.", emptyDecisions,1,false);
+    Node n14 = new Node(14,"Pleased to meet you, [].", emptyDecisions,1,false);
 
-    Decision n15d1 = new Decision("n13d1", "He",0,0);
-    Decision n15d2 = new Decision("n13d2", "She",0,0);
-    Decision n15d3 = new Decision("n13d3", "They",0,0);
+    Decision n15d1 = new Decision("n15d1", "He",0,0);
+    Decision n15d2 = new Decision("n15d2", "She",0,0);
+    Decision n15d3 = new Decision("n15d3", "They",0,0);
     Decision[] n15d = {n15d1, n15d2, n15d3};
     Node n15 = new Node(15, "I don't want to assume anything. What are your pronouns?", n15d, 1, false);
 
     Decision n16d1 = new Decision("n16d1", "Wait, you lost me. Do you see this as text, too? I'm typing.", 0, 0, "What?");
-    Decision n16d2 = new Decision("n16d2", "Not a fan of that as nickname. Do you see this as text, too? I'm typing.", 0, 0, "Well, excuse me.");
+    Decision n16d2 = new Decision("n16d2", "Not a fan of that as a nickname. Do you see this as text, too? I'm typing.", 0, 0, "Well, excuse me.");
     Decision[] n16d = {n16d1, n16d2};
     Node n16 = new Node(16, "Got it. Good to know more than \"text tinning up my quiet space.\"", n16d, 1, false);
 
