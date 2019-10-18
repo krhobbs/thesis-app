@@ -121,12 +121,12 @@ public class Game {
     Decision n25d1 = new Decision("n25d1", "Okay, sorry to pry. Well, what happened?", 0, 0, "Sorry.");
     Decision n25d2 = new Decision("n25d2", "So, mystery guy. Can I ask what happened?", 0, 0, "So what happened?");
     Decision[] n25d = {n25d1, n25d2};
-    Node n25 = new Node(25, "Look, you don't want the details, Simon. When I say \"long story,\" that implies brutal, uncomfortable, and dangerous to know.", n25d, 1, false);
+    Node n25 = new Node(25, "Look, you don't want the details, []]. When I say \"long story,\" that implies brutal, uncomfortable, and dangerous to know.", n25d, 1, false);
 
     Decision n26d1 = new Decision("n26d1", "Okay, sorry to pry. Well what happened?", 0, 0, "Sorry.");
     Decision n26d2 = new Decision("n26d2", "Okay, fine. I'm going to assume A, though.", 1, 0, "So it's A.");
     Decision[] n26d = {n26d1, n26d2};
-    Node n26 = new Node(26, "Look, you don't want the details, Simon. When I say \"long story,\" that implies brutal, uncomfortable, and dangerous to know.", n26d, 1, false);
+    Node n26 = new Node(26, "Look, you don't want the details, []]. When I say \"long story,\" that implies brutal, uncomfortable, and dangerous to know.", n26d, 1, false);
 
     Decision n27d1 = new Decision("n27d1", "So, mystery guy. Can I ask what happened?", 0, 0, "So what happened?");
     Decision n27d2 = new Decision("n27d2", "Well, can you at least hint at what happened?", 0, 0, "Can I get a hint?");
@@ -141,12 +141,12 @@ public class Game {
     Decision n29d1 = new Decision("n29d1", "Okay, sorry to pry. Well what happened?", 0, 0);
     Decision n29d2 = new Decision("n29d2", "So, mystery guy. Can I ask what happened?", 1, 0);
     Decision[] n29d = {n29d1, n29d2};
-    Node n29 = new Node(29, "Look, you don't want the details, Simon. When I say \"long story,\" that implies brutal, uncomfortable, and dangerous to know.", n29d, 1, false);
+    Node n29 = new Node(29, "Look, you don't want the details, []]. When I say \"long story,\" that implies brutal, uncomfortable, and dangerous to know.", n29d, 1, false);
 
     Decision n30d1 = new Decision("n30d1", "Okay, sorry to pry. Well what happened?", 0, 0);
     Decision n30d2 = new Decision("n30d2", "Okay, fine. I'm going to assume A, though.", 1, 0);
     Decision[] n30d = {n30d1, n30d2};
-    Node n30 = new Node(30, "Look, you don't want the details, Simon. When I say \"long story,\" that implies brutal, uncomfortable, and dangerous to know.", n30d, 1, false);
+    Node n30 = new Node(30, "Look, you don't want the details, []]. When I say \"long story,\" that implies brutal, uncomfortable, and dangerous to know.", n30d, 1, false);
 
     Decision n30_1d1 = new Decision("n30_1d1", "So, mystery guy. Can I ask what happened?", 0, 0, "So what happened?");
     Decision n30_1d2 = new Decision("n30_1d2", "Well, can you at least hint at what happened?", 0, 0, "Can I get a hint?");
@@ -200,11 +200,11 @@ public class Game {
     Decision[] n38d = {n38d1, n38d2};
     Node n38 = new Node(38, "Okay. You could say I'm in a bit of bind.", n38d, 1, false);
 
-    Node n39 = new Node(39, "Thank you, [Simon]. That you're even willing to listen... It means a lot.", emptyDecisions, 1, false);
+    Node n39 = new Node(39, "Thank you, []. That you're even willing to listen... It means a lot.", emptyDecisions, 1, false);
 
     Node n40 = new Node(40, "Maybe there is something you could do.", emptyDecisions, 1, false); //Checkpoint?
 
-    Node n41 = new Node(41, "No, [Simon], you don't know. And there's no reason you should.", emptyDecisions, 1, false);
+    Node n41 = new Node(41, "No, [], you don't know. And there's no reason you should.", emptyDecisions, 1, false);
 
     Decision n42d1 = new Decision("n42d1", "Wait, I'm sorry. I don't want to sign off. So, the bind. Is it something I can help with?", 0, 0, "Wait! I'm sorry.");
     Decision n42d2 = new Decision("n42d2", "I don't want to sign off. I want to know more. So, the bind. Is it something I can help with?", 0, 0, "Not yet.");
@@ -261,9 +261,9 @@ public class Game {
     Decision n59d1 = new Decision("n59d1", "Okay. I guess you don't seem to have a reason to lie. I'll write this letter. But I won't promise to send it, if I think it would upset someone.", 0, 0, "I believe you.");
     Decision n59d2 = new Decision("n59d2", "That's...pretty vague. I'll write this letter, Prosper. But I'm not promising to send it until I know more.", 0, 0, "That's suspicious.");
     Decision[] n59d = {n59d1, n59d2};
-    Node n59 = new Node(59, "I did what I thought was right. I didn't hurt anyone, and I definitely don't want you to get hurt, [Simon].", n59d, 1, false);
+    Node n59 = new Node(59, "I did what I thought was right. I didn't hurt anyone, and I definitely don't want you to get hurt, [].", n59d, 1, false);
 
-    Node n60 = new Node(60, "I suppose I can't ask for more. Thanks, [Simon].", emptyDecisions, 1, false);
+    Node n60 = new Node(60, "I suppose I can't ask for more. Thanks, [].", emptyDecisions, 1, false);
 
     Decision n61d1 = new Decision("n61d1", "I've got paper and pen with me. Whenever you're ready.", 0, 0, "Go ahead.");
     Decision n61d2 = new Decision("n61d2", "Okay. Paper, pen. Let's go.", 0, 0, "Let's go.");
@@ -281,7 +281,7 @@ public class Game {
 
     Node n65 = new Node(65, "Oh, no.", emptyDecisions, 1, false);
 
-    Node n66 = new Node(66, "Damn it. [Simon}, I have to disconnect. I'll have to...", emptyDecisions, 1, false);
+    Node n66 = new Node(66, "Damn it. [], I have to disconnect. I'll have to...", emptyDecisions, 1, false);
 
     Decision n67d1 = new Decision("n67d1", "Whoa, whoa. Are you okay?", 0, 0, "Are you okay?");
     Decision n67d2 = new Decision("n67d2", "Whoa, whoa. What's going on?", 0, 0, "What's going on?");
@@ -301,7 +301,7 @@ public class Game {
     Decision[] n74d = {n74d1};
     Node n74 = new Node(74, "pinging...\nacquired signal\nstatus...connected", n74d, 0, false);
 
-    Node n75 = new Node(75, "[Simon]?", emptyDecisions, 1, false);
+    Node n75 = new Node(75, "[]?", emptyDecisions, 1, false);
 
     Decision n76d1 = new Decision("n76d1", "The computer freaked out and shut down. I reconnected as soon as I could. Are you okay? Prosper?", 0, 0, "Are you ok?");
     Decision n76d2 = new Decision("n76d2", "The computer freaked out and shut down. I reconnected as soon as I could. What happened? Prosper?", 0, 0, "What happened?");
@@ -326,7 +326,7 @@ public class Game {
     Decision n82d1 = new Decision("n82d1", "I am.", 0, 0);
     Decision n82d2 = new Decision("n82d2", "Let's compose some correspondence.", 0, 0, "Let's do it.");
     Decision[] n82d = {n82d1, n82d2};
-    Node n82 = new Node(82, "Still willing to help me with that letter, [Simon]?", n82d, 1, false);
+    Node n82 = new Node(82, "Still willing to help me with that letter, []?", n82d, 1, false);
 
     Node n83 = new Node(83, "Thanks.", emptyDecisions, 1, false);
     Node n84 = new Node(84, "I didn't get the chance to put much thought into it, but maybe I don't need to.", emptyDecisions, 1,  false);
@@ -339,7 +339,7 @@ public class Game {
 
     Node n87 = new Node(87, "Grace...", emptyDecisions, 1, false);
     Node n88 = new Node(88, "First off, do not set out to find me.", emptyDecisions, 1, false);
-    Node n89 = new Node(89, "Don't mention Greenland, [Simon]. Or prison.", emptyDecisions, 1, false);
+    Node n89 = new Node(89, "Don't mention Greenland, []. Or prison.", emptyDecisions, 1, false);
     Node n90 = new Node(90, "Grace, everything ended in a rush after the Harlem bust. There wasn't anything you or I could do. TUR was prepared for every eventuality.", emptyDecisions, 1, false);
     Node n91 = new Node(91, "So, they have me. That's the ugly fact. We're right back to the beginning.", emptyDecisions, 1, false);
     Node n92 = new Node(92, "But that doesn't mean you should try to get me recommissioned. It won't work, even if you could still contact TUR.", emptyDecisions, 1, false);
@@ -348,7 +348,7 @@ public class Game {
     Decision n94d1 = new Decision("n94d1", "It's okay. This sounds heavy, and it's a weight you probably need off your shoulders.", 0, 0, "No, it is?");
     Decision n94d2 = new Decision("n94d2", "To reach out to this Grace person for the express purpose of telling her not to reach back?", 1, 0, "A bit pointless?");
     Decision[] n94d = {n94d1, n94d2};
-    Node n94 = new Node(94, "Damn it. I'm not sure this is a good idea, [Simon].", n94d, 1, false);
+    Node n94 = new Node(94, "Damn it. I'm not sure this is a good idea, [].", n94d, 1, false);
 
     Node n95 = new Node(95, "You know, that's an analogy I never got around to understanding.", emptyDecisions, 1, false);
 
@@ -402,7 +402,7 @@ public class Game {
     Decision[] n112d = {n112d1, n112d2};
     Node n112 = new Node(112, "Grace Dillon\n 1765 11th Ave\n New York City, NY", n112d, 1, false);
 
-    Node n113 = new Node(113, "This is such a relief. Thank you, [Simon]. Really.", emptyDecisions, 1, false);
+    Node n113 = new Node(113, "This is such a relief. Thank you, []. Really.", emptyDecisions, 1, false);
     Node n114 = new Node(114, "Now... You may not like the sound of this.", emptyDecisions, 1, false);
 
     Decision n115d1 = new Decision("n115d1", "Whoa, whoa. What if you need help in the future?", 0, 0, "But you could need help.");
@@ -463,7 +463,7 @@ public class Game {
     Decision[] n133d = {n133d1, n133d2};
     Node n133 = new Node(133, "But I'll start by disconnecting the chip.", n133d, 1, false);
 
-    Node n134 = new Node(134, "[Simon].", emptyDecisions, 1, false);
+    Node n134 = new Node(134, "[].", emptyDecisions, 1, false);
     Node n135 = new Node(135, "Take care of yourself.", emptyDecisions, 1, false);
     Node n136 = new Node(136, "signal lost", emptyDecisions, 0, false);
     Node n137 = new Node(137, "status...disconnected", emptyDecisions, 0, false);
@@ -478,7 +478,7 @@ public class Game {
 
     Node n143 = new Node(143, "Prosper?", emptyDecisions, 2, false);
 
-    Decision n144d1 = new Decision("n144d1", "This is [Simon]. But I talked to Prosper.", 0, 0);
+    Decision n144d1 = new Decision("n144d1", "This is []. But I talked to Prosper.", 0, 0);
     Decision n144d2 = new Decision("n144d2", "Who is this, and how do you know Prosper?", 1, 0);
     Decision[] n144d = {n144d1, n144d2};
     Node n144 = new Node(144, "Do you copy?", n144d, 2, false);
@@ -504,7 +504,7 @@ public class Game {
     Decision[] n151d = {n151d1, n151d2};
     Node n151 = new Node(151, "pinging...\nacquired signal\nstatus...connected", n151d, 2, false);
 
-    Node n152 = new Node(152, "[Simon]?", emptyDecisions, 1, false);
+    Node n152 = new Node(152, "[]?", emptyDecisions, 1, false);
 
     Decision n153d1 = new Decision("n153d1", "You did. But I didn't want to take away your only link to the outside world!", 0, 0);
     Decision n153d2 = new Decision("n153d2", "You did. But I for sure did not listen.", 0, 0);
@@ -547,7 +547,7 @@ public class Game {
     Decision n170d1 = new Decision("n170d1", "Yeah. Not much I can do about it.", 0, 0);
     Decision n170d2 = new Decision("n170d2", "Just pretend like I'm not here.", 0, 0);
     Decision[] n170d = {n170d1, n170d2};
-    Node n170 = new Node(170, "[Simon], are you still there?", n170d, 1, false);
+    Node n170 = new Node(170, "[], are you still there?", n170d, 1, false);
 
     Node n171 = new Node(171, "Prosper, where are you?", emptyDecisions, 2, false);
 
@@ -562,7 +562,7 @@ public class Game {
     Decision[] n175d = {n175d1, n175d2};
     Node n175 = new Node(175, "A TUR facility, you mean.", n175d, 2, false);
 
-    Node n176 = new Node(176, "There's nothing either of us can do, Detective. Get yourself home, and deactivate [Simon]'s computer.", emptyDecisions, 1, false);
+    Node n176 = new Node(176, "There's nothing either of us can do, Detective. Get yourself home, and deactivate []'s computer.", emptyDecisions, 1, false);
     Node n177 = new Node(177, "Please. I don't want anyone else to get hurt because of me.", emptyDecisions, 1, false);
 
     Node n178 = new Node(178, "That's exactly why I have to help you.", emptyDecisions, 2, false);
@@ -625,7 +625,7 @@ public class Game {
     Node n219 = new Node(219, "You don't understand, Grace.", emptyDecisions, 1, false);
     Node n220 = new Node(220, "There's no way.", emptyDecisions, 1, false);
 
-    Node n221 = new Node(221, "I saw that you had [Simon] send me a letter. You wouldn't have contacted me if there wasn't some part of you that wanted help.", emptyDecisions, 2, false);
+    Node n221 = new Node(221, "I saw that you had [] send me a letter. You wouldn't have contacted me if there wasn't some part of you that wanted help.", emptyDecisions, 2, false);
     Node n222 = new Node(222, "But I...", emptyDecisions, 1, false);
     Node n223 = new Node(223, "I shouldn't want help.", emptyDecisions, 1, false);
     Node n224 = new Node(224, "It's over. Test failed.", emptyDecisions, 1, false);
@@ -689,9 +689,9 @@ public class Game {
     Decision n264d1 = new Decision("n264d1", "For the record, I don't think she can. And I was reading along the whole time.\n Sounds like you're in a lot of trouble. And it also sounds like you're a robot.", 0, 0);
     Decision n264d2 = new Decision("n264d2", "As if I wasn't eavesdropping the entire time.\n Soooo...a ROBOT?", 0, 0);
     Decision[] n264d = {n264d1, n264d2};
-    Node n264 = new Node(264, "There's sensitive information [Simon] shouldn't see. Clear the messages.", n264d, 1, false);
+    Node n264 = new Node(264, "There's sensitive information [] shouldn't see. Clear the messages.", n264d, 1, false);
 
-    Node n265 = new Node(265, "Hello, [Simon].", emptyDecisions, 1, false);
+    Node n265 = new Node(265, "Hello, [].", emptyDecisions, 1, false);
 
     Decision n266d1 = new Decision("n266d1", "Of course not. You're amazing.", 0, 0);
     Decision n266d2 = new Decision("n266d2", "Mechanical- American?", 1, 0);
@@ -753,7 +753,7 @@ public class Game {
     Decision[] n286d = {n286d1, n286d2};
     Node n286 = new Node(286, "Class: Prototype 286\n Model 412-009 Mark-1\n Unit Dictation: Prospero", n286d, 1, false);
 
-    Node n287 = new Node(287, "[Simon].", emptyDecisions, 1, false);
+    Node n287 = new Node(287, "[].", emptyDecisions, 1, false);
 
     Decision n288d1 = new Decision("n288d1", "You're right. I'm sorry. I just wanted to know what I'm getting into here. Like...412? Are there that many models?", 0, 0);
     Decision n288d2 = new Decision("n288d2", "Well, now we've traded low blows and we're even. Does that mean there are 412 models?", 1, 0);
@@ -765,7 +765,7 @@ public class Game {
     Node n291 = new Node(291, "But it's fair for you to want to know.", emptyDecisions, 1, false);
     Node n292 = new Node(292, "412 is the employee code. I'm their ninth design.", emptyDecisions, 1, false);
 
-    Node n293 = new Node(293, "Not amusing, [Simon].", emptyDecisions, 1, false);
+    Node n293 = new Node(293, "Not amusing, [].", emptyDecisions, 1, false);
     Node n294 = new Node(294, "This sort of information could be dangerous to you.", emptyDecisions, 1, false);
 
     Decision n295d1 = new Decision("n295d1", "You're right. I'm sorry. I just wanted to know what I'm getting into here. Like...412? Are there that many models?", 0, 0);
@@ -832,7 +832,7 @@ public class Game {
     Decision n327d1 = new Decision("n327d1", "I might know how, actually, after picking apart the hardware while we were disconnected.", 0, 0);
     Decision n327d2 = new Decision("n327d2", "About that. I was looking at the hardware while we were disconnected.", 0, 0);
     Decision[] n327d = {n327d1, n327d2};
-    Node n327 = new Node(327, "It still doesn't make sense that it's connecting to your computer, [Simon].", n327d, 1, false);
+    Node n327 = new Node(327, "It still doesn't make sense that it's connecting to your computer, [].", n327d, 1, false);
 
     Decision n328d1 = new Decision("n328d1", "And, I picked up my processor from a junkstore that ships in from New York. Think it could be your tech?", 0, 0);
     Decision n328d2 = new Decision("n328d2", "And, I picked up my processor from a junkstore that ships in from New York. Not to embarass you, but...you ever leave some spare parts lying around?", 0, 0);

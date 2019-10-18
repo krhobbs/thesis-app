@@ -23,7 +23,7 @@ class Home extends Component {
           },
           {
             id: 'n1d2',
-            text: 'Whoa -- is this an actual person?.',
+            text: 'Whoa -- is this an actual person?',
             whichChild: 0,
             attitude: 0,
             shortText: "Whoa."
