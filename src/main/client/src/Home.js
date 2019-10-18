@@ -92,7 +92,7 @@ class Home extends Component {
 
     let body = { decisionList: this.state.decisionList };
 
-    let currentNode = await (await fetch('http://localhost:8080/decide', {
+    let currentNode = await (await fetch('http://localhost:9000/decide', {
       method: 'POST',
       mode: 'cors',
       headers: {
