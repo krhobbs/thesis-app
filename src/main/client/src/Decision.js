@@ -5,7 +5,7 @@ class Decision extends Component {
 
   generateAnswerButtons() {
     //For the three decisions where the player may have to enter their name, add a form to do so
-    if (this.props.decisions[0].id === "n11d1" || this.props.decisions[0].id === "n12d1" || this.props.decisions[0].id === "n13d1") {
+    if (this.props.decisions[0].id === "n11d1" || this.props.decisions[0].id === "n12d1") {
       return (
         <div>
           <Form inline>
@@ -32,6 +32,28 @@ class Decision extends Component {
           >
             {this.props.decisions[1].shortText}
           </Button>
+        </div>
+      );
+    }
+
+    if (this.props.decisions[0].id === "n13d1") {
+      return (
+        <div>
+          <Form inline>
+            <Input type={"text"}
+                   placeholder={"Enter your name"}
+                   onChange={(event) => {this.props.updateName(event.target.value)}}
+            />
+            <Button
+              key={this.props.decisions[0].id}
+              onClick={() => {
+                this.props.onDecide(this.props.decisions[0])
+              }}
+              value={"Done."}
+            >
+              Done.
+            </Button>
+          </Form>
         </div>
       );
     }
