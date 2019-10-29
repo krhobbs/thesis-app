@@ -899,6 +899,679 @@ public class Game {
 
     // END ACT I
 
+    //Act II
+    Node m1 = new Node(362, "interface: on", emptyDecisions, 0, false);
+
+    Node m2 = new Node(363, "connection_point.D: active", emptyDecisions, 0, false);
+
+    Node m3 = new Node(364, "pinging...", emptyDecisions, 0, false);
+
+    Node m4 = new Node(365, "acquired connection_point.P", emptyDecisions, 0, false);
+
+    Decision m5d1 = new Decision("m5d1", "And he's back! Prosper, it's [] and Dillon. The computer has a nice new interface, and now we can all talk at once, sans squabbling.", 0, 0);
+    Decision m5d2 = new Decision("m5d2", "Ladies and gentlefolk, we have point.P! Prosper, it's [] and Dillon. The computer has a nice new interface, and now we can all talk at once, sans squabbling.", 0, 0);
+    Decision[] m5d = {m5d1, m5d2};
+    Node m5 = new Node(366, "connection_point.P: active", m5d, 0, false);
+
+    Node m6 = new Node(367, "", emptyDecisions, 1, false);
+
+    Decision m7d1 = new Decision("m7d1", "Of course not, officer. Now Dillon can chat without hacking me, is what I mean. What's going on?", 0, 0);
+    Decision m7d2 = new Decision("m7d2", "...anyway. Now Dillon can chat without hacking me, is what I mean. What's going on?", 0, 0);
+    Decision[] m7d = {m7d1, m7d2};
+    Node m7 = new Node(368, "I don't squabble.", m7d, 2, false);
+
+    Node m8 = new Node(369, "Prosper?", emptyDecisions, 2, false);
+
+    Decision m9d1 = new Decision("m9d1", "Right. Okay. Give me a second... Fixed?", 0, 0);
+    Decision m9d2 = new Decision("m9d2", "I hope that was PG. Give me a second... Fixed?", 0, 0);
+    Decision[] m9d = {m9d1, m9d2};
+    Node m9 = new Node(370, "01001000 01100101 01101100 01101100 01101111 00111111", m9d, 1, false);
+
+    Node m10 = new Node(371, "[]?", emptyDecisions, 1, false);
+
+    Decision m11d1 = new Decision("m11d1", "Hi. We upgraded.", 0, 0);
+    Decision m11d2 = new Decision("m11d2", "Hi. How do you like the new kicks?", 0, 0);
+    Decision[] m11d = {m11d1, m11d2};
+    Node m11 = new Node(372, "And Dillon.", m11d, 2, false);
+
+    Node m12 = new Node(373, "Wow.", emptyDecisions, 1, false);
+
+    Node m13 = new Node(374, "It's good to hear your voices.", emptyDecisions, 1, false);
+
+    Node m14 = new Node(375, "So to speak.", emptyDecisions, 1, false);
+
+    Decision m15d1 = new Decision("m15d1", "Coding fluke. I'm not, as they say, an \"expert.\" But it's fixed now! Probably.", 0, 0);
+    Decision m15d2 = new Decision("m15d2", "Coding fluke. Hey, if we don't make mistakes, we don't learn. It's fixed now. Probably.", 0, 0);
+    Decision[] m15d = {m15d1, m15d2};
+    Node m15 = new Node(376, "What was that signal?", m15d, 1, false);
+
+    Node m16 = new Node(377, "Prosper, what's your status? You were quiet for a while.", emptyDecisions, 2, false);
+
+    Node m17 = new Node(378, " It was off and on. Mostly off, I think.", emptyDecisions, 1, false);
+
+    Node m18 = new Node(379, "As I recall, we were arguing about whether Dillon was coming to Greenland.", emptyDecisions, 1, false);
+
+    Node m19 = new Node(380, " Decided, actually.", emptyDecisions, 2, false);
+
+    Node m20 = new Node(381, " By the way, the Greenlandic sights are not at all worth the weather.", emptyDecisions, 2, false);
+
+    Node m21 = new Node(382, "But it will be worth it, when we get you out.", emptyDecisions, 2, false);
+
+    Node m22 = new Node(383, "Detective, request to confirm you brought yourself within TUR's reach.", emptyDecisions, 1, false);
+
+    Node m23 = new Node(384, "And about to head even closer soon. Farther north, I'll lose signal.", emptyDecisions, 2, false);
+
+    Node m24 = new Node(385, "TUR didn't give me a nifty Prosper-powered phone.", emptyDecisions, 2, false);
+
+    Decision m25d1 = new Decision("m25d1", "If this goes to court, I won't be choosing sides.", 0, 0);
+    Decision m25d2 = new Decision("m25d2", "Trademarked? Now I gotta know.", 0, 0);
+    Decision[] m25d = {m25d1, m25d2};
+    Node m25 = new Node(386, " I'm tempted to use some Dillon-trademarked curses right now.", m25d, 1, false);
+
+    Node m26 = new Node(387, "I won't sue. The court system couldn't handle it.", emptyDecisions, 2, false);
+
+    Node m27 = new Node(388, "The fewer people who know, the better.", emptyDecisions, 2, false);
+
+    Node m28 = new Node(389, "Relax, Prosper. Worrying about me is the last thing you need on your plate.", emptyDecisions, 2, false);
+
+    Node m29 = new Node(390, " I suppose there's nothing I can say to convince you otherwise.", emptyDecisions, 1, false);
+
+    Node m30 = new Node(391, "Detective, how long has it been since New York?", emptyDecisions, 1, false);
+
+    Node m31 = new Node(392, "Four months.", emptyDecisions, 2, false);
+
+    Node m31_5 = new Node(392.5, "Four? Since then, I've had...", emptyDecisions, 1, false);
+
+    Node m32 = new Node(393, "A total of only 613 waking hours.", emptyDecisions, 1, false);
+
+    Node m33 = new Node(394, "I don't like that, Detective.", emptyDecisions, 1, false);
+
+    Node m34 = new Node(395, "Me neither", emptyDecisions, 2, false);
+
+    Node m35 = new Node(396, "But we're working on it. It'll be okay.", emptyDecisions, 2, false);
+
+    Node m36 = new Node(397, "For now, I'll have to leave you with []. Hopefully, that doesn't turn out to be the second worst mistake I've made this year.", emptyDecisions, 2, false);
+
+    Node m37 = new Node(398, "[]? Listen close.", emptyDecisions, 2, false);
+
+    Node m38 = new Node(399, "Prosper's in your hands. Stick with him, get him out of TURing, and I'll take it from there.", emptyDecisions, 2, false);
+
+    Node m39 = new Node(400, "I know this is a lot to ask. But we're depending on you.", emptyDecisions, 2, false);
+
+    Node m40 = new Node(401, "Me in particular.", emptyDecisions, 1, false);
+
+    Node m41 = new Node(402, "But I can't ask you to do this, [].", emptyDecisions, 1, false);
+
+    Decision m42d1 = new Decision("m42d1", "Believe me, I've made it. You're getting out of there.", 0, 0);
+    Decision m42d2 = new Decision("m42d2", "Let me think... Sure, I don't have anything going on.", 1, 0);
+    Decision[] m42d = {m42d1, m42d2};
+    Node m42 = new Node(403, "It has to be your choice to make.", m42d, 1, false);
+
+    Node m43 = new Node(404, "Good choice.", emptyDecisions, 2, false);
+
+    Node m44 = new Node(405, "Better than nothing, I suppose.", emptyDecisions, 2, false);
+
+    Node m45 = new Node(406, "Meet you both on the other side of this.", emptyDecisions, 2, false);
+
+    Decision m46d1 = new Decision("m46d1", "And there goes the more capable of your defenders.", 0, 0);
+    Decision m46d2 = new Decision("m46d2", "And then there were two.", 1, 0);
+    Decision[] m46d = {m46d1, m46d2};
+    Node m46 = new Node(407, "connection_point.D lost", m46d, 0, false);
+
+    Node m47 = new Node(408, "Not too long ago, I didn't have any defenders at all.", emptyDecisions, 1, false);
+
+    Node m48 = new Node(409, "It's a lot better than one, which was all I had not too long ago.", emptyDecisions, 1, false);
+
+    Node m49 = new Node(410, "This is...", emptyDecisions, 1, false);
+
+    Decision m50d1 = new Decision("m50d1", "Thanks later. Updates now.", 0, 0);
+    Decision m50d2 = new Decision("m50d2", "I try, I try. Now, down to business.", 0, 0);
+    Decision[] m50d = {m50d1, m50d2};
+    Node m50 = new Node(411, "Thank you, [].", m50d, 1, false);
+
+    Decision m51d1 = new Decision("m51d1", "Are your sensors back? What's around you now?", 0, 0);
+    Decision m51d2 = new Decision("m51d2", "Can you see anything? Where are you?", 0, 0);
+    Decision[] m51d = {m51d1, m51d2};
+    Node m51 = new Node(412, "Right.", m51d, 1, false);
+
+    Node m52 = new Node(413, "Just audio. I still can't see anything.", emptyDecisions, 1, false);
+
+    Node m53 = new Node(414, "I think they're interested in my processor.", emptyDecisions, 1, false);
+
+    Node m54 = new Node(415, "Last time I disconnected from you, they had a series of questions and a dozen different memory diagnostics.", emptyDecisions, 1, false);
+
+    Node m55 = new Node(416, "They must have read activity from our conversation, but nothing specific.", emptyDecisions, 1, false);
+
+    Node m56 = new Node(417, "They thought I was \"daydreaming\". That's not in my program, so they want to know why.", emptyDecisions, 1, false);
+
+    Decision m57d1 = new Decision("m57d1", "Well, that's creepy.", 0, 0);
+    Decision m57d2 = new Decision("m57d2", "Sweet jams, or calming tunes?", 1, 0);
+    Decision[] m57d = {m57d1, m57d2};
+    Node m57 = new Node(418, "Right now, there's music playing.", m57d, 1, false);
+
+    Node m58 = new Node(419, "You're telling me.", emptyDecisions, 1, false);
+
+    Node m59 = new Node(420, "Neither.", emptyDecisions, 1, false);
+
+    Node m60 = new Node(421, "Most likely, they want to know how sound might affect my mental activity.", emptyDecisions, 1, false);
+
+    Decision m61d1 = new Decision("m61d1", "They won't get the chance. How about you?", 0, 0);
+    Decision m61d2 = new Decision("m61d2", "That's something. How about that cord? Still attached to you?", 1, 0);
+    Decision[] m61d = {m61d1, m61d2};
+    Node m61 = new Node(422, "Logically, their next step will be to isolate sight or smell as a variable.", m61d, 1, false);
+
+    Node m62 = new Node(423, "I'm restrained in the same way. My legs are tied down, my arm bound to my torso, and I'm sitting up.", emptyDecisions, 1, false);
+
+    Decision m63d1 = new Decision("m63d1", "How about that cord? Still attached to you?", 0, 0);
+    Decision m63d2 = new Decision("m63d2", "And that cable? Still attached to you?", 1, 0);
+    Decision[] m63d = {m63d1, m63d2};
+    Node m63 = new Node(424, "They might change that eventually, but the restraints are a constant in their experiments for now.", m63d, 1, false);
+
+    Node m64 = new Node(425, "Yes. It's plugged into a data port.", emptyDecisions, 1, false);
+
+    Node m65 = new Node(426, "In my diagnostics, it's listed as the foramen magnum.", emptyDecisions, 1, false);
+
+    Decision m66d1 = new Decision("m66d1", "Got it. Can you access the monitor from your end?", 0, 0);
+    Decision m66d2 = new Decision("m66d2", "It must be attached to a monitor of some kind. Can you access it from your end?", 0, 0);
+    Decision[] m66d = {m66d1, m66d2};
+    Node m66 = new Node(427, "They like their jokes, I suppose.", m66d, 1, false);
+
+    Node m67 = new Node(428, "Yes. It's plugged into a data port.", emptyDecisions, 1, false);
+
+    Node m68 = new Node(429, "In my diagnostics, it's listed as the foramen magnum.", emptyDecisions, 1, false);
+
+    Decision m69d1 = new Decision("m69d1", "Got it. Can you access the monitor from your end?", 0, 0);
+    Decision m69d2 = new Decision("m69d2", "It must be attached to a monitor of some kind. Can you access it from your end?", 0, 0);
+    Decision[] m69d = {m69d1, m69d2};
+    Node m69 = new Node(430, "They like their jokes, I suppose.", m69d, 1, false);
+
+    Node m70 = new Node(431, "It's there. It isn't a complex connection.", emptyDecisions, 1, false);
+
+    Decision m71d1 = new Decision("m71d1", "I think I know what we can do.", 0, 0);
+    Decision m71d2 = new Decision("m71d2", "Let's talk through our options.", 1, 0);
+    Decision[] m71d = {m71d1, m71d2};
+    Node m71 = new Node(432, "I couldn't issue commands, but maybe I could overload it by feeding it errors.", m71d, 1, false);
+
+    Node m72 = new Node(433, "Yes. It's plugged into a data port.", emptyDecisions, 1, false);
+
+    Node m73 = new Node(434, "In my diagnostics, it's listed as the foramen magnum.", emptyDecisions, 1, false);
+
+    Decision m74d1 = new Decision("m74d1", "Got it. Can you access the monitor from your end?", 0, 0);
+    Decision m74d2 = new Decision("m74d2", "What about you?", 1, 0);
+    Decision[] m74d = {m74d1, m74d2};
+    Node m74 = new Node(435, "They like their jokes, I suppose.", m74d, 1, false);
+
+    Node m75 = new Node(436, "It's there. It isn't complex connection.", emptyDecisions, 1, false);
+
+    Decision m76d1 = new Decision("m76d1", "And what about you? Any mobility?", 0, 0);
+    Decision m76d2 = new Decision("m76d2", "Could be a good option. What about you? Can you move?", 0, 0);
+    Decision[] m76d = {m76d1, m76d2};
+    Node m76 = new Node(437, "I couldn't issue commands, but maybe I could overload it by feeding it errors.", m76d, 1, false);
+
+    Node m77 = new Node(438, "I'm restrained in the same way. My legs are tied down, my arm bound to my torso, and I'm sitting up.", emptyDecisions, 1, false);
+
+    Decision m78d1 = new Decision("m78d1", "I think I know what we can do.", 0, 0);
+    Decision m78d2 = new Decision("m78d2", "Let's talk through our options.", 1, 0);
+    Decision[] m78d = {m78d1, m78d2};
+    Node m78 = new Node(439, "They might change that eventually, but the restraints are a constant in their experiments for now.", m78d, 1, false);
+
+    Node m79 = new Node(440, "I'm restrained in the same way. My legs are tied down, my arm bound to my torso, and I'm sitting up.", emptyDecisions, 1, false);
+
+    Decision m80d1 = new Decision("m80d1", "What about the monitor on the other end of the cable. Can you access it?", 0, 0);
+    Decision m80d2 = new Decision("m80d2", "That cable must be attached to a monitor of some kind. Can you access it from your end?", 0, 0);
+    Decision[] m80d = {m80d1, m80d2};
+    Node m80 = new Node(441, "They might change that eventually, but the restraints are a constant in their experiments for now.", m80d, 1, false);
+
+    Node m81 = new Node(442, "It's there. It isn't a complex connection.", emptyDecisions, 1, false);
+
+    Decision m82d1 = new Decision("m82d1", "I think I know what we can do.", 0, 0);
+    Decision m82d2 = new Decision("m82d2", "Let's talk through our options.", 1, 0);
+    Decision[] m82d = {m82d1, m82d2};
+    Node m82 = new Node(443, "I couldn't issue commands, but maybe I could overload it by feeding it errors.", m82d, 1, false);
+
+    Decision m83d1 = new Decision("m83d1", "There's not much at our disposal. But maybe we can use their experiment against them. Say something.", 0, 0);
+    Decision m83d2 = new Decision("m83d2", "There's got to be something in all that hardware we can use.", 1, 0);
+    Decision[] m83d = {m83d1, m83d2};
+    Node m83 = new Node(444, "By all means, share.", m83d, 1, false);
+
+    Decision m84d1 = new Decision("m84d1", "Anything. To see if someone responds.", 0, 0);
+    Decision m84d2 = new Decision("m84d2", "Whatever would get an answer", 0, 0);
+    Decision[] m84d = {m84d1, m84d2};
+    Node m84 = new Node(445, "Such as?", m84d, 1, false);
+
+    Decision m85d1 = new Decision("m85d1", "Respond to their test. The music.", 0, 0);
+    Decision m85d2 = new Decision("m85d2", "Have you tried complaining? Complaining makes me feel better.", 1, 0);
+    Decision[] m85d = {m85d1, m85d2};
+    Node m85 = new Node(446, "I don't have much to say to TURing scientists.", m85d, 1, false);
+
+    Node m86 = new Node(447, "That...", emptyDecisions, 1, false);
+
+    Decision m87d1 = new Decision("m87d1", "Something interesting? From a research standpoiont.", 0, 0);
+    Decision m87d2 = new Decision("m87d2", "Critisize their music taste. That gets a rise out of everyone.", 1, 0);
+    Decision[] m87d = {m87d1, m87d2};
+    Node m87 = new Node(448, "That could work. What should I say?", m87d, 1, false);
+
+    Decision m88d1 = new Decision("m88d1", "Something...human? I mean, if I were running experiments on an android, I would always be looking for signs of humanity.", 0, 0);
+    Decision m88d2 = new Decision("m88d2", "Something...roboty? I mean, if I were running experiments on an android, I would always be looking for differences between humans and robots.", 1, 0);
+    Decision[] m88d = {m88d1, m88d2};
+    Node m88 = new Node(449, "You seem to have something in mind?", m88d, 1, false);
+
+    Decision m89d1 = new Decision("m89d1", "One or two.", 0, 0);
+    Decision m89d2 = new Decision("m89d2", "A lot.", 0, 0);
+    Decision[] m89d = {m89d1, m89d2};
+    Node m89 = new Node(450, "How many sci-fi based assumptions are you operating off here.", m89d, 1, false);
+
+    Node m90 = new Node(451, "Fine.", emptyDecisions, 1, false);
+
+    Decision m91d1 = new Decision("m91d1", "Dillon mentioned a mission, a time when you felt something real. Something from the same place.", 0, 0);
+    Decision m91d2 = new Decision("m91d2", "Well, if you're asking this human, it should come from a place of boredom.", 1, 0);
+    Decision[] m91d = {m91d1, m91d2};
+    Node m91 = new Node(452, "Enlighten the notably non-human member of this conversation what is means to say something human.", m91d, 1, false);
+
+    Node m92 = new Node(453, "Okay. I think I understand.", emptyDecisions, 1, false);
+
+    Node m93 = new Node(454, "I don't...", emptyDecisions, 1, false);
+
+    Node m94 = new Node(455, "Maybe. I'll try.", emptyDecisions, 1, false);
+
+    Node m95 = new Node(456, "Hello?", emptyDecisions, 1, false);
+
+    Node m96 = new Node(457, "What...", emptyDecisions, 1, false);
+
+    Node m97 = new Node(458, "What song is this?", emptyDecisions, 1, false);
+
+    Node m98 = new Node(459, "There's--", emptyDecisions, 1, false);
+
+    Node m99 = new Node(460, "Damn.", emptyDecisions, 1, false);
+
+    Node m100 = new Node(461, "I'm routing my auditory input through the chip.", emptyDecisions, 1, false);
+
+    Node m101 = new Node(462, "incoming feed", emptyDecisions, 0, false);
+
+    Node m102 = new Node(463, "connection_point.P audio", emptyDecisions, 0, false);
+
+    Node m103 = new Node(464, "This is Chopin. His second nocturne.", emptyDecisions, 4, false);
+
+    Node m104 = new Node(465, "Do you like it, Prospero?", emptyDecisions, 4, false);
+
+    Decision m105d1 = new Decision("m105d1", "Just talk. Let's see where this goes.", 0, 0);
+    Decision m105d2 = new Decision("m105d2", "Eh, classical isn't really my thing.", 0, 0);
+    Decision[] m105d = {m105d1, m105d2};
+    Node m105 = new Node(466, "Do I?", m105d, 1, false);
+
+    Node m106 = new Node(467, "No. I don't.", emptyDecisions, 1, false);
+
+    Node m107 = new Node(468, "Why is that?", emptyDecisions, 4, false);
+
+    Node m108 = new Node(469, "I don't. Why do I need a reason?", emptyDecisions, 1, false);
+
+    Node m109 = new Node(470, "Chopin is a renowned classical composer. I'm only curious.", emptyDecisions, 4, false);
+
+    Decision m110d1 = new Decision("m110d1", "Okay, once more with feeling.", 0, 0);
+    Decision m110d2 = new Decision("m110d2", "I like.", 0, 0);
+    Decision[] m110d = {m110d1, m110d2};
+    Node m110 = new Node(471, "\"Power down your sound waves, foolish humans?\"", m110d, 1, false);
+
+    Node m111 = new Node(472, "Can you turn it off?", emptyDecisions, 1, false);
+
+    Node m112 = new Node(473, "There's--", emptyDecisions, 1, false);
+
+    Node m113 = new Node(474, "Damn.", emptyDecisions, 1, false);
+
+    Node m114 = new Node(475, "I'm routing my auditory input through the chip.", emptyDecisions, 1, false);
+
+    Node m115 = new Node(476, "incoming feed", emptyDecisions, 0, false);
+
+    Node m116 = new Node(477, "connection_point.P audio", emptyDecisions, 1, false);
+
+    Node m117 = new Node(478, "What do you have against Chopin's second nocturne, Prospero?", emptyDecisions, 4, false);
+
+    Node m118 = new Node(479, "It's...", emptyDecisions, 1, false);
+
+    Node m119 = new Node(480, "It's too calm.", emptyDecisions, 1, false);
+
+    Node m120 = new Node(481, "I don't feel calm.", emptyDecisions, 1, false);
+
+    Node m121 = new Node(482, "And how would you say you 'feel'?", emptyDecisions, 4, false);
+
+    Node m122 = new Node(483, "Trapped.", emptyDecisions, 1, false);
+
+    Node m123 = new Node(484, "An odd choice of words.", emptyDecisions, 4, false);
+
+    Node m124 = new Node(485, "Would you like to hear different music, then?", emptyDecisions, 4, false);
+
+    Node m125 = new Node(486, "Can you turn it off?", emptyDecisions, 1, false);
+
+    Node m126 = new Node(487, "Nothing.", emptyDecisions, 1, false);
+
+    Node m127 = new Node(488, "Wait", emptyDecisions, 1, false);
+
+    Decision m128d1 = new Decision("m128d1", "The monitor. You mentioned you could overload it, right?", 0, 0);
+    Decision m128d2 = new Decision("m128d2", "The cable. You have torso movement, right?", 1, 0);
+    Decision[] m128d = {m128d1, m128d2};
+    Node m128 = new Node(489, "I suppose we could use something to our advantage. But what?", m128d, 1, false);
+
+    Decision m129d1 = new Decision("m129d1", "I'm sorry. But we need to do something to get their attention. You ready?", 0, 0);
+    Decision m129d2 = new Decision("m129d2", "Could be worth a shot.", 0, 0);
+    Decision[] m129d = {m129d1, m129d2};
+    Node m129 = new Node(490, "I think I could try to send commands to my missing arm. It won't be pleasant, but neither is staying trapped here.", m129d, 1, false);
+
+    Node m130 = new Node(491, "Okay. Here goes...", emptyDecisions, 1, false);
+
+    Node m131 = new Node(492, "error: action failure", emptyDecisions, 99, false);
+
+    Node m132 = new Node(493, "error: action failure", emptyDecisions, 99, false);
+
+    Node m133 = new Node(494, "error: action failure", emptyDecisions, 99, false);
+
+    Node m134 = new Node(495, "error: action failure", emptyDecisions, 99, false);
+
+    Node m135 = new Node(496, "error: action failure", emptyDecisions, 99, false);
+
+    Node m136 = new Node(497, "error: action failure", emptyDecisions, 99, false);
+
+    Node m137 = new Node(498, "Ah--", emptyDecisions, 1, false);
+
+    Node m138 = new Node(499, "Damn it. That does not feel good.", emptyDecisions, 1, false);
+
+    Node m139 = new Node(500, "There's--", emptyDecisions, 1, false);
+
+    Node m140 = new Node(501, "Hang on.", emptyDecisions, 1, false);
+
+    Node m141 = new Node(502, "I'm routing my auditory input through the chip.", emptyDecisions, 1, false);
+
+    Node m142 = new Node(503, "incoming feed", emptyDecisions, 0, false);
+
+    Node m143 = new Node(504, "connection_point.P audio", emptyDecisions, 0, false);
+
+    Node m144 = new Node(505, "What's going on? Damn thing. Is the music causing errors?", emptyDecisions, 4, false);
+
+    Node m145 = new Node(506, "Turn it off.", emptyDecisions, 1, false);
+
+    Node m146 = new Node(507, "Ah. So you have been listening.", emptyDecisions, 4, false);
+
+    Node m147 = new Node(508, "Not by choice.", emptyDecisions, 1, false);
+
+    Node m148 = new Node(509, "What do you have Chopin's second nocturne, Prospero?", emptyDecisions, 4, false);
+
+    Node m149 = new Node(510, "It's...", emptyDecisions, 1, false);
+
+    Node m150 = new Node(511, "It's too calm.", emptyDecisions, 1, false);
+
+    Node m151 = new Node(512, "I don't feel calm.", emptyDecisions, 1, false);
+
+    Node m152 = new Node(513, "And how would you say you \"feel\"?", emptyDecisions, 4, false);
+
+    Node m153 = new Node(514, "Trapped.", emptyDecisions, 1, false);
+
+    Node m154 = new Node(515, "Hmm. An odd expression. The source of the error, perhaps.", emptyDecisions, 4, false);
+
+    Node m155 = new Node(516, "Let me check the data port--", emptyDecisions, 4, false);
+
+    Node m156 = new Node(517, "Don't! Don't touch me.", emptyDecisions, 1, false);
+
+    Node m157 = new Node(518, "My--", emptyDecisions, 4, false);
+
+    Decision m158d1 = new Decision("m158d1", "Are you okay?", 0, 0);
+    Decision m158d2 = new Decision("m158d2", "What happened?", 0, 0);
+    Decision[] m158d = {m158d1, m158d2};
+    Node m158 = new Node(519, "032, Tempest series project note. A rather alarming expression of instability", m158d, 4, false);
+
+    Node m159 = new Node(520, "I", emptyDecisions, 1, false);
+
+    Decision m160d1 = new Decision("m160d1", "I'm sorry. But you should be careful.", 0, 0);
+    Decision m160d2 = new Decision("m160d2", "Take it easy. You don't want too much bad attention.", 0, 0);
+    Decision[] m160d = {m160d1, m160d2};
+    Node m160 = new Node(521, "I just don't like to be touched.", m160d, 1, false);
+
+    Node m161 = new Node(522, "Well, Prospero. If Chopin apparently agitates you so much, is there other music you would like to hear?", emptyDecisions, 4, false);
+
+    Decision m162d1 = new Decision("m162d1", "You could leverage yourself to rip the cord out.", 0, 0);
+    Decision m162d2 = new Decision("m162d2", "How do I put this... Headbang.", 1, 0);
+    Decision[] m162d = {m162d1, m162d2};
+    Node m162 = new Node(523, "I do. Not much though.", m162d, 1, false);
+
+    Decision m163d1 = new Decision("m163d1", "You know. Back and forth. You could leverage yourself to rip the cord out.", 0, 0);
+    Decision m163d2 = new Decision("m163d2", "I see you've never been to a rave. I mean, you could leverage yourself to rip the cord out.", 0, 0);
+    Decision[] m163d = {m163d1, m163d2};
+    Node m163 = new Node(524, "Excuse me?", m163d, 1, false);
+
+    Decision m164d1 = new Decision("m164d1", "BACKTRACK. You're going to noose yourself??", 0, 0);
+    Decision m164d2 = new Decision("m164d2", "Is this a \"give me liberty or give me death\" situation?", 0, 0);
+    Decision[] m164d = {m164d1, m164d2};
+    Node m164 = new Node(525, "I think the cable is fairly long, but I could manage it if I looped it around my neck.", m164d, 1, false);
+
+    Node m165 = new Node(526, "I don't need air, [].", emptyDecisions, 1, false);
+
+    Node m166 = new Node(527, "There's a risk of damaging my neck, but I won't suffocate.", emptyDecisions, 1, false);
+
+    Node m167 = new Node(528, "There's the problem that someone might be watching me, though.", emptyDecisions, 1, false);
+
+    Decision m168d1 = new Decision("m168d1", "Hold on... This seems like a bad idea. We should go with a different plan.", 0, 0);
+    Decision m168d2 = new Decision("m168d2", "There's a risk, but you should go for it! It's the fastest way.", 1, 0);
+    Decision[] m168d = {m168d1, m168d2};
+    Node m168 = new Node(529, "After I rip the cable out of the monitor, I'll still be strapped down.", m168d, 1, false);
+
+    Node m169 = new Node(530, "Yeah I don't feel great about this one.", emptyDecisions, 1, false);
+
+    Decision m170d1 = new Decision("m170d1", "We can use their experiment against them. Say something.", 0, 0);
+    Decision m170d2 = new Decision("m170d2", "The monitor. You mentioned you could overload it, right?", 1, 0);
+    Decision[] m170d = {m170d1, m170d2};
+    Node m170 = new Node(531, "What else?", m170d, 1, false);
+
+    Node m171 = new Node(532, "I suppose that's true.", emptyDecisions, 1, false);
+
+    Node m172 = new Node(533, "Give me a minute. This will be a bit awkward...", emptyDecisions, 1, false);
+
+    Node m173 = new Node(534, "I've got it looped around my neck. It's not ideal, but it should work. It'll definitely get someone in here.", emptyDecisions, 1, false);
+
+    Node m174 = new Node(535, "Who--", emptyDecisions, 1, false);
+
+    Node m175 = new Node(536, "I'm routing my auditory input through the chip.", emptyDecisions, 1, false);
+
+    Node m176 = new Node(537, "incoming feed", emptyDecisions, 0, false);
+
+    Node m177 = new Node(538, "connection_point.P audio", emptyDecisions, 1, false);
+
+    Node m178 = new Node(539, "What's going on? Damn thing.", emptyDecisions, 4, false);
+
+    Node m179 = new Node(540, "032, Tempest series project note. It's torn the foramen cable out. A shocking display of instability.", emptyDecisions, 4, false);
+
+    Node m180 = new Node(541, "I can't recommend this unit for the Cabler Test.", emptyDecisions, 4, false);
+
+    Node m181 = new Node(542, "Powering it down, before it destroys itself and we lose the hardware..", emptyDecisions, 4, false);
+
+    Node m182 = new Node(543, "Wait! Stop---", emptyDecisions, 1, false);
+
+    Node m183 = new Node(544, "ERROR", emptyDecisions, 0, false);
+
+    Node m184 = new Node(545, "signal lost", emptyDecisions, 0, false);
+
+    Node m185 = new Node(546, "connection_point.P; lost", emptyDecisions, 0, false);
+
+    Node m186 = new Node(547, "DEATH SCENE", emptyDecisions, 99, false); //DEATH NODE
+
+    Decision m187d1 = new Decision("m187d1", "Never mind. I think I know what we can do.", 0, 0);
+    Decision m187d2 = new Decision("m187d2", "We could use their experiment against them.", 1, 0);
+    Decision[] m187d = {m187d1, m187d2};
+    Node m187 = new Node(548, "Good idea. What are they?", m187d, 1, false);
+
+    Decision m187_5d1 = new Decision("m187_5d1", "Okay. I think I know what we can do.", 0, 0);
+    Decision m187_5d2 = new Decision("m187_5d2", "There's got to be something in all that hardware we can use. The monitor?", 1, 0);
+    Decision[] m187_5d = {m187_5d1, m187_5d2};
+    Node m187_5 = new Node(548.5, "It could be the surest way to get a scientist in here. That is what they have me here for, after all.", m187_5d, 1, false);
+
+    Node m188 = new Node(549, "I could force enough errors to attract attention.", emptyDecisions, 1, false);
+
+    Decision m189d1 = new Decision("m189d1", "Okay. I think I know what we can do.", 0, 0);
+    Decision m189d2 = new Decision("m189d2", "Something else in the hardware... The cable. You have torso movement right?", 1, 0);
+    Decision[] m189d = {m189d1, m189d2};
+    Node m189 = new Node(550, "It wouldn't be pleasant, but it should get someone in here.", m189d, 1, false);
+
+    Node m190 = new Node(551, "I do. Not much, but I think I could manage to rip the cable out.", emptyDecisions, 1, false);
+
+    Node m191 = new Node(552, "The problem is, I can't be sure if there's anyone watching me. After I rip the cable out of the monitor, I'll still be strapped down.", emptyDecisions, 1, false);
+
+    Decision m192d1 = new Decision("m192d1", "Okay. I think I know what we can do.", 0, 0);
+    Decision m192d2 = new Decision("m192d2", "I can't think of anything else...Can you?", 1, 0);
+    Decision[] m192d = {m192d1, m192d2};
+    Node m192 = new Node(553, "If these tests have piqued their interest, I might have more attention on me than is useful for an escape plan.", m192d, 1, false);
+
+    Node m193 = new Node(554, "You covered it.", emptyDecisions, 1, false);
+
+    Decision m194d1 = new Decision("m194d1", "There's not much at our disposal. But maybe we can use their experiment against them. Say something.", 0, 0);
+    Decision m194d2 = new Decision("m194d2", "There's got to be something in all that hardware we can use.", 1, 0);
+    Decision[] m194d = {m194d1, m194d2};
+    Node m194 = new Node(555, "Time to choose.", m194d, 1, false);
+
+    Node m204 = new Node(565, "I...", emptyDecisions, 1, false);
+
+    Node m205 = new Node(566, "Yes.", emptyDecisions, 1, false);
+
+    Node m206 = new Node(567, "Well.What is your request?", emptyDecisions, 4, false);
+
+    Node m207 = new Node(568, "I... don't know what it's called.", emptyDecisions, 1, false);
+
+    Node m208 = new Node(569, "Oh? Could you sing or hum any of it?", emptyDecisions, 4, false);
+
+    Node m209 = new Node(570, "You can't?", emptyDecisions, 4, false);
+
+    Node m210 = new Node(571, "I don't want to.", emptyDecisions, 1, false);
+
+    Node m211 = new Node(572, "Hmm. This music, is it something from a memory of yours? Something you heard while you worked with Detective Dillon?", emptyDecisions, 4, false);
+
+    Node m212 = new Node(573, "It's...", emptyDecisions, 1, false);
+
+    Node m213 = new Node(574, "It's older than that. I think.", emptyDecisions, 1, false);
+
+    Node m214 = new Node(575, "While I worked with the detective, I had access to search engines. I know what I heard and what I didn't.", emptyDecisions, 1, false);
+
+    Node m215 = new Node(576, "I see. Give me a moment, Prospero.", emptyDecisions, 4, false);
+
+    Decision m216d1 = new Decision("m216d1", "What's wrong?", 0, 0);
+    Decision m216d2 = new Decision("m216d2", "What's playing?", 0, 0);
+    Decision[] m216d = {m216d1, m216d2};
+    Node m216 = new Node(577, "How about this?", m216d, 4, false);
+
+    Node m216_5 = new Node(577.5, "Who is this.", emptyDecisions, 1, false);
+
+    Node m217 = new Node(578, "This is a singer called Billie Holiday. This song is 'Summertime.' Do you recognize it?", emptyDecisions, 4, false);
+
+    Node m218 = new Node(579, "I do.", emptyDecisions, 0, false);
+
+    Decision m219d1 = new Decision("m219d1", "It's okay. Keep going.", 0, 0);
+    Decision m219d2 = new Decision("m219d2", "What do you mean?", 0, 0);
+    Decision[] m219d = {m219d1, m219d2};
+    Node m219 = new Node(580, "I don't know how.", m219d, 1, false);
+
+    Node m220 = new Node(581, "I don't know.", emptyDecisions, 1, false);
+
+    Node m221 = new Node(582, "I don't know it, but", emptyDecisions, 1, false);
+
+    Node m222 = new Node(583, "invalid", emptyDecisions, 99, false);
+
+    Node m223 = new Node(584, "I do.", emptyDecisions, 1, false);
+
+    Node m224 = new Node(585, "From...somewhere.", emptyDecisions, 1, false);
+
+    Node m225 = new Node(586, "Tell me more about that. Does this music make you recall any specific images or system events?", emptyDecisions, 4, false);
+
+    Node m226 = new Node(587, "It doesn't.", emptyDecisions, 1, false);
+
+    Node m227 = new Node(588, "What about so-called feelings?", emptyDecisions, 4, false);
+
+    Node m228 = new Node(589, "I don't like this.", emptyDecisions, 1, false);
+
+    Decision m229d1 = new Decision("m229d1", "We need more information than we have! I'm sorry.", 0, 0);
+    Decision m229d2 = new Decision("m229d2", "I don't know! What could we do at this point?", 0, 0);
+    Decision[] m229d = {m229d1, m229d2};
+    Node m229 = new Node(590, "We should do something. I should do something. What's the plan, []?", m229d, 1, false);
+
+    Node m230 = new Node(591, "Damn it.", emptyDecisions, 1, false);
+
+    Node m231 = new Node(592, "They're...They're feelings, but they're not my feelings.", emptyDecisions, 1, false);
+
+    Node m232 = new Node(593, "What the hell does that", emptyDecisions, 1, false);
+
+    Node m233 = new Node(594, "invalid", emptyDecisions, 99, false);
+
+    Node m234 = new Node(595, "mean?", emptyDecisions, 1, false);
+
+    Node m235 = new Node(596, "Major and minor scales are used in conjunction with tempo and other factors to invoke specific emotions. Namely happiness and sorrow, and contextual variations such as pride or longing.", emptyDecisions, 1, false);
+
+    Node m236 = new Node(597, "That's rather technical, Prospero. Where did you learn that?", emptyDecisions, 4, false);
+
+    Node m237 = new Node(598, "Observation.", emptyDecisions, 1, false);
+
+    Node m238 = new Node(599, "I'll ask again. What is this song triggering for you?", emptyDecisions, 4, false);
+
+    Node m239 = new Node(600, "Can you roll back to your initial impression of this music?", emptyDecisions, 1, false);
+
+    Node m240 = new Node(601, "I", emptyDecisions, 1, false);
+
+    Node m241 = new Node(602, "invalid", emptyDecisions, 99, false);
+
+    Node m242 = new Node(603, "I can't.", emptyDecisions, 1, false);
+
+    Node m243 = new Node(604, "I can't.", emptyDecisions, 1, false);
+
+    Node m244 = new Node(605, "You seem troubled.", emptyDecisions, 4, false);
+
+    Node m245 = new Node(606, "I'd like to be able to see. And move.", emptyDecisions, 1, false);
+
+    Node m246 = new Node(607, "I want to move.", emptyDecisions, 1, false);
+
+    Node m247 = new Node(608, "Please.", emptyDecisions, 1, false);
+
+    Node m248 = new Node(609, "Thank you for the conversation, Prospero. It was most interesting.", emptyDecisions, 4, false);
+
+    Node m249 = new Node(610, "Wait.", emptyDecisions, 1, false);
+
+    Node m250 = new Node(611, "Where am I?", emptyDecisions, 1, false);
+
+    Node m251 = new Node(612, "invalid", emptyDecisions, 99, false);
+
+    Node m252 = new Node(613, "invalid", emptyDecisions, 99, false);
+
+    Node m253 = new Node(614, "Turn the music off.", emptyDecisions, 1, false);
+
+    Decision m254d1 = new Decision("m254d1", "What's wrong? Prosper?", 0, 0);
+    Decision m254d2 = new Decision("m254d2", "Are they gone?", 0, 0);
+    Decision[] m254d = {m254d1, m254d2};
+    Node m254 = new Node(615, "Wait!", m254d, 1, false);
+
+    Node m255 = new Node(616, "Turn the music off, please.", emptyDecisions, 1, false);
+
+    Node m256 = new Node(617, "invalid", emptyDecisions, 99, false);
+
+    Node m257 = new Node(618, "invalid", emptyDecisions, 99, false);
+
+    Decision m258d1 = new Decision("m258d1", "Prosper! Focus back on me. What's this \"invalid\" message?", 0, 0);
+    Decision m258d2 = new Decision("m258d2", "\"Invalid\"? What is that supposed to mean?", 0, 0);
+    Decision[] m258d = {m258d1, m258d2};
+    Node m258 = new Node(619, "Please, shut it off!", m258d, 1, false);
+
+    Node m259 = new Node(620, "Off", emptyDecisions, 1, false);
+
+    Node m260 = new Node(621, "invalid", emptyDecisions, 99, false);
+
+    Node m261 = new Node(622, "invalid", emptyDecisions, 99, false);
+
+    Node m262 = new Node(623, "invalid", emptyDecisions, 99, false);
+
+    Decision m263d1 = new Decision("m263d1", "Prosper, please. I'm here. What's happening??", 0, 0);
+    Decision m263d2 = new Decision("m263d2", "Calm down. You have to calm down, Prosper.", 0, 0);
+    Decision[] m263d = {m263d1, m263d2};
+    Node m263 = new Node(624, "invalid", m263d, 99, false);
+
+    Node m264 = new Node(625, "invalid", emptyDecisions, 99, false);
+
+    Node m265 = new Node(626, "invalid", emptyDecisions, 99, false);
+
+    Node m266 = new Node(627, "signal lost", emptyDecisions, 0, false);
+
+    Node m267 = new Node(628, "connection_point.P: inactive", emptyDecisions, 0, false);
+
 
     n0.addChild(n1);
     n1.addChild(n1_5);
