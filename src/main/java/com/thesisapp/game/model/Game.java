@@ -1815,7 +1815,7 @@ public class Game {
     Decision m355d1 = new Decision("m355d1", "Yeah, a status monitor.", 0, 0);
     Decision m355d2 = new Decision("m355d2", "We can try the status monitor.", 0, 0);
     Decision[] m355d = {m355d1, m355d2};
-    Node m355 = new Node(715, "Anything else?", emptyDecisions, 1, false);
+    Node m355 = new Node(715, "Anything else?", m355d, 1, false);
 
     Node m356 = new Node(716, "experiment_log.txt", emptyDecisions, 1, false);
 
