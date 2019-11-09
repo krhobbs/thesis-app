@@ -899,6 +899,565 @@ public class Game {
 
     // END ACT I
 
+    Node m1 = buildRestOfStoryTree();
+
+    n0.addChild(n1);
+    n1.addChild(n1_5);
+    n1_5.addChild(n2);
+    n2.addChild(n3);
+    n3.addChild(n3_5);
+    n3_5.addChild(n4);
+    n4.addChild(n5);
+    n5.addChild(n5_5);
+    n5_5.addChild(n6);
+    n6.addChild(n7);
+    n7.addChild(n8);
+
+    n8.addChild(n9);
+    n8.addChild(n10);
+
+    n9.addChild(n11);
+    n10.addChild(n11);
+
+    n11.addChild(n14);
+    n11.addChild(n12);
+
+    n12.addChild(n14);
+    n12.addChild(n13);
+
+    n13.addChild(n14);
+
+    n14.addChild(n15);
+
+    n15.addChild(n16);
+
+    n16.addChild(n17);
+
+    n17.addChild(n18);
+
+    n18.addChild(n19);
+
+    n19.addChild(n20); //START OF RED LINE STUFF
+    n19.addChild(n28);
+
+    n20.addChild(n22);
+    n20.addChild(n21);
+
+    n21.addChild(n22);
+
+    n22.addChild(n23);
+    n22.addChild(n24);
+
+    n24.addChild(n25);
+    n24.addChild(n26);
+
+    n25.addChild(n23);
+
+    n26.addChild(n23);
+    n26.addChild(n27);
+
+    n27.addChild(n23);
+
+    n28.addChild(n29);
+    n28.addChild(n30);
+
+    n29.addChild(n30_2);
+
+    n30.addChild(n30_2);
+    n30.addChild(n30_1);
+
+    n30_1.addChild(n30_2);
+
+    n30_2.addChild(n30_4);
+    n30_2.addChild(n30_3);
+
+    n30_3.addChild(n30_4);
+
+    n30_4.addChild(n23);
+
+    n23.addChild(n31);
+
+    n31.addChild(n32);
+    n31.addChild(n33);
+
+    n32.addChild(n34);
+    n33.addChild(n34);
+
+    n34.addChild(n35);
+
+    n35.addChild(n36);
+
+    n36.addChild(n38);
+    n36.addChild(n37);
+
+    n37.addChild(n38);
+
+    n38.addChild(n39);
+    n38.addChild(n41);
+
+    n39.addChild(n40);
+
+    n41.addChild(n42);
+
+    n42.addChild(n40);
+
+    n40.addChild(n43);
+
+    n43.addChild(n44);
+
+    n44.addChild(n45);
+
+    n45.addChild(n46);
+
+    n46.addChild(n47);
+
+    n47.addChild(n48);
+
+    n48.addChild(n49);
+    n48.addChild(n53);
+
+    n49.addChild(n50);
+
+    n50.addChild(n51);
+
+    n51.addChild(n52);
+
+    n53.addChild(n54);
+
+    n54.addChild(n52);
+
+    n52.addChild(n55);
+
+    n55.addChild(n56);
+    n55.addChild(n57);
+
+    n57.addChild(n56);
+
+    n56.addChild(n58);
+
+    n58.addChild(n59);
+
+    n59.addChild(n60);
+
+    n60.addChild(n61);
+
+    n61.addChild(n62);
+
+    n62.addChild(n63);
+
+    n63.addChild(n64);
+
+    n64.addChild(n65);
+
+    n65.addChild(n66);
+
+    n66.addChild(n67);
+
+    n67.addChild(n68);
+
+    n68.addChild(n69);
+    n69.addChild(n70);
+    n70.addChild(n71);
+    n71.addChild(n72);
+    n72.addChild(n73);
+    n73.addChild(n74);
+
+    n74.addChild(n75);
+
+    n75.addChild(n76);
+
+    n76.addChild(n77);
+
+    n77.addChild(n78);
+
+    n78.addChild(n79);
+
+    n79.addChild(n80);
+    n79.addChild(n81);
+
+    n80.addChild(n82);
+    n81.addChild(n82);
+
+    n82.addChild(n83);
+    n83.addChild(n84);
+    n84.addChild(n85);
+    n85.addChild(n86); //"It's to Grace"
+
+    //Letter to Grace
+    n86.addChild(n87);
+    n87.addChild(n88);
+    n88.addChild(n89);
+    n89.addChild(n90);
+    n90.addChild(n91);
+    n91.addChild(n92);
+    n92.addChild(n93);
+
+    n93.addChild(n94);
+
+    n94.addChild(n95);
+    n94.addChild(n96);
+
+    n96.addChild(n95);
+    n96.addChild(n97);
+
+    n97.addChild(n98);
+    n98.addChild(n99);
+
+    n99.addChild(n95);
+    n99.addChild(n100);
+
+    n100.addChild(n95);
+
+    n95.addChild(n101);
+
+    n101.addChild(n102);
+    n102.addChild(n103);
+    n103.addChild(n104);
+    n104.addChild(n105);
+    n105.addChild(n106);
+
+    n106.addChild(n107);
+    n106.addChild(n110);
+
+    n107.addChild(n108);
+
+    n108.addChild(n109);
+
+    n109.addChild(n110);
+
+    n110.addChild(n111);
+    n111.addChild(n112);
+    n112.addChild(n113);
+    n113.addChild(n114);
+    n114.addChild(n115);
+
+    n115.addChild(n116);
+    n115.addChild(n117);
+
+    n116.addChild(n118);
+    n117.addChild(n118);
+
+    n118.addChild(n119);
+    n118.addChild(n120);
+
+    n119.addChild(n121);
+    n120.addChild(n121);
+
+    n121.addChild(n122);
+
+    n122.addChild(n123);
+    n122.addChild(n125);
+
+    n123.addChild(n124);
+    n125.addChild(n126);
+
+    n124.addChild(n127);
+    n126.addChild(n127);
+
+    n127.addChild(n128);
+
+    n128.addChild(n129);
+
+    n129.addChild(n130);
+    n129.addChild(n131);
+
+    n131.addChild(n130);
+    n131.addChild(n132);
+
+    n132.addChild(n133);
+
+    n133.addChild(n130);
+    n133.addChild(n134);
+
+    n130.addChild(n134);
+
+    n134.addChild(n135);
+    n135.addChild(n136);
+    n136.addChild(n137);
+    n137.addChild(n138);
+    n138.addChild(n139);
+    n139.addChild(n140);
+    n140.addChild(n141);
+
+    n141.addChild(n142);
+    n142.addChild(n143);
+    n143.addChild(n144);
+
+    n144.addChild(n145);
+    n144.addChild(n147);
+
+    n145.addChild(n146);
+    n147.addChild(n148);
+
+    n146.addChild(n149);
+    n148.addChild(n149);
+
+    n149.addChild(n150);
+
+    n150.addChild(n151);
+    n151.addChild(n152);
+    n152.addChild(n153);
+    n153.addChild(n154);
+    n154.addChild(n155);
+    n155.addChild(n156);
+    n156.addChild(n157);
+    n157.addChild(n158);
+    n158.addChild(n159);
+    n159.addChild(n160);
+    n160.addChild(n161);
+    n161.addChild(n162);
+    n162.addChild(n163);
+    n163.addChild(n164);
+    n164.addChild(n165);
+    n165.addChild(n166);
+    n166.addChild(n167);
+    n167.addChild(n168);
+    n168.addChild(n169);
+    n169.addChild(n170);
+    n170.addChild(n171);
+    n171.addChild(n172);
+    n172.addChild(n173);
+    n173.addChild(n174);
+    n174.addChild(n175);
+    n175.addChild(n176);
+    n176.addChild(n177);
+    n177.addChild(n178);
+    n178.addChild(n179);
+    n179.addChild(n180);
+    n180.addChild(n181);
+    n181.addChild(n182);
+    n182.addChild(n183);
+    n183.addChild(n184);
+    n184.addChild(n185);
+    n185.addChild(n186);
+    n186.addChild(n187);
+    n187.addChild(n188);
+    n188.addChild(n189);
+    n189.addChild(n190);
+    n190.addChild(n191);
+    n191.addChild(n192);
+    n192.addChild(n193);
+    n193.addChild(n194);
+    n194.addChild(n195);
+    n195.addChild(n196);
+    n196.addChild(n197);
+    n197.addChild(n198);
+    n198.addChild(n199);
+    n199.addChild(n200);
+    n200.addChild(n201);
+    n201.addChild(n202);
+    n202.addChild(n203);
+    n203.addChild(n204);
+    n204.addChild(n205);
+    n205.addChild(n206);
+    n206.addChild(n207);
+    n207.addChild(n208);
+    n208.addChild(n209);
+    n209.addChild(n210);
+    n210.addChild(n211);
+    n211.addChild(n212);
+    n212.addChild(n213);
+    n213.addChild(n214);
+    n214.addChild(n215);
+    n215.addChild(n216);
+    n216.addChild(n217);
+    n217.addChild(n218);
+    n218.addChild(n219);
+    n219.addChild(n220);
+    n220.addChild(n221);
+    n221.addChild(n222);
+    n222.addChild(n223);
+    n223.addChild(n224);
+    n224.addChild(n225);
+    n225.addChild(n226);
+    n226.addChild(n227);
+    n227.addChild(n228);
+    n228.addChild(n229);
+    n229.addChild(n230);
+    n230.addChild(n231);
+    n231.addChild(n232);
+    n232.addChild(n233);
+    n233.addChild(n234);
+    n234.addChild(n235);
+    n235.addChild(n236);
+    n236.addChild(n237);
+    n237.addChild(n238);
+    n238.addChild(n239);
+    n239.addChild(n240);
+    n240.addChild(n241);
+    n241.addChild(n242);
+    n242.addChild(n243);
+    n243.addChild(n244);
+    n244.addChild(n245);
+    n245.addChild(n246);
+    n246.addChild(n247);
+    n247.addChild(n248);
+    n248.addChild(n249);
+    n249.addChild(n250);
+    n250.addChild(n251);
+    n251.addChild(n252);
+    n252.addChild(n253);
+    n253.addChild(n254);
+    n254.addChild(n255);
+    n255.addChild(n256);
+    n256.addChild(n257);
+    n257.addChild(n258);
+    n258.addChild(n259);
+    n259.addChild(n260);
+    n260.addChild(n261);
+    n261.addChild(n262);
+    n262.addChild(n263);
+    n263.addChild(n264);
+    n264.addChild(n265);
+    n265.addChild(n266);
+
+    n266.addChild(n267);
+    n266.addChild(n269);
+
+    n267.addChild(n268);
+    n269.addChild(n270);
+
+    n268.addChild(n271);
+    n270.addChild(n271);
+
+    n271.addChild(n272);
+    n271.addChild(n286);
+
+    n272.addChild(n273);
+
+    n273.addChild(n274);
+    n273.addChild(n277);
+
+    n274.addChild(n275);
+    n275.addChild(n276);
+
+    n276.addChild(n278);
+    n277.addChild(n278);
+
+    n278.addChild(n279);
+    n279.addChild(n280);
+    n280.addChild(n281);
+    n281.addChild(n282);
+    n282.addChild(n283);
+    n283.addChild(n284);
+    n284.addChild(n285);
+    n285.addChild(n306);
+
+    n286.addChild(n287);
+    n286.addChild(n293);
+
+    n287.addChild(n288);
+
+    n288.addChild(n289);
+    n288.addChild(n296);
+
+    n289.addChild(n290);
+    n290.addChild(n291);
+    n291.addChild(n292);
+    n292.addChild(n298);
+
+    n293.addChild(n294);
+    n294.addChild(n295);
+
+    n295.addChild(n289);
+    n295.addChild(n296);
+
+    n296.addChild(n297);
+
+    n297.addChild(n292);
+
+    n298.addChild(n299);
+    n298.addChild(n300);
+
+    n299.addChild(n301);
+    n300.addChild(n301);
+
+    n301.addChild(n302);
+    n302.addChild(n303);
+    n303.addChild(n304);
+    n304.addChild(n305);
+    n305.addChild(n306);
+
+    n306.addChild(n307);
+    n307.addChild(n308);
+    n308.addChild(n309);
+    n309.addChild(n310);
+    n310.addChild(n311);
+    n311.addChild(n312);
+    n312.addChild(n313);
+    n313.addChild(n314);
+    n314.addChild(n315);
+    n315.addChild(n316);
+    n316.addChild(n317);
+    n317.addChild(n318);
+    n318.addChild(n319);
+
+    n319.addChild(n321);
+    n319.addChild(n320);
+
+    n320.addChild(n321);
+
+    n321.addChild(n322);
+    n322.addChild(n323);
+    n323.addChild(n324);
+
+    n324.addChild(n326);
+    n324.addChild(n325);
+
+    n325.addChild(n326);
+
+    n326.addChild(n327);
+    n327.addChild(n328);
+    n328.addChild(n329);
+    n329.addChild(n330);
+    n330.addChild(n331);
+    n331.addChild(n332);
+    n332.addChild(n333);
+    n333.addChild(n334);
+
+    n334.addChild(n335);
+    n334.addChild(n336);
+
+    n335.addChild(n337);
+    n336.addChild(n337);
+
+    n337.addChild(n338);
+    n338.addChild(n339);
+    n339.addChild(n340);
+    n340.addChild(n341);
+    n341.addChild(n342);
+    n342.addChild(n343);
+    n343.addChild(n344);
+
+    n344.addChild(n347);
+    n344.addChild(n345);
+
+    n345.addChild(n347);
+    n345.addChild(n346);
+    n346.addChild(n347);
+
+    n347.addChild(n348);
+    n348.addChild(n349);
+    n349.addChild(n350);
+    n350.addChild(n351);
+    n351.addChild(n352);
+    n352.addChild(n353);
+    n353.addChild(n354);
+    n354.addChild(n355);
+    n355.addChild(n356);
+    n356.addChild(n357);
+    n357.addChild(n358);
+    n358.addChild(n359);
+    n359.addChild(n360);
+    n360.addChild(n361);
+
+    n361.addChild(m1);
+
+
+    return n0;
+  }
+
+  Node buildRestOfStoryTree() {
     //Act II
     Node m1 = new Node(362, "interface: on", emptyDecisions, 0, false);
 
@@ -3833,557 +4392,6 @@ public class Game {
 
     Node m1208 = new Node(1567, "DEATH", emptyDecisions, 99, false);
 
-    n0.addChild(n1);
-    n1.addChild(n1_5);
-    n1_5.addChild(n2);
-    n2.addChild(n3);
-    n3.addChild(n3_5);
-    n3_5.addChild(n4);
-    n4.addChild(n5);
-    n5.addChild(n5_5);
-    n5_5.addChild(n6);
-    n6.addChild(n7);
-    n7.addChild(n8);
-
-    n8.addChild(n9);
-    n8.addChild(n10);
-
-    n9.addChild(n11);
-    n10.addChild(n11);
-
-    n11.addChild(n14);
-    n11.addChild(n12);
-
-    n12.addChild(n14);
-    n12.addChild(n13);
-
-    n13.addChild(n14);
-
-    n14.addChild(n15);
-
-    n15.addChild(n16);
-
-    n16.addChild(n17);
-
-    n17.addChild(n18);
-
-    n18.addChild(n19);
-
-    n19.addChild(n20); //START OF RED LINE STUFF
-    n19.addChild(n28);
-
-    n20.addChild(n22);
-    n20.addChild(n21);
-
-    n21.addChild(n22);
-
-    n22.addChild(n23);
-    n22.addChild(n24);
-
-    n24.addChild(n25);
-    n24.addChild(n26);
-
-    n25.addChild(n23);
-
-    n26.addChild(n23);
-    n26.addChild(n27);
-
-    n27.addChild(n23);
-
-    n28.addChild(n29);
-    n28.addChild(n30);
-
-    n29.addChild(n30_2);
-
-    n30.addChild(n30_2);
-    n30.addChild(n30_1);
-
-    n30_1.addChild(n30_2);
-
-    n30_2.addChild(n30_4);
-    n30_2.addChild(n30_3);
-
-    n30_3.addChild(n30_4);
-
-    n30_4.addChild(n23);
-
-    n23.addChild(n31);
-
-    n31.addChild(n32);
-    n31.addChild(n33);
-
-    n32.addChild(n34);
-    n33.addChild(n34);
-
-    n34.addChild(n35);
-
-    n35.addChild(n36);
-
-    n36.addChild(n38);
-    n36.addChild(n37);
-
-    n37.addChild(n38);
-
-    n38.addChild(n39);
-    n38.addChild(n41);
-
-    n39.addChild(n40);
-
-    n41.addChild(n42);
-
-    n42.addChild(n40);
-
-    n40.addChild(n43);
-
-    n43.addChild(n44);
-
-    n44.addChild(n45);
-
-    n45.addChild(n46);
-
-    n46.addChild(n47);
-
-    n47.addChild(n48);
-
-    n48.addChild(n49);
-    n48.addChild(n53);
-
-    n49.addChild(n50);
-
-    n50.addChild(n51);
-
-    n51.addChild(n52);
-
-    n53.addChild(n54);
-
-    n54.addChild(n52);
-
-    n52.addChild(n55);
-
-    n55.addChild(n56);
-    n55.addChild(n57);
-
-    n57.addChild(n56);
-
-    n56.addChild(n58);
-
-    n58.addChild(n59);
-
-    n59.addChild(n60);
-
-    n60.addChild(n61);
-
-    n61.addChild(n62);
-
-    n62.addChild(n63);
-
-    n63.addChild(n64);
-
-    n64.addChild(n65);
-
-    n65.addChild(n66);
-
-    n66.addChild(n67);
-
-    n67.addChild(n68);
-
-    n68.addChild(n69);
-    n69.addChild(n70);
-    n70.addChild(n71);
-    n71.addChild(n72);
-    n72.addChild(n73);
-    n73.addChild(n74);
-
-    n74.addChild(n75);
-
-    n75.addChild(n76);
-
-    n76.addChild(n77);
-
-    n77.addChild(n78);
-
-    n78.addChild(n79);
-
-    n79.addChild(n80);
-    n79.addChild(n81);
-
-    n80.addChild(n82);
-    n81.addChild(n82);
-
-    n82.addChild(n83);
-    n83.addChild(n84);
-    n84.addChild(n85);
-    n85.addChild(n86); //"It's to Grace"
-
-    //Letter to Grace
-    n86.addChild(n87);
-    n87.addChild(n88);
-    n88.addChild(n89);
-    n89.addChild(n90);
-    n90.addChild(n91);
-    n91.addChild(n92);
-    n92.addChild(n93);
-
-    n93.addChild(n94);
-
-    n94.addChild(n95);
-    n94.addChild(n96);
-
-    n96.addChild(n95);
-    n96.addChild(n97);
-
-    n97.addChild(n98);
-    n98.addChild(n99);
-
-    n99.addChild(n95);
-    n99.addChild(n100);
-
-    n100.addChild(n95);
-
-    n95.addChild(n101);
-
-    n101.addChild(n102);
-    n102.addChild(n103);
-    n103.addChild(n104);
-    n104.addChild(n105);
-    n105.addChild(n106);
-
-    n106.addChild(n107);
-    n106.addChild(n110);
-
-    n107.addChild(n108);
-
-    n108.addChild(n109);
-
-    n109.addChild(n110);
-
-    n110.addChild(n111);
-    n111.addChild(n112);
-    n112.addChild(n113);
-    n113.addChild(n114);
-    n114.addChild(n115);
-
-    n115.addChild(n116);
-    n115.addChild(n117);
-
-    n116.addChild(n118);
-    n117.addChild(n118);
-
-    n118.addChild(n119);
-    n118.addChild(n120);
-
-    n119.addChild(n121);
-    n120.addChild(n121);
-
-    n121.addChild(n122);
-
-    n122.addChild(n123);
-    n122.addChild(n125);
-
-    n123.addChild(n124);
-    n125.addChild(n126);
-
-    n124.addChild(n127);
-    n126.addChild(n127);
-
-    n127.addChild(n128);
-
-    n128.addChild(n129);
-
-    n129.addChild(n130);
-    n129.addChild(n131);
-
-    n131.addChild(n130);
-    n131.addChild(n132);
-
-    n132.addChild(n133);
-
-    n133.addChild(n130);
-    n133.addChild(n134);
-
-    n130.addChild(n134);
-
-    n134.addChild(n135);
-    n135.addChild(n136);
-    n136.addChild(n137);
-    n137.addChild(n138);
-    n138.addChild(n139);
-    n139.addChild(n140);
-    n140.addChild(n141);
-
-    n141.addChild(n142);
-    n142.addChild(n143);
-    n143.addChild(n144);
-
-    n144.addChild(n145);
-    n144.addChild(n147);
-
-    n145.addChild(n146);
-    n147.addChild(n148);
-
-    n146.addChild(n149);
-    n148.addChild(n149);
-
-    n149.addChild(n150);
-
-    n150.addChild(n151);
-    n151.addChild(n152);
-    n152.addChild(n153);
-    n153.addChild(n154);
-    n154.addChild(n155);
-    n155.addChild(n156);
-    n156.addChild(n157);
-    n157.addChild(n158);
-    n158.addChild(n159);
-    n159.addChild(n160);
-    n160.addChild(n161);
-    n161.addChild(n162);
-    n162.addChild(n163);
-    n163.addChild(n164);
-    n164.addChild(n165);
-    n165.addChild(n166);
-    n166.addChild(n167);
-    n167.addChild(n168);
-    n168.addChild(n169);
-    n169.addChild(n170);
-    n170.addChild(n171);
-    n171.addChild(n172);
-    n172.addChild(n173);
-    n173.addChild(n174);
-    n174.addChild(n175);
-    n175.addChild(n176);
-    n176.addChild(n177);
-    n177.addChild(n178);
-    n178.addChild(n179);
-    n179.addChild(n180);
-    n180.addChild(n181);
-    n181.addChild(n182);
-    n182.addChild(n183);
-    n183.addChild(n184);
-    n184.addChild(n185);
-    n185.addChild(n186);
-    n186.addChild(n187);
-    n187.addChild(n188);
-    n188.addChild(n189);
-    n189.addChild(n190);
-    n190.addChild(n191);
-    n191.addChild(n192);
-    n192.addChild(n193);
-    n193.addChild(n194);
-    n194.addChild(n195);
-    n195.addChild(n196);
-    n196.addChild(n197);
-    n197.addChild(n198);
-    n198.addChild(n199);
-    n199.addChild(n200);
-    n200.addChild(n201);
-    n201.addChild(n202);
-    n202.addChild(n203);
-    n203.addChild(n204);
-    n204.addChild(n205);
-    n205.addChild(n206);
-    n206.addChild(n207);
-    n207.addChild(n208);
-    n208.addChild(n209);
-    n209.addChild(n210);
-    n210.addChild(n211);
-    n211.addChild(n212);
-    n212.addChild(n213);
-    n213.addChild(n214);
-    n214.addChild(n215);
-    n215.addChild(n216);
-    n216.addChild(n217);
-    n217.addChild(n218);
-    n218.addChild(n219);
-    n219.addChild(n220);
-    n220.addChild(n221);
-    n221.addChild(n222);
-    n222.addChild(n223);
-    n223.addChild(n224);
-    n224.addChild(n225);
-    n225.addChild(n226);
-    n226.addChild(n227);
-    n227.addChild(n228);
-    n228.addChild(n229);
-    n229.addChild(n230);
-    n230.addChild(n231);
-    n231.addChild(n232);
-    n232.addChild(n233);
-    n233.addChild(n234);
-    n234.addChild(n235);
-    n235.addChild(n236);
-    n236.addChild(n237);
-    n237.addChild(n238);
-    n238.addChild(n239);
-    n239.addChild(n240);
-    n240.addChild(n241);
-    n241.addChild(n242);
-    n242.addChild(n243);
-    n243.addChild(n244);
-    n244.addChild(n245);
-    n245.addChild(n246);
-    n246.addChild(n247);
-    n247.addChild(n248);
-    n248.addChild(n249);
-    n249.addChild(n250);
-    n250.addChild(n251);
-    n251.addChild(n252);
-    n252.addChild(n253);
-    n253.addChild(n254);
-    n254.addChild(n255);
-    n255.addChild(n256);
-    n256.addChild(n257);
-    n257.addChild(n258);
-    n258.addChild(n259);
-    n259.addChild(n260);
-    n260.addChild(n261);
-    n261.addChild(n262);
-    n262.addChild(n263);
-    n263.addChild(n264);
-    n264.addChild(n265);
-    n265.addChild(n266);
-
-    n266.addChild(n267);
-    n266.addChild(n269);
-
-    n267.addChild(n268);
-    n269.addChild(n270);
-
-    n268.addChild(n271);
-    n270.addChild(n271);
-
-    n271.addChild(n272);
-    n271.addChild(n286);
-
-    n272.addChild(n273);
-
-    n273.addChild(n274);
-    n273.addChild(n277);
-
-    n274.addChild(n275);
-    n275.addChild(n276);
-
-    n276.addChild(n278);
-    n277.addChild(n278);
-
-    n278.addChild(n279);
-    n279.addChild(n280);
-    n280.addChild(n281);
-    n281.addChild(n282);
-    n282.addChild(n283);
-    n283.addChild(n284);
-    n284.addChild(n285);
-    n285.addChild(n306);
-
-    n286.addChild(n287);
-    n286.addChild(n293);
-
-    n287.addChild(n288);
-
-    n288.addChild(n289);
-    n288.addChild(n296);
-
-    n289.addChild(n290);
-    n290.addChild(n291);
-    n291.addChild(n292);
-    n292.addChild(n298);
-
-    n293.addChild(n294);
-    n294.addChild(n295);
-
-    n295.addChild(n289);
-    n295.addChild(n296);
-
-    n296.addChild(n297);
-
-    n297.addChild(n292);
-
-    n298.addChild(n299);
-    n298.addChild(n300);
-
-    n299.addChild(n301);
-    n300.addChild(n301);
-
-    n301.addChild(n302);
-    n302.addChild(n303);
-    n303.addChild(n304);
-    n304.addChild(n305);
-    n305.addChild(n306);
-
-    n306.addChild(n307);
-    n307.addChild(n308);
-    n308.addChild(n309);
-    n309.addChild(n310);
-    n310.addChild(n311);
-    n311.addChild(n312);
-    n312.addChild(n313);
-    n313.addChild(n314);
-    n314.addChild(n315);
-    n315.addChild(n316);
-    n316.addChild(n317);
-    n317.addChild(n318);
-    n318.addChild(n319);
-
-    n319.addChild(n321);
-    n319.addChild(n320);
-
-    n320.addChild(n321);
-
-    n321.addChild(n322);
-    n322.addChild(n323);
-    n323.addChild(n324);
-
-    n324.addChild(n326);
-    n324.addChild(n325);
-
-    n325.addChild(n326);
-
-    n326.addChild(n327);
-    n327.addChild(n328);
-    n328.addChild(n329);
-    n329.addChild(n330);
-    n330.addChild(n331);
-    n331.addChild(n332);
-    n332.addChild(n333);
-    n333.addChild(n334);
-
-    n334.addChild(n335);
-    n334.addChild(n336);
-
-    n335.addChild(n337);
-    n336.addChild(n337);
-
-    n337.addChild(n338);
-    n338.addChild(n339);
-    n339.addChild(n340);
-    n340.addChild(n341);
-    n341.addChild(n342);
-    n342.addChild(n343);
-    n343.addChild(n344);
-
-    n344.addChild(n347);
-    n344.addChild(n345);
-
-    n345.addChild(n347);
-    n345.addChild(n346);
-    n346.addChild(n347);
-
-    n347.addChild(n348);
-    n348.addChild(n349);
-    n349.addChild(n350);
-    n350.addChild(n351);
-    n351.addChild(n352);
-    n352.addChild(n353);
-    n353.addChild(n354);
-    n354.addChild(n355);
-    n355.addChild(n356);
-    n356.addChild(n357);
-    n357.addChild(n358);
-    n358.addChild(n359);
-    n359.addChild(n360);
-    n360.addChild(n361);
-
-    n361.addChild(m1);
     m1.addChild(m2);
     m2.addChild(m3);
     m3.addChild(m4);
@@ -5921,23 +5929,7 @@ public class Game {
     m1206.addChild(m1207);
     m1207.addChild(m1208); //DEATH
 
-    return n0;
+    return m1;
   }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
