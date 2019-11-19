@@ -49,6 +49,21 @@ html {
   border-bottom-color: gray;
 }
 
+#speaker4 {
+  color: darkorange;
+  padding-right: 50%;
+}
+
+#speaker5 {
+  color: white;
+  padding-right: 50%;
+}
+
+#speaker6 {
+  color: darkorange;
+  padding-right: 50%;
+}
+
 .decision {
   margin-bottom: 4em;
 }

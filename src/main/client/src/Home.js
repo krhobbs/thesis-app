@@ -92,7 +92,7 @@ class Home extends Component {
 
     let body = { decisionList: this.state.decisionList };
 
-    let currentNode = await (await fetch('http://localhost:9000/decide', {
+    let currentNode = await (await fetch('https://secret-woodland-72794.herokuapp.com/decide', {
       method: 'POST',
       mode: 'cors',
       headers: {
