@@ -64,6 +64,11 @@ html {
   padding-right: 50%;
 }
 
+#speaker99 {
+  color: red;
+  text-align: center;
+}
+
 .decision {
   margin-bottom: 4em;
 }
