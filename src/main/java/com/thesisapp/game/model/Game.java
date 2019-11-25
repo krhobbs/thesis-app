@@ -21,13 +21,14 @@ public class Game {
   Game() {}
 
   Node buildFullStoryTree() {
+    Node n00 = new Node(0.3, "", emptyDecisions, 0, true);
     //Act 1
     Node n0 = new Node(0, "pinging...", emptyDecisions, 0, true);
     Node n0_1 = new Node(0.1, "acquired signal", emptyDecisions, 0, false);
-    Node n0_2 = new Node(0.1, "status...connected", emptyDecisions, 0, false);
+    Node n0_2 = new Node(0.2, "status...connected", emptyDecisions, 0, false);
 
     Decision n1d1 = new Decision("n1d1", "Who is this?", 0, 0);
-    Decision n1d2 = new Decision("n1d1", "Whoa-- is this an actual person?", 0, 0, "Whoa.");
+    Decision n1d2 = new Decision("n1d2", "Whoa-- is this an actual person?", 0, 0, "Whoa.");
     Decision[] n1d = {n1d1, n1d2};
     Node n1 = new Node(1, "Ah-- what the hell?", emptyDecisions, 1, false);
     Node n1_5 = new Node(1.5, "Stupid thing.", n1d, 1, false);
@@ -452,7 +453,7 @@ public class Game {
     Node n129 = new Node(129, "So you'll shut it down?", n129d, 1, false);
 
     Decision n130d1 = new Decision("n130d1", "Okay. I trust your judgement.\n It was nice to meet you, Prosper.", 0, 0, "Okay.");
-    Decision n130d2 = new Decision("n130d2", "This is me...signing off, then.\n In 60 seconds. A last minute, just in case you change your mind.", 1, 0, "But if you change your mind...");
+    Decision n130d2 = new Decision("n130d2", "This is me...signing off, then.\n In 60 seconds. A last minute, just in case you change your mind.", 0, 0, "But if you change your mind...");
     Decision[] n130d = {n130d1, n130d2};
     Node n130 = new Node(130, "It is.", n130d, 1, false);
 
@@ -913,6 +914,7 @@ public class Game {
 
     Node m1 = buildRestOfStoryTree();
 
+    n00.addChild(n0);
     n0.addChild(n0_1);
     n0_1.addChild(n0_2);
     n0_2.addChild(n1);
@@ -1477,7 +1479,7 @@ public class Game {
     n361.addChild(m1);
 
 
-    return n0;
+    return n00;
   }
 
   Node buildRestOfStoryTree() {
