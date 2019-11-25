@@ -9,30 +9,23 @@ class Home extends Component {
     this.state = {
       name: "",
       pronouns: "",
-      previouslyPlayed: [{text: 'pinging...  acquired signal  status...connected', speaker: 0}, {text: 'Ah-- what the hell?', speaker: 1}],
+      previouslyPlayed: [],
       currentNode: {
         id: 1,
-        text: 'Stupid thing.',
+        text: '',
         decisions: [
           {
-            id: 'n1d1',
-            text: 'Who is this?',
+            id: 'xx',
+            text: '',
             whichChild: 0,
             attitude: 0,
-            shortText: "Who is this?"
-          },
-          {
-            id: 'n1d2',
-            text: 'Whoa -- is this an actual person?',
-            whichChild: 0,
-            attitude: 0,
-            shortText: "Whoa."
+            shortText: "Connect (Begin Playing)"
           }
         ],
         speaker: 0,
         checkpoint: true
       },
-      decisionList: [0, 0]
+      decisionList: []
     };
 
     this.onDecide = this.onDecide.bind(this);
@@ -92,7 +85,7 @@ class Home extends Component {
 
     let body = { decisionList: this.state.decisionList };
 
-    let currentNode = await (await fetch('http://localhost:9000/decide', {
+    let currentNode = await (await fetch('localhost:9000/decide', {
       method: 'POST',
       mode: 'cors',
       headers: {

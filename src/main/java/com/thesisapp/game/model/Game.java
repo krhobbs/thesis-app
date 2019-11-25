@@ -21,11 +21,14 @@ public class Game {
   Game() {}
 
   Node buildFullStoryTree() {
+    Node n00 = new Node(0.3, "", emptyDecisions, 0, true);
     //Act 1
-    Node n0 = new Node(0, "pinging...\nacquired signal\nstatus...connected", emptyDecisions, 0, true);
+    Node n0 = new Node(0, "pinging...", emptyDecisions, 0, true);
+    Node n0_1 = new Node(0.1, "acquired signal", emptyDecisions, 0, false);
+    Node n0_2 = new Node(0.2, "status...connected", emptyDecisions, 0, false);
 
     Decision n1d1 = new Decision("n1d1", "Who is this?", 0, 0);
-    Decision n1d2 = new Decision("n1d1", "Whoa-- is this an actual person?", 0, 0, "Whoa.");
+    Decision n1d2 = new Decision("n1d2", "Whoa-- is this an actual person?", 0, 0, "Whoa.");
     Decision[] n1d = {n1d1, n1d2};
     Node n1 = new Node(1, "Ah-- what the hell?", emptyDecisions, 1, false);
     Node n1_5 = new Node(1.5, "Stupid thing.", n1d, 1, false);
@@ -114,7 +117,7 @@ public class Game {
     Node n23 = new Node(23, "Let's call that a need to know situation", emptyDecisions, 1, false);
 
     Decision n24d1 = new Decision("n24d1", "You don't say...", 0, 0);
-    Decision n24d2 = new Decision("n24d2", "Uh, I bet it is. Okay, was it: A) Seedy Corporation B) Aliens C) Cool futury tech", 1, 0);
+    Decision n24d2 = new Decision("n24d2", "Uh, I bet it is. Okay, was it: A) Seedy Corporation B) Aliens C) Cool futury tech", 1, 0, "Let me guess.");
     Decision[] n24d = {n24d1, n24d2};
     Node n24 = new Node(24, "It's a long story.", n24d, 1, false); //FINAL NODE OF CHIP-INFO SCENE
 
@@ -297,9 +300,12 @@ public class Game {
 
     //Wait 3 Hours (If they attempt to play within three hours)
 
+    Node n73_1 = new Node(73.1, "pinging...", emptyDecisions, 0, false);
+    Node n73_2 = new Node(73.2, "acquired signal", emptyDecisions, 0, false);
+
     Decision n74d1 = new Decision("n74d1", "Connected! Hello?? Prosper?", 0, 0, "Prosper?");
     Decision[] n74d = {n74d1};
-    Node n74 = new Node(74, "pinging...\nacquired signal\nstatus...connected", n74d, 0, false);
+    Node n74 = new Node(74, "status...connected", n74d, 0, false);
 
     Node n75 = new Node(75, "[]?", emptyDecisions, 1, false);
 
@@ -441,25 +447,25 @@ public class Game {
     Decision[] n128d = {n128d1, n128d2};
     Node n128 = new Node(128, "I don't want you to pay the price for helping me.", n128d, 1, false);
 
-    Decision n129d1 = new Decision("n129d1", "Yes. I guess this is goodbye, Prosper.", 0, 0, "Agree");
-    Decision n129d2 = new Decision("n129d2", "Are you sure?", 1, 0, "Disagree");
+    Decision n129d1 = new Decision("n129d1", "Yes. I guess this is goodbye, Prosper.", 0, 0);
+    Decision n129d2 = new Decision("n129d2", "Are you sure?", 1, 0);
     Decision[] n129d = {n129d1, n129d2};
     Node n129 = new Node(129, "So you'll shut it down?", n129d, 1, false);
 
-    Decision n130d1 = new Decision("n130d1", "Okay. I trust your judgement.\n It was nice to meet you, Prosper.", 0, 0, "Agree");
-    Decision n130d2 = new Decision("n130d2", "This is me...signing off, then.\n In 60 seconds. A last minute, just in case you change your mind.", 1, 0, "Disagree");
+    Decision n130d1 = new Decision("n130d1", "Okay. I trust your judgement.\n It was nice to meet you, Prosper.", 0, 0, "Okay.");
+    Decision n130d2 = new Decision("n130d2", "This is me...signing off, then.\n In 60 seconds. A last minute, just in case you change your mind.", 0, 0, "But if you change your mind...");
     Decision[] n130d = {n130d1, n130d2};
     Node n130 = new Node(130, "It is.", n130d, 1, false);
 
-    Decision n131d1 = new Decision("n131d1", "Okay. I guess this is goodbye, Prosper.", 0, 0, "Agree");
-    Decision n131d2 = new Decision("n131d2", "There's really nothing else I can do to help?", 1, 0, "Disagree");
+    Decision n131d1 = new Decision("n131d1", "Okay. I guess this is goodbye, Prosper.", 0, 0, "Okay, then.");
+    Decision n131d2 = new Decision("n131d2", "There's really nothing else I can do to help?", 1, 0, "Are you SUPER sure?");
     Decision[] n131d = {n131d1, n131d2};
     Node n131 = new Node(131, "I'm sure.", n131d, 1, false);
 
     Node n132 = new Node(132, "You've done more than enough. I couldn't possibly repay you.", emptyDecisions, 1, false);
 
-    Decision n133d1 = new Decision("n133d1", "Okay. I guess this is goodbye, Prosper.", 0, 0, "Agree");
-    Decision n133d2 = new Decision("n133d2", "No way! I can still help you, Prosper.", 1, 0, "Disagree");
+    Decision n133d1 = new Decision("n133d1", "Okay. I guess this is goodbye, Prosper.", 0, 0, "Whatever you think is best.");
+    Decision n133d2 = new Decision("n133d2", "No way! I can still help you, Prosper.", 1, 0);
     Decision[] n133d = {n133d1, n133d2};
     Node n133 = new Node(133, "But I'll start by disconnecting the chip.", n133d, 1, false);
 
@@ -499,10 +505,13 @@ public class Game {
     Decision[] n150d = {n150d1, n150d2};
     Node n150 = new Node(150, "This is Detective Grace Dillon. NYPD.", n150d, 2, false);
 
+    Node n150_1 = new Node(150.1, "pinging...", emptyDecisions, 0, false);
+    Node n150_2 = new Node(150.2, "acquired signal", emptyDecisions, 0, false);
+
     Decision n151d1 = new Decision("n151d1", "Hi, Prosper.", 0, 0);
     Decision n151d2 = new Decision("n151d2", "Don't be mad.", 0, 0);
     Decision[] n151d = {n151d1, n151d2};
-    Node n151 = new Node(151, "pinging...\nacquired signal\nstatus...connected", n151d, 2, false);
+    Node n151 = new Node(151, "status...connected", n151d, 0, false);
 
     Node n152 = new Node(152, "[]?", emptyDecisions, 1, false);
 
@@ -578,7 +587,9 @@ public class Game {
     Node n187 = new Node(187, "2", emptyDecisions, 0, false);
     Node n188 = new Node(188, "1", emptyDecisions, 0, false);
 
-    Node n189 = new Node(189, "pinging...\nacquired signal\nstatus...connected", emptyDecisions, 0, false);
+    Node n189 = new Node(189, "pinging...", emptyDecisions, 0, false);
+    Node n189_1 = new Node(189.1, "acquired signal", emptyDecisions, 0, false);
+    Node n189_2 = new Node(189.2, "status...connected", emptyDecisions, 0, false);
 
     Node n190 = new Node(190, "Let it go, Detective.", emptyDecisions, 1, false);
 
@@ -606,7 +617,9 @@ public class Game {
     Node n205 = new Node(205, "3", emptyDecisions, 0, false);
     Node n206 = new Node(206, "2", emptyDecisions, 0, false);
     Node n207 = new Node(207, "1", emptyDecisions, 0, false);
-    Node n208 = new Node(208, "pinging...\nacquired signal\nstatus...connected", emptyDecisions, 0, false);
+    Node n208 = new Node(208, "pinging...", emptyDecisions, 0, false);
+    Node n208_1 = new Node(208.1, "acquired signal", emptyDecisions, 0, false);
+    Node n208_2 = new Node(208.2, "status...connected", emptyDecisions, 0, false);
 
     Node n209 = new Node(209, "Explain what you did on the roof in Harlem, Prosper.", emptyDecisions, 2, false);
     Node n210 = new Node(210, "What you chose to do.", emptyDecisions, 2, false);
@@ -694,7 +707,7 @@ public class Game {
     Node n265 = new Node(265, "Hello, [].", emptyDecisions, 1, false);
 
     Decision n266d1 = new Decision("n266d1", "Of course not. You're amazing.", 0, 0);
-    Decision n266d2 = new Decision("n266d2", "Mechanical- American?", 1, 0);
+    Decision n266d2 = new Decision("n266d2", "Mechanical-American?", 1, 0);
     Decision[] n266d = {n266d1, n266d2};
     Node n266 = new Node(266, "No, I'm not a robot. Nothing so simplistic.", n266d, 1, false);
 
@@ -901,7 +914,10 @@ public class Game {
 
     Node m1 = buildRestOfStoryTree();
 
-    n0.addChild(n1);
+    n00.addChild(n0);
+    n0.addChild(n0_1);
+    n0_1.addChild(n0_2);
+    n0_2.addChild(n1);
     n1.addChild(n1_5);
     n1_5.addChild(n2);
     n2.addChild(n3);
@@ -1060,7 +1076,10 @@ public class Game {
     n70.addChild(n71);
     n71.addChild(n72);
     n72.addChild(n73);
-    n73.addChild(n74);
+    n73.addChild(n73_1);
+
+    n73_1.addChild(n73_2);
+    n73_2.addChild(n74);
 
     n74.addChild(n75);
 
@@ -1194,7 +1213,9 @@ public class Game {
 
     n149.addChild(n150);
 
-    n150.addChild(n151);
+    n150.addChild(n150_1);
+    n150_1.addChild(n150_2);
+    n150_2.addChild(n151);
     n151.addChild(n152);
     n152.addChild(n153);
     n153.addChild(n154);
@@ -1233,7 +1254,9 @@ public class Game {
     n186.addChild(n187);
     n187.addChild(n188);
     n188.addChild(n189);
-    n189.addChild(n190);
+    n189.addChild(n189_1);
+    n189_1.addChild(n189_2);
+    n189_2.addChild(n190);
     n190.addChild(n191);
     n191.addChild(n192);
     n192.addChild(n193);
@@ -1252,7 +1275,9 @@ public class Game {
     n205.addChild(n206);
     n206.addChild(n207);
     n207.addChild(n208);
-    n208.addChild(n209);
+    n208.addChild(n208_1);
+    n208_1.addChild(n208_2);
+    n208_2.addChild(n209);
     n209.addChild(n210);
     n210.addChild(n211);
     n211.addChild(n212);
@@ -1454,7 +1479,7 @@ public class Game {
     n361.addChild(m1);
 
 
-    return n0;
+    return n00;
   }
 
   Node buildRestOfStoryTree() {
@@ -1468,11 +1493,11 @@ public class Game {
     Node m4 = new Node(365, "acquired connection_point.P", emptyDecisions, 0, false);
 
     Decision m5d1 = new Decision("m5d1", "And he's back! Prosper, it's [] and Dillon. The computer has a nice new interface, and now we can all talk at once, sans squabbling.", 0, 0, "And he's back!");
-    Decision m5d2 = new Decision("m5d2", "Ladies and gentlefolk, we have point.P! Prosper, it's [] and Dillon. The computer has a nice new interface, and now we can all talk at once, sans squabbling.", 0, 0, "Ladies and gentlefolk, we have point.P!");
+    Decision m5d2 = new Decision("m5d2", "Folks, we have point.P! Prosper, it's [] and Dillon. The computer has a nice new interface, and now we can all talk at once, sans squabbling.", 0, 0, "Ladies and gentlefolk, we have point.P!");
     Decision[] m5d = {m5d1, m5d2};
     Node m5 = new Node(366, "connection_point.P: active", m5d, 0, false);
 
-    Node m6 = new Node(367, "", emptyDecisions, 1, false);
+    //Node m6 = new Node(367, "", emptyDecisions, 1, false);
 
     Decision m7d1 = new Decision("m7d1", "Of course not, officer. Now Dillon can chat without hacking me, is what I mean. What's going on?", 0, 0, "Whatever you say. So, what's going on?");
     Decision m7d2 = new Decision("m7d2", "...anyway. Now Dillon can chat without hacking me, is what I mean. What's going on?", 0, 0, "Sure... So, what's going on?");
@@ -2327,12 +2352,12 @@ public class Game {
     Node m339 = new Node(699, "Really?", emptyDecisions, 1, false);
 
     Decision m340d1 = new Decision("m340d1", "Okay, we have a status monitor.", 0, 0);
-    Decision m340d2 = new Decision("m340d2", "Okay, we have an equipment log.", 0, 0);
+    Decision m340d2 = new Decision("m340d2", "Okay, we have an experiment log.", 0, 0);
     Decision[] m340d = {m340d1, m340d2};
     Node m340 = new Node(700, "I think I'm too accustomed to bad news.", m340d, 1, false);
 
     Decision m341d1 = new Decision("m341d1", "Okay, we have a status monitor.", 0, 0);
-    Decision m341d2 = new Decision("m341d2", "Okay, we have an equipment log.", 0, 0);
+    Decision m341d2 = new Decision("m341d2", "Okay, we have an experiment log.", 0, 0);
     Decision[] m341d = {m341d1, m341d2};
     Node m341 = new Node(701, "I object to that description. Please don't call anything \"juicy\" that you just redirected through my head.", m341d, 1, false);
 
@@ -2902,7 +2927,7 @@ public class Game {
     Decision[] m585d = {m585d1, m585d2};
     Node m585 = new Node(945, "Oh.", m585d, 1, false);
 
-    Node m586 = new Node(946, "\"Hello.\"", emptyDecisions, 4, false);
+    Node m586 = new Node(946, "?: \"Hello.\"", emptyDecisions, 4, false);
 
     Node m587 = new Node(947, "I knew it. I knew it, but", emptyDecisions, 1, false);
 
@@ -2916,7 +2941,7 @@ public class Game {
     Decision m590d1 = new Decision("m590d1", "What??", 0, 0);
     Decision m590d2 = new Decision("m590d2", "No way.", 0, 0);
     Decision[] m590d = {m590d1, m590d2};
-    Node m590 = new Node(950, "\"What I am is Model 412-09 Mark-2.\"", m590d, 4, false);
+    Node m590 = new Node(950, "?: \"What I am is Model 412-09 Mark-2.\"", m590d, 4, false);
 
     Node m591 = new Node(951, "PROSPER: \"That.\"", emptyDecisions, 5, false);
 
@@ -2940,7 +2965,7 @@ public class Game {
 
     Node m598 = new Node(958, "PROSPER: \"What are you called?\"", emptyDecisions, 5, false);
 
-    Node m599 = new Node(959, "\"Unit Dictation: Caliban.\"", emptyDecisions, 4, false);
+    Node m599 = new Node(959, "?: \"Unit Dictation: Caliban.\"", emptyDecisions, 4, false);
 
     Node m600 = new Node(960, "CALIBAN: \"You are Model 412-09 Mark-1. Unit Dictation: Prospero.\"", emptyDecisions, 4, false);
 
@@ -4396,8 +4421,8 @@ public class Game {
     m2.addChild(m3);
     m3.addChild(m4);
     m4.addChild(m5);
-    m5.addChild(m6);
-    m6.addChild(m7);
+    m5.addChild(m7);
+    //Skip m6
     m7.addChild(m8);
     m8.addChild(m9);
     m9.addChild(m10);
