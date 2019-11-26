@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Container } from 'reactstrap';
+import ls from 'local-storage';
 import Message from "./Message";
 import Decision from "./Decision";
 
@@ -34,6 +35,11 @@ class Home extends Component {
 
   }
 
+  componentDidMount() {
+    let state  = JSON.parse(ls.get('game-state') || '{}');
+    this.setState(state);
+  }
+
   componentDidUpdate(prevProps, prevState, snapshot) {
     this.scrollToBottom();
   }
@@ -55,6 +61,7 @@ class Home extends Component {
       let previouslyPlayed = this.state.previouslyPlayed;
       previouslyPlayed.push(superSimpleNode);
       this.setState({previouslyPlayed: previouslyPlayed});
+      ls.set('game-state', JSON.stringify(this.state));
     }
   }
 
@@ -62,14 +69,17 @@ class Home extends Component {
     let decisionList = this.state.decisionList;
     decisionList.push(whichChild);
     this.setState({decisionList: decisionList});
+    ls.set('game-state', JSON.stringify(this.state));
   }
 
   updateName(name) {
     this.setState({name: name});
+    ls.set('game-state', JSON.stringify(this.state));
   }
 
   updatePronoun(pronoun) {
     this.setState({pronoun: pronoun})
+    ls.set('game-state', JSON.stringify(this.state));
   }
 
   scrollToBottom() {
@@ -85,7 +95,7 @@ class Home extends Component {
 
     let body = { decisionList: this.state.decisionList };
 
-    let currentNode = await (await fetch('localhost:9000/decide', {
+    let currentNode = await (await fetch('http://localhost:9000/decide', {
       method: 'POST',
       mode: 'cors',
       headers: {
@@ -99,6 +109,7 @@ class Home extends Component {
 
     this.setState({currentNode: currentNode});
     this.updatePreviouslyPlayed({text: currentNode.text, speaker: currentNode.speaker});
+    ls.set('game-state', JSON.stringify(this.state));
 
     if (currentNode.decisions[0].id === '') {
       this.onDecide(currentNode.decisions[0]);
