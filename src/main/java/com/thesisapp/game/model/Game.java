@@ -5,9 +5,13 @@ public class Game {
   private Decision blankDecision = new Decision("", "", 0, -1);
   private Decision[] emptyDecisions = {blankDecision};
 
+  private Decision restartDecision = new Decision("r", "Restart", 0, -1);
+  private Decision[] restartDecisions = {restartDecision};
+
   public Decision[] getEmptyDecisions() {
     return emptyDecisions;
   }
+
   public void setEmptyDecisions(Decision[] emptyDecisions) {
     this.emptyDecisions = emptyDecisions;
   }
@@ -16,6 +20,18 @@ public class Game {
   }
   public void setBlankDecision(Decision blankDecision) {
     this.blankDecision = blankDecision;
+  }
+  public Decision getRestartDecision() {
+    return restartDecision;
+  }
+  public void setRestartDecision(Decision restartDecision) {
+    this.restartDecision = restartDecision;
+  }
+  public Decision[] getRestartDecisions() {
+    return restartDecisions;
+  }
+  public void setRestartDecisions(Decision[] restartDecisions) {
+    this.restartDecisions = restartDecisions;
   }
 
   Game() {}
@@ -1973,7 +1989,7 @@ public class Game {
 
     Node m185 = new Node(546, "connection_point.P: lost", emptyDecisions, 0, false);
 
-    Node m186 = new Node(547, "DEATH SCENE", emptyDecisions, 99, false); //DEATH NODE
+    Node m186 = new Node(547, "", restartDecisions, 99, false); //DEATH NODE
 
     Decision m187d1 = new Decision("m187d1", "Never mind. I think I know what we can do.", 0, 0);
     Decision m187d2 = new Decision("m187d2", "We could use their experiment against them.", 1, 0);
@@ -2669,7 +2685,7 @@ public class Game {
 
     Node m474 = new Node(834, "connection_point.P: lost", emptyDecisions, 0, false);
 
-    Node m475 = new Node(835, "DEATH", emptyDecisions, 0, false);
+    Node m475 = new Node(835, "", restartDecisions, 0, false);
 
     Node m476 = new Node(836, "You're right. We need more of a plan before we move.", emptyDecisions, 1, false);
 
@@ -2918,7 +2934,7 @@ public class Game {
 
     Node m582 = new Node(942, "connection_point.P: lost", emptyDecisions, 0, false);
 
-    Node m583 = new Node(943, "DEATH", emptyDecisions, 99, false);
+    Node m583 = new Node(943, "", restartDecisions, 99, false);
 
     Node m584 = new Node(944, "I", emptyDecisions, 1, false);
 
@@ -3027,7 +3043,7 @@ public class Game {
 
     Node m626 = new Node(986, "connection_point.P: lost", emptyDecisions, 0, false);
 
-    Node m627 = new Node(987, "DEATH", emptyDecisions, 0, false);
+    Node m627 = new Node(987, "", restartDecisions, 0, false);
 
     Node m628 = new Node(988, "At least I got top billing.", emptyDecisions, 1, false);
 
@@ -3381,7 +3397,7 @@ public class Game {
 
     Node m786 = new Node(1146, "connection_point.P: lost", emptyDecisions, 0, false);
 
-    Node m787 = new Node(1147, "DEATH", emptyDecisions, 99, false);
+    Node m787 = new Node(1147, "", restartDecisions, 99, false);
 
     Node m788 = new Node(1148, "PROSPER: \"No, Caliban.\"", emptyDecisions, 5, false);
 
@@ -4383,7 +4399,7 @@ public class Game {
 
     Node m1191 = new Node(1550, "connection_point.P: lost", emptyDecisions, 0, false);
 
-    Node m1192 = new Node(1551, "DEATH", emptyDecisions, 99, false);
+    Node m1192 = new Node(1551, "", restartDecisions, 99, false);
 
     //Skip m1193
 
@@ -4415,7 +4431,7 @@ public class Game {
 
     Node m1207 = new Node(1566, "connection_point.P: lost", emptyDecisions, 0, false);
 
-    Node m1208 = new Node(1567, "DEATH", emptyDecisions, 99, false);
+    Node m1208 = new Node(1567, "", restartDecisions, 99, false);
 
     m1.addChild(m2);
     m2.addChild(m3);
@@ -4666,7 +4682,8 @@ public class Game {
     m182.addChild(m183);
     m183.addChild(m184);
     m184.addChild(m185);
-    m185.addChild(m186); //DEATH, m186 has no children
+    m185.addChild(m186); //DEATH, 61 is checkpoint
+    m186.addChild(m61);
 
     m187.addChild(m83);
     m187.addChild(m187_5);
@@ -5023,7 +5040,8 @@ public class Game {
     m471.addChild(m472);
     m472.addChild(m473);
     m473.addChild(m474);
-    m474.addChild(m475); //DEATH
+    m474.addChild(m475); //DEATH, go back to m384
+    m475.addChild(m384);
 
     m476.addChild(m477);
     m477.addChild(m478);
@@ -5147,7 +5165,8 @@ public class Game {
     m579.addChild(m580);
     m580.addChild(m581);
     m581.addChild(m582);
-    m582.addChild(m583); //DEATH
+    m582.addChild(m583); //DEATH, go back to m384
+    m583.addChild(m384);
 
     m584.addChild(m585);
     m585.addChild(m586);
@@ -5197,7 +5216,8 @@ public class Game {
     m623.addChild(m624);
     m624.addChild(m625);
     m625.addChild(m626);
-    m626.addChild(m627); //DEATH
+    m626.addChild(m627); //DEATH, go back to m596
+    m627.addChild(m596);
 
     m628.addChild(m629);
 
@@ -5371,7 +5391,8 @@ public class Game {
     m783.addChild(m784);
     m784.addChild(m785);
     m785.addChild(m786);
-    m786.addChild(m787); //DEATH
+    m786.addChild(m787); //DEATH, go back to m639
+    m787.addChild(m639);
 
     m788.addChild(m789);
     m789.addChild(m790);
@@ -5935,7 +5956,8 @@ public class Game {
     m1188.addChild(m1189);
     m1189.addChild(m1190);
     m1190.addChild(m1191);
-    m1191.addChild(m1192); //DEATH
+    m1191.addChild(m1192); //DEATH, go back to m1097
+    m1192.addChild(m1097);
 
     //Skip m1193
 
@@ -5952,7 +5974,8 @@ public class Game {
     m1204.addChild(m1205);
     m1205.addChild(m1206);
     m1206.addChild(m1207);
-    m1207.addChild(m1208); //DEATH
+    m1207.addChild(m1208); //DEATH, go back to m1095
+    m1208.addChild(m1095);
 
     return m1;
   }
