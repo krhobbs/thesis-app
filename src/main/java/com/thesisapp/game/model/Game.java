@@ -8,10 +8,12 @@ public class Game {
   private Decision restartDecision = new Decision("r", "Restart", 0, -1);
   private Decision[] restartDecisions = {restartDecision};
 
+  private Decision endingDecision = new Decision("f", "The End. Restart...", 0, -1);
+  private Decision[] endingDecisions = {endingDecision};
+
   public Decision[] getEmptyDecisions() {
     return emptyDecisions;
   }
-
   public void setEmptyDecisions(Decision[] emptyDecisions) {
     this.emptyDecisions = emptyDecisions;
   }
@@ -32,6 +34,18 @@ public class Game {
   }
   public void setRestartDecisions(Decision[] restartDecisions) {
     this.restartDecisions = restartDecisions;
+  }
+  public Decision getEndingDecision() {
+    return endingDecision;
+  }
+  public void setEndingDecision(Decision endingDecision) {
+    this.endingDecision = endingDecision;
+  }
+  public Decision[] getEndingDecisions() {
+    return endingDecisions;
+  }
+  public void setEndingDecisions(Decision[] endingDecisions) {
+    this.endingDecisions = endingDecisions;
   }
 
   Game() {}
@@ -158,7 +172,7 @@ public class Game {
     Node n28 = new Node(28, "It's a long story", n28d, 1, false);
 
     Decision n29d1 = new Decision("n29d1", "Okay, sorry to pry. Well what happened?", 0, 0);
-    Decision n29d2 = new Decision("n29d2", "So, mystery guy. Can I ask what happened?", 1, 0);
+    Decision n29d2 = new Decision("n29d2", "So, mystery guy. Can I ask what happened?", 0, 0);
     Decision[] n29d = {n29d1, n29d2};
     Node n29 = new Node(29, "Look, you don't want the details, []. When I say \"long story,\" that implies brutal, uncomfortable, and dangerous to know.", n29d, 1, false);
 
@@ -177,7 +191,7 @@ public class Game {
     Decision[] n30_2d = {n30_2d1, n30_2d2};
     Node n30_2 = new Node(30.2, "To the chip?", n30_2d, 1, false);
 
-    Node n30_3 = new Node(30.3, "Oh well... I got dinged up pretty badly. I'm fine now.", emptyDecisions, 1, false);
+    Node n30_3 = new Node(30.3, "Oh. Well... I got dinged up pretty badly. I'm fine now.", emptyDecisions, 1, false);
 
     Decision n30_4d1 = new Decision("n22d1", "What else can the chip do?", 0, 0);
     Decision n30_4d2 = new Decision("n22d2", "Right. And why exactly do you have a chip in your head?", 0, 0);
@@ -1658,7 +1672,7 @@ public class Game {
     Decision m61d1 = new Decision("m61d1", "They won't get the chance. How about you?", 0, 0, "They won't get the chance.");
     Decision m61d2 = new Decision("m61d2", "That's something. How about that cord? Still attached to you?", 1, 0, "That's something. But let's talk shop.");
     Decision[] m61d = {m61d1, m61d2};
-    Node m61 = new Node(422, "Logically, their next step will be to isolate sight or smell as a variable.", m61d, 1, false);
+    Node m61 = new Node(422, "Logically, their next step will be to isolate sight or smell as a variable.", m61d, 1, true);
 
     Node m62 = new Node(423, "I'm restrained in the same way. My legs are tied down, my arm bound to my torso, and I'm sitting up.", emptyDecisions, 1, false);
 
@@ -2326,7 +2340,7 @@ public class Game {
     Decision m318d1 = new Decision("m318d1", "Whoa--something just popped up on my end.", 0, 0);
     Decision m318d2 = new Decision("m318d2", "Or...how about an e-crowbar?", 0, 0);
     Decision[] m318d = {m318d1, m318d2};
-    Node m318 = new Node(678, "data port: foramen magnum", m318d, 1, false);
+    Node m318 = new Node(678, "data port: foramen magnum", m318d, 0, false);
 
     Decision m319d1 = new Decision("m319d1", "It's some sort of data signal. A two-way connection through that cable, I think. I might be able to pull their data.", 0, 0, "Some sort of data.");
     Decision m319d2 = new Decision("m319d2", "That cable connection is different. Namely, it's playing nice with the communicator chip. I think I could pull their data.", 0, 0, "The cable connection is different.");
@@ -2488,7 +2502,7 @@ public class Game {
     Decision m384d1 = new Decision("m384d1", "Up to you. Catch more flies with honey and all that. Then again, you catch the most with shit.", 0, 0, "Up to you, but you should play the game.");
     Decision m384d2 = new Decision("m384d2", "No holds barred. Give them a piece of your mind.", 1, 0);
     Decision[] m384d = {m384d1, m384d2};
-    Node m384 = new Node(744, "But what should I say?", m384d, 1, false);
+    Node m384 = new Node(744, "But what should I say?", m384d, 1, true);
 
     Node m385 = new Node(745, "I think I need time to process that analogy.", emptyDecisions, 1, false);
 
@@ -2706,8 +2720,6 @@ public class Game {
     Node m484 = new Node(844, "More tests. Fantastic.", emptyDecisions, 1, false);
 
     Node m485 = new Node(845, "PROSPER: \"Yes, I could do that.\"", emptyDecisions, 5, false);
-
-    //Node m486 = new Node(846, "", emptyDecisions, 4, false);
 
     Node m487 = new Node(847, "CARMEN: \"Wonderful. We're going to trade places.\"", emptyDecisions, 4, false);
 
@@ -2975,7 +2987,7 @@ public class Game {
     Decision m596d1 = new Decision("m596d1", "That isn't you, Prosper. Ask for his name. He's an entirely different person, like a twin.", 0, 0, "It's not you.");
     Decision m596d2 = new Decision("m596d2", "That doesn't matter. You have to calm down! Now!", 1, 0, "Snap out of it!");
     Decision[] m596d = {m596d1, m596d2};
-    Node m596 = new Node(956, "It doesn't have skin", m596d, 1, false);
+    Node m596 = new Node(956, "It doesn't have skin", m596d, 1, true);
 
     Node m597 = new Node(957, "Okay.", emptyDecisions, 1, false);
 
@@ -3073,7 +3085,7 @@ public class Game {
     Decision m639d1 = new Decision("m639d1", "You can't mean that. You don't think the good old folks of TURing aren't saying the same thing about you?", 0, 0, "You can't mean that!");
     Decision m639d2 = new Decision("m639d2", "Prosper...", 1, 0, "[Don't interfere]");
     Decision[] m639d = {m639d1, m639d2};
-    Node m639 = new Node(999, "It. Without skin, this thing is an it.", m639d, 1, false);
+    Node m639 = new Node(999, "It. Without skin, this thing is an it.", m639d, 1, true);
 
     Decision m640d1 = new Decision("m640d1", "Then give them that chance!", 0, 0);
     Decision m640d2 = new Decision("m640d2", "You are different. You're capable of compassion. Like, say, treating another android kindly.", 0, 0, "I know you're different. You're better than this.");
@@ -4001,7 +4013,7 @@ public class Game {
 
     Node m1027 = new Node(1386, "Well, I appreciate the sentiment.", emptyDecisions, 1, false);
 
-    Node m1028 = new Node(1387, "connection_point.P inactive", emptyDecisions, 0, false);
+    Node m1028 = new Node(1387, "connection_point.P inactive", endingDecisions, 0, false);
 
     Node m1029 = new Node(1388, "Noted.", emptyDecisions, 1, false);
 
@@ -4175,14 +4187,14 @@ public class Game {
     Decision m1095d1 = new Decision("m1095d1", "We can't be any more certain than that. Focus on the threat inside the room for now.", 0, 0, "You should focus on Carmen, then.");
     Decision m1095d2 = new Decision("m1095d2", "Sounds like a bad bet to make. Maybe watch the door.", 1, 0, "Maybe watch the door anyway.");
     Decision[] m1095d = {m1095d1, m1095d2};
-    Node m1095 = new Node(1454, "I don't think anyone had the chance to alert security. At the least, no one has come looking in this workshop.", m1095d, 1, false);
+    Node m1095 = new Node(1454, "I don't think anyone had the chance to alert security. At the least, no one has come looking in this workshop.", m1095d, 1, true);
 
     Node m1096 = new Node(1455, "Right.", emptyDecisions, 1, false);
 
     Decision m1097d1 = new Decision("m1097d1", "You'd better let her put it on.", 0, 0);
     Decision m1097d2 = new Decision("m1097d2", "You should handle it.", 1, 0);
     Decision[] m1097d = {m1097d1, m1097d2};
-    Node m1097 = new Node(1456, "Looks like the arm is done. Not a lot of ways to get it on if I need to be cautious about Carmen.", m1097d, 1, false);
+    Node m1097 = new Node(1456, "Looks like the arm is done. Not a lot of ways to get it on if I need to be cautious about Carmen.", m1097d, 1, true);
 
     Decision m1098d1 = new Decision("m1098d1", "This might be a good time to ask... Are you actually prepared to shoot her if she tries something?", 0, 0, "This might be a good time to ask...");
     Decision m1098d2 = new Decision("m1098d2", "Speaking of Carmen... Are you really going to shoot her if she tries something?", 1, 0, "Speaking of Carmen...");
@@ -4348,7 +4360,7 @@ public class Game {
 
     Node m1167 = new Node(1526, "Well, I appreciate the sentiment.", emptyDecisions, 1, false);
 
-    Node m1168 = new Node(1527, "connection_point.P inactive", emptyDecisions, 0, false);
+    Node m1168 = new Node(1527, "connection_point.P inactive", endingDecisions, 0, false);
 
     Node m1169 = new Node(1528, "PROSPER: \"I appreciate the patch job, Carmen.\"", emptyDecisions, 5, false);
 
@@ -5052,7 +5064,9 @@ public class Game {
     m482.addChild(m483);
     m483.addChild(m484);
     m484.addChild(m485);
+    //Skip m486
     m485.addChild(m487);
+    m487.addChild(m569);
 
     m488.addChild(m489);
     m489.addChild(m490);
@@ -5717,6 +5731,7 @@ public class Game {
 
     m1026.addChild(m1028);
     m1027.addChild(m1028); //ENDING NUMBER ONE
+    m1028.addChild(m1);
 
     m1029.addChild(m1030);
     m1030.addChild(m1031);
@@ -5929,6 +5944,7 @@ public class Game {
 
     m1166.addChild(m1168);
     m1167.addChild(m1168); //Second Ending!
+    m1168.addChild(m1);
 
     m1169.addChild(m1170);
     m1170.addChild(m1171);

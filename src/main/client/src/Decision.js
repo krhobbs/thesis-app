@@ -58,6 +58,20 @@ class Decision extends Component {
       );
     }
 
+    if (this.props.decisions[0].id === 'r' || this.props.decisions[0].id === 'f') {
+      return this.props.decisions.map((decision) =>
+        <Button
+          key={decision.id}
+          onClick={() => {
+            this.props.restartButton(decision.id);
+          }}
+          value={decision.shortText}
+        >
+          {decision.shortText}
+        </Button>
+      );
+    }
+
     if (this.props.decisions.length > 0) {
       return this.props.decisions.map((decision) =>
         <Button

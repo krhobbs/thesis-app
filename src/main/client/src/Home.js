@@ -26,12 +26,17 @@ class Home extends Component {
         speaker: 0,
         checkpoint: true
       },
-      decisionList: []
+      decisionList: [],
+      checkpointInfo: {
+        previouslyPlayed: [],
+        checkpointList: []
+      }
     };
 
     this.onDecide = this.onDecide.bind(this);
     this.updateName = this.updateName.bind(this);
     this.updatePronoun = this.updatePronoun.bind(this);
+    this.restartButton = this.restartButton.bind(this);
 
   }
 
@@ -53,7 +58,7 @@ class Home extends Component {
 
   // Generate the current decision that the play must make (do not modify state)
   generateDecision() {
-    return <Decision decisions={this.state.currentNode.decisions} onDecide={this.onDecide} updateName={this.updateName} updatePronoun={this.updatePronoun}/>;
+    return <Decision decisions={this.state.currentNode.decisions} onDecide={this.onDecide} updateName={this.updateName} updatePronoun={this.updatePronoun} restartButton={this.restartButton}/>;
   }
 
   updatePreviouslyPlayed(superSimpleNode) {
@@ -82,6 +87,53 @@ class Home extends Component {
     ls.set('game-state', JSON.stringify(this.state));
   }
 
+  //Sets the decision list back to what it should be, after death or end. Also clears cookies.
+  restartButton(id) {
+    if (id === 'r') {
+      let backToList = this.state.checkpointInfo.checkpointList.slice();
+      let backToPrev = this.state.checkpointInfo.previouslyPlayed.slice();
+      this.setState({
+        decisionList: backToList,
+        previouslyPlayed: backToPrev
+      });
+      ls.clear();
+      let promise = this.onDecide({id: 'r', text: '', whichChild: 0, attitude:0, shortText: ''});
+      console.log(promise);
+    } else {
+      let newState = {
+        name: "",
+        pronouns: "",
+        previouslyPlayed: [],
+        currentNode: {
+          id: 1,
+          text: '',
+          decisions: [
+            {
+              id: 'xx',
+              text: '',
+              whichChild: 0,
+              attitude: 0,
+              shortText: "Connect (Begin Playing)"
+            }
+          ],
+          speaker: 0,
+          checkpoint: true
+        },
+        decisionList: [],
+        checkpointInfo: {
+          previouslyPlayed: [],
+          checkpointList: []
+        }
+      };
+      this.setState(newState);
+      ls.clear();
+      let promise = this.onDecide({id: 'f', text: '', whichChild: 0, attitude:0, shortText: ''});
+      console.log(promise);
+    }
+
+
+  }
+
   scrollToBottom() {
     this.el.scrollIntoView({behavior: "auto"});
   }
@@ -107,6 +159,18 @@ class Home extends Component {
       body: JSON.stringify(body),
     })).json();
 
+    //Update the checkpoint information if the node is a checkpoint
+    if (currentNode.checkpoint === true) {
+      console.log("Test");
+      let newCheckpointList = this.state.decisionList.slice();
+      let newCheckpointPrevious = this.state.previouslyPlayed.slice();
+      let newCheckpointInfo = {
+        previouslyPlayed: newCheckpointPrevious,
+        checkpointList: newCheckpointList
+      };
+      this.setState({checkpointInfo: newCheckpointInfo});
+    }
+
     this.setState({currentNode: currentNode});
     this.updatePreviouslyPlayed({text: currentNode.text, speaker: currentNode.speaker});
     ls.set('game-state', JSON.stringify(this.state));
@@ -117,7 +181,6 @@ class Home extends Component {
 
   }
 
-  //A method to get the next node when no decision is necessary
 
   render() {
     return (
