@@ -8,10 +8,12 @@ public class Game {
   private Decision restartDecision = new Decision("r", "Restart", 0, -1);
   private Decision[] restartDecisions = {restartDecision};
 
+  private Decision endingDecision = new Decision("f", "The End. Restart...", 0, -1);
+  private Decision[] endingDecisions = {endingDecision};
+
   public Decision[] getEmptyDecisions() {
     return emptyDecisions;
   }
-
   public void setEmptyDecisions(Decision[] emptyDecisions) {
     this.emptyDecisions = emptyDecisions;
   }
@@ -32,6 +34,18 @@ public class Game {
   }
   public void setRestartDecisions(Decision[] restartDecisions) {
     this.restartDecisions = restartDecisions;
+  }
+  public Decision getEndingDecision() {
+    return endingDecision;
+  }
+  public void setEndingDecision(Decision endingDecision) {
+    this.endingDecision = endingDecision;
+  }
+  public Decision[] getEndingDecisions() {
+    return endingDecisions;
+  }
+  public void setEndingDecisions(Decision[] endingDecisions) {
+    this.endingDecisions = endingDecisions;
   }
 
   Game() {}
@@ -3999,7 +4013,7 @@ public class Game {
 
     Node m1027 = new Node(1386, "Well, I appreciate the sentiment.", emptyDecisions, 1, false);
 
-    Node m1028 = new Node(1387, "connection_point.P inactive", emptyDecisions, 0, false);
+    Node m1028 = new Node(1387, "connection_point.P inactive", endingDecisions, 0, false);
 
     Node m1029 = new Node(1388, "Noted.", emptyDecisions, 1, false);
 
@@ -4346,7 +4360,7 @@ public class Game {
 
     Node m1167 = new Node(1526, "Well, I appreciate the sentiment.", emptyDecisions, 1, false);
 
-    Node m1168 = new Node(1527, "connection_point.P inactive", emptyDecisions, 0, false);
+    Node m1168 = new Node(1527, "connection_point.P inactive", endingDecisions, 0, false);
 
     Node m1169 = new Node(1528, "PROSPER: \"I appreciate the patch job, Carmen.\"", emptyDecisions, 5, false);
 
@@ -5717,6 +5731,7 @@ public class Game {
 
     m1026.addChild(m1028);
     m1027.addChild(m1028); //ENDING NUMBER ONE
+    m1028.addChild(m1);
 
     m1029.addChild(m1030);
     m1030.addChild(m1031);
@@ -5929,6 +5944,7 @@ public class Game {
 
     m1166.addChild(m1168);
     m1167.addChild(m1168); //Second Ending!
+    m1168.addChild(m1);
 
     m1169.addChild(m1170);
     m1170.addChild(m1171);
