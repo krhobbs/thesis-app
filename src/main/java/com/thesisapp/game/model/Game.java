@@ -158,7 +158,7 @@ public class Game {
     Node n28 = new Node(28, "It's a long story", n28d, 1, false);
 
     Decision n29d1 = new Decision("n29d1", "Okay, sorry to pry. Well what happened?", 0, 0);
-    Decision n29d2 = new Decision("n29d2", "So, mystery guy. Can I ask what happened?", 1, 0);
+    Decision n29d2 = new Decision("n29d2", "So, mystery guy. Can I ask what happened?", 0, 0);
     Decision[] n29d = {n29d1, n29d2};
     Node n29 = new Node(29, "Look, you don't want the details, []. When I say \"long story,\" that implies brutal, uncomfortable, and dangerous to know.", n29d, 1, false);
 
