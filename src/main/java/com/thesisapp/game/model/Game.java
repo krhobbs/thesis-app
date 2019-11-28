@@ -2706,9 +2706,7 @@ public class Game {
     Node m484 = new Node(844, "More tests. Fantastic.", emptyDecisions, 1, false);
 
     Node m485 = new Node(845, "PROSPER: \"Yes, I could do that.\"", emptyDecisions, 5, false);
-
-    //Node m486 = new Node(846, "", emptyDecisions, 4, false);
-
+    
     Node m487 = new Node(847, "CARMEN: \"Wonderful. We're going to trade places.\"", emptyDecisions, 4, false);
 
     Node m488 = new Node(848, "PROSPER: \"Nothing.\"", emptyDecisions, 5, false);
@@ -5052,7 +5050,9 @@ public class Game {
     m482.addChild(m483);
     m483.addChild(m484);
     m484.addChild(m485);
+    //Skip m486
     m485.addChild(m487);
+    m487.addChild(m569);
 
     m488.addChild(m489);
     m489.addChild(m490);
